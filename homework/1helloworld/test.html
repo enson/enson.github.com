@@ -1,0 +1,34 @@
+<!doctype html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html charset= "gbk" />
+  <title>Hello World</title>
+  <style>
+      #click{
+          weight:bold;
+	  color:red;
+	  }
+      #main{
+          margin:0 auto;
+	  }
+  </style>
+ </head>
+ <body>
+ <div id="main">
+    <p>YUI Framework</p>
+    <p>Hello world</p>
+    <p>By Enson</p>
+    <div id="click">click me</div>
+ </div>
+ </body>
+ <script src="http://a.tbcdn.cn/s/yui/3.3.0/build/yui/yui-min.js"></script>
+ <script>
+    YUI().use('node', function (Y) {
+        var Helloworld = function(e){
+            alert ("hello world!");
+        }
+        var node = Y.one("#click");
+        node.on("click" , Helloworld);
+   
+    });
+ </script>
+ </html>   
