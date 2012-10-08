@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>淘宝万花筒-创建图标</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="淘宝万花筒-手机客户端定制平台"" />
+    <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
+    <link rel="stylesheet" href="./css/design.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!--<script type="text/javascript" src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js"></script>
+    -->
+    <script src="http://yui.yahooapis.com/3.7.2/build/yui/yui-min.js"></script>
+    <style type="text/css">
+        #content .selectSize{
+            float:left;
+            width:430px;
+            margin-right: 28px;
+        }
+        #content .selectSize .sizeItem{
+            /*background: url("./img/design/sizeBg.PNG") no-repeat fixed left top;*/
+            width:132px;
+            height:140px;
+            display:inline-block;
+            background-color: #e5e5e5;
+            border:1px solid gainsboro;
+            margin-right: 4px;
+            cursor:pointer;
+        }
+        /*
+        #content .selectSize .sizeItem1{
+            background-position: 127px 183px;
+        }
+        #content .selectSize .sizeItem2{
+            background-position: 262px 183px;
+        }
+        #content .selectSize .sizeItem3{
+            background-position: 398px 183px;
+        } */
+        #content .selectSize .sizeBox{
+            background-color: #989898;
+            border-radius: 9px;
+            vertical-align: middle;
+        }
+        #content .selectSize .sizeBox1{
+            width:29px;
+            height:29px;
+            margin:48px 48px 40px 48px;
+        }
+        #content .selectSize .sizeBox2{
+            width:72px;
+            height:72px;
+            margin:31px 11px 14px 34px;
+        }
+        #content .selectSize .sizeBox3{
+            width:96px;
+            height:96px;
+            margin:12px 8px 9px 18px;
+        }
+        #content .done{
+            margin-top: 40px;
+            margin-bottom: 45px;
+            clear:both;
+        }
+        #content .selectSize .button1{
+            cursor:pointer;
+            margin:6px 0px;
+        }
+        #content .selectColor{
+            float:left;
+            margin-left: 16px;
+            width:500px;
+            text-align: left;
+        }
+        #content .vertical-line{
+            border-right: 1px solid gainsboro;
+            border-color: #000;
+        }
+        #content .selectColor .title{
+            font-size:16px;
+            font-weight:bold;
+            display:block;
+            margin:5px 0px;
+        }
+        #content .selectColor .tip{
+            font-size:12px;
+            clear:both;
+            display:block;
+        }
+        #content .selectColor .uploadPic{
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        #content .selectColor .uploadPic img{
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        #content .selectColor .bgcolor .selectC{
+            width: 36px;
+            height:36px;
+            background-color:#82c32e ;
+            display: inline-block;
+            margin-right: 6px;
+            margin-top: 10px;
+            cursor:pointer;
+        }
+        #content .selectColor .bgcolor .color1{
+            background-color: #ff0000;
+        }
+        #content .selectColor .bgcolor .color2{
+            background-color: #ffff00;
+        }
+        #content .selectColor .bgcolor .color3{
+            background-color: #00ff00;
+        }
+        #content .selectColor .bgcolor .color4{
+            background-color: #00ffff;
+        }
+        #content .selectColor .bgcolor{
+            margin-bottom: 10px;
+        }
+        .select-color-focus{
+            border:5px solid #ff6600;
+        }
+    </style>
+</head>
+<body>
+<div id="body" >
+    <header id="header">
+        <div class="header-text">
+            Welcome,<span id="user-name">xijian</span>&nbsp&nbsp<a href="#">退出</a>
+        </div>
+    </header>
+    <div id="content">
+        <div class="flowTab" style="width:1011px">
+            <a href="" class="tab1"><img src="./img/common/designTab.PNG" /></a>
+            <a href="" class="tab2"><img src="./img/common/editTab.PNG" /></a>
+            <a href="" class="tab3"><img src="./img/common/deployTab.PNG" /></a>
+        </div>
+        <div class="theme">
+            外观设计 &gt 创建图标
+        </div>
+        <div class="divisionLine"></div>
+        <section class="selectSize">
+            <div class="sizeItem">
+                <div class="sizeBox sizeBox1"></div>
+                <div class="sizePx">29*29</div>
+            </div>
+            <div class="sizeItem">
+                <div class="sizeBox sizeBox2"></div>
+                <div class="sizePx">72*72</div>
+            </div>
+            <div class="sizeItem">
+                <div class="sizeBox sizeBox3"></div>
+                <div class="sizePx">128*128</div>
+            </div>
+
+<!--
+            <img src="./img/design/72.PNG" />
+            <img src="./img/design/128.PNG" />  -->
+            <div class="button1">
+                <img src="./img/design/button1.PNG"/>
+            </div>
+
+        </section>
+        <div class="vertical-line"></div>
+        <section class="selectColor">
+            <div class="title">为图标选择一种底色:</div>
+            <div class="tip">提示：底色选定后，下一步欢迎页的颜色也会自动和底色保持同一风格。</div>
+            <div class="bgcolor">
+                <span class="selectC color1"></span>
+                <span id="selectC" class="selectC color2"></span>
+                <span class="selectC color3"></span>
+                <span class="selectC color4"></span>
+                <span class="selectC color1"></span>
+                <span class="selectC color2"></span>
+                <span class="selectC color3"></span>
+                <span class="selectC color4"></span>
+                <span class="selectC color1"></span>
+                <span class="selectC color2"></span>
+                <span class="selectC color3"></span>
+                <span class="selectC color4"></span>
+                <span class="selectC color2"></span>
+                <span class="selectC color3"></span>
+                <span class="selectC color1"></span>
+                <span class="selectC color2"></span>
+                <span class="selectC color4"></span>
+                <span class="selectC color2"></span>
+                <span class="selectC color3"></span>
+                <span class="selectC color2"></span>
+            </div>
+            <div class="divisionLine"></div>
+            <div class="title">在图标上展示你的品牌:</div>
+            <div class="tip">提示：你可以选择直接填写品牌名称在图标上或者将自己的品牌logo图片通过上传体现。</div>
+            <div class="uploadPic">上传图片：
+                <input type="text" style="width:0px" title="图片要求：透明底色；尺寸180*180；格式png" placeholder="图片要求：透明底色；尺寸180*180；格式png" />
+                <input type="file" style="background-image:"./img/design/button2.PNG"" />
+                <span class="">
+                    <img src="./img/design/preview.PNG" />
+                </span>
+            </div>
+        </section>
+    </div>
+
+    <div class="nextStep">
+        <a href=""><img src="./img/common/done.PNG" /></a>
+    </div>
+    <footer id="footer" align="center">
+        <img src="./img/homepage/footer-logo.PNG" />
+    </footer>
+
+</div>
+<script type="text/javascript">
+    YUI().use('event','node',function(Y){
+        Y.one('#selectC').on('click',function(){
+            Y.one('#selectC').addClass('.select-color-focus');
+
+        });
+
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/**
+ * @author xijian
+ * @version v1.0.0 first release
+ * @description 本页是万花筒所有页面公用样式
+ */
+
+
+#body{
+    text-align:center;
+}
+.bg{
+    background: url("../img/common/num.png") no-repeat 0 0;
+
+}
+#header {
+    background: #fff url("../img/homepage/header-logo.PNG") no-repeat center top;
+    width: 990px;
+    height:79px;
+    margin:0 auto;
+
+}
+#header .header-text{
+    color:#808080;
+    font-size: 16px;
+    float: right;
+    margin-right: 22px;
+    margin-top: 31px;
+    letter-spacing: 2px;
+}
+#content{
+    width:990px;
+    overflow-x:hidden;
+}
+#content .theme{
+    margin-left: -856px;
+    margin-top: 5px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+#content .divisionLine{
+    border-bottom: 1px solid gainsboro;
+    border-color: #cccccc;
+    display: block;
+
+}
+#content .flowTab .tab1{
+    margin-left: -8px;
+    position:relative;
+    z-index: 3;
+    cursor:pointer;
+}
+#content .flowTab img{
+    margin-top:-3px;
+}
+#content .flowTab .tab2{
+    margin-left: -24px;
+    position:relative;
+    z-index:2;
+    cursor:pointer;
+}
+#content .flowTab .tab3{
+    margin-left: -20px;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+}
+.nextStep{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid gainsboro;
+    border-color: #cccccc;
+    width: 990px;
+    height: 55px;
+    margin: 20px auto 10px;
+}
+#footer{
+    width:990px;
+    overflow-x: hidden;
+}
+button{
+    border: none;
+}

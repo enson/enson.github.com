@@ -1,0 +1,50 @@
+#content .flowStep .detail{
+    margin-top: 20px;
+    vertical-align: middle;
+}
+#content .flowStep .detail li{
+    font-size: 16px;
+    font-weight:bold;
+    margin:10px 0px;
+    vertical-align: middle;
+}
+#content .flowStep .detail li span{
+    font-size: 14px;
+    font-weight: normal;
+}
+#content .flowStep p{
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 235px;
+    margin-bottom: 20px;
+}
+#content .flowStep a{
+    vertical-align: middle;
+}
+#content .flowStep .scheduleBar{
+    width: 16px;
+    height:16px;
+    border: 1px solid gainsboro;
+    border-color: #cdcccc;
+    background-color:#82c32e ;
+    display: inline-block;
+    margin-left: -3px;
+}
+#content .flowStep .scheduleBar-complete{
+    background-color:#82c32e ;
+}
+#content .flowStep .scheduleBar-incomplete{
+    background-color:#ff6600 ;
+}
+#content .flowStep .scheduleBar-unstart{
+    background-color:#ffffff ;
+}
+#content .phonePreview{
+    float:left;
+    width:370px;
+    margin-top: 1px;
+    margin-left: 1px;
+    height:580px;
+    background: url("../img/design/bkgPhone.png") no-repeat 0px 0px;
+}

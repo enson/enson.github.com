@@ -1,0 +1,108 @@
+/*----------外观设计-卖家首页 --------begin-----*/
+
+#content .setName{
+    font-size: 17px;
+    font-weight:500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#content .setName li{
+    font-size:16px;
+    font-weight:bold;
+    margin-top: 10px;
+}
+#content .setName p{
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+#content .divisionLine{
+    border-bottom: 1px solid gainsboro;
+    border-color: #cccccc;
+    margin-bottom: 20px;
+}
+#content .setName input{
+    height:26px;
+    width:213px;
+    background: url(http://img02.taobaocdn.com/tps/i2/T122NIXoBAXXXXXXXX-200-200.png) no-repeat 0 -100px white;
+    padding: 1px;
+    border: 1px solid gainsboro;
+    border-color: #cdcccc;
+}
+
+#content .flowStep .detail{
+    margin-top: 20px;
+    vertical-align: middle;
+}
+#content .flowStep .detail li{
+    font-size: 16px;
+    font-weight:bold;
+    margin:10px 0px;
+    vertical-align: middle;
+}
+#content .flowStep .detail li span{
+    font-size: 14px;
+    font-weight: normal;
+}
+#content .flowStep p{
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 235px;
+    margin-bottom: 20px;
+}
+#content .flowStep a{
+    vertical-align: middle;
+}
+#content .flowStep .scheduleBar{
+    width: 16px;
+    height:16px;
+    border: 1px solid gainsboro;
+    border-color: #cdcccc;
+    background-color:#82c32e ;
+    display: inline-block;
+    margin-left: -3px;
+}
+#content .flowStep .scheduleBar-complete{
+     background-color:#82c32e ;
+ }
+#content .flowStep .scheduleBar-incomplete{
+    background-color:#ff6600 ;
+}
+#content .flowStep .scheduleBar-unstart{
+    background-color:#ffffff ;
+}
+#content .phonePreview{
+    float:left;
+    width:370px;
+    margin-top: -19px;
+    margin-left: 1px;
+    height:580px;
+    background: url("../img/design/bkgPhone.png") no-repeat 0px 0px;
+}
+/*
+#content .flowStep .detail .step1{
+    background-position: 114px 13px;
+}
+#content .flowStep .detail .step1 .complete{
+    background-position: 0px -62px;
+}
+#content .flowStep .detail .step2{
+    background-position: 114px -22px;
+}
+#content .flowStep .detail .step3{
+    background-position: 114px -52px;
+}
+*/
+
+
+/*----------外观设计-卖家首页 --------end-----*/
+
+
+
+
+/*------创建图表页面CSS--begin------------*/
+
+
+/*------创建图表页面CSS--end------*/
