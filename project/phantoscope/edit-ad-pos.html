@@ -16,7 +16,7 @@
         #content .phonePreview .preview-content{
             width:318px;
             height:478px;
-            background:url("./img/edit/preview_bkg.PNG") no-repeat 0px 0px;
+            background:url("./img/edit/preview_bkg.PNG") repeat-y 0px 0px;
             top: 40px;
             left: 26px;
             overflow-y: scroll;
@@ -73,6 +73,10 @@
         #content .phonePreview .preview-content .P_box .item-box8{
             background-color: #cc9a86;
         }
+        #content .phonePreview .preview-content .P_new{
+            width:318px;
+            height:478px;
+        }
         #content .phonePreview .preview-content .P_footer{
             position: absolute;
             top: 438px;
@@ -97,6 +101,7 @@
         #content .ad-pos .ad-list .ad-item .ad-item-pic{
             display:inline-block;
             margin: 11px 0px 0px 10px;
+            width: 313px;
         }
         #content .ad-pos .ad-list .ad-item .ad-item-button{
             width:80px;
@@ -211,7 +216,7 @@
             overflow-x: hidden;
             overflow-y: auto;
         }
-        #content .ad-pos .add-ad .store-product .box-left .item-sub{
+        #content .ad-pos .add-ad .store-product .item-sub{
             width:234px;
             float:left;
             height: 68px;
@@ -219,20 +224,25 @@
             padding-top: 6px;
             border-bottom: 1px solid gainsboro;
             border-color: #e3e3e3;
+            cursor:pointer;
         }
-        #content .ad-pos .add-ad .store-product .box-left .item-sub .item-sub-pic{
+        .item-sub-focus{
+            background-color: #d0c3a3;
+        }
+
+        #content .ad-pos .add-ad .store-product .item-sub .item-sub-pic{
             display: inline-block;
         }
-        #content .ad-pos .add-ad .store-product .box-left .item-sub .item-sub-dscptn{
+        #content .ad-pos .add-ad .store-product .item-sub .item-sub-dscptn{
             display: inline-block;
         }
-        #content .ad-pos .add-ad .store-product .box-left .item-sub .title{
+        #content .ad-pos .add-ad .store-product .item-sub .title{
             font-size: 14px;
             font-weight: normal;
             text-overflow:ellipsis;
             overflow-x: hidden;
         }
-        #content .ad-pos .add-ad .store-product .box-left .item-sub .price{
+        #content .ad-pos .add-ad .store-product .item-sub .price{
             font-size: 12px;
             font-weight: normal;
             color:#ff6600;
@@ -256,6 +266,8 @@
             display: inline-block;
             background-color: #fff;
             margin-left: -4px;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
         #content .ad-pos .add-ad .keyword-input{
             display:none;
@@ -310,6 +322,7 @@
                     </li>
                     <li class="item-box"></li>
                 </ul>
+                <div class="P_new"></div>
                 <div class="P_footer"><img src="./img/edit/phone_tabbar.PNG"</div>
 
             </div>
@@ -334,7 +347,7 @@
                             <div class="item-shift-up2"></div>
                         </div>
                         <div class="item-shift-box">
-                        <div class="item-shift-down2"></div>
+                            <div class="item-shift-down2"></div>
                         </div>
                     </div>
                 </li>
@@ -389,7 +402,14 @@
                         <input type="text" />
                         <img src="./img/edit/search.PNG" />
                     </div>
-                    <ul class="box-left">
+                    <ul class="box-left" id="box-left">
+                        <li class="item-sub">
+                            <div class="item-sub-pic"><img src="./img/edit/item-pic.PNG" /></div>
+                            <div class="item-sub-dscptn">
+                                <div class="title">2012秋款新品欧美复古风</div>
+                                <div class="price">￥59.00</div>
+                            </div>
+                        </li>
                         <li class="item-sub">
                             <div class="item-sub-pic"><img src="./img/edit/item-pic.PNG" /></div>
                             <div class="item-sub-dscptn">
@@ -415,10 +435,10 @@
 
                     </ul>
                     <div class="button">
-                        <div class="add-transfer-button"><img src="./img/edit/add.PNG" /></div>
-                        <div class="add-transfer-button"><img src="./img/edit/transfer-out.PNG" /></div>
+                        <div class="add-transfer-button" id="add-transfer-button"><img src="./img/edit/add.PNG" /></div>
+                        <div class="add-transfer-button" id="out-transfer-button"><img src="./img/edit/transfer-out.PNG" /></div>
                     </div>
-                    <div class="box-right"></div>
+                    <ul class="box-right" id="box-right"></ul>
 
                 </div>
                 <div class="keyword-input" id="keyword-input">填写搜索关键词：<input type="text" /> </div>
