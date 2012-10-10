@@ -189,18 +189,30 @@ YUI().use('node','node-event-delegate',function(Y){
         nAdPos.setStyle('display','block');
         nPAd.setStyle('border','2px solid #ff6600');
         nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
+        nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
         n3Sub.setStyle('display','none');
     });
     nPBox.delegate('click',function(){
         nPBox.all('.item-title').setStyle('border','2px solid #ff6600');
+        nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
         nPAd.setStyle('border','none');
         nAdPos.setStyle('display','none');
         n3Sub.setStyle('display','block');
     },'.item-title');
+    nPBox.delegate('click',function(){
+        nPBox.all('.item-bb').setStyle('border','2px solid #ff6600');
+        nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
+        nPAd.setStyle('border','none');
+        nAdPos.setStyle('display','none');
+        n3Sub.setStyle('display','none');
+    },'.item-bb');
 
     //专题删除功能
     nSubList.delegate('click',function(){
         this.ancestor('.sub-item').remove();
+        nSubList.setStyle('display','none');
+        nSubSave.setStyle('display','none');
+        nEditSub.setStyle('display','block');
     },'.deleteSub')
 
     //专题编辑功能
