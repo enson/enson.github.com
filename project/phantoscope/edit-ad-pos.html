@@ -6,281 +6,14 @@
     <meta name="description" content="淘宝万花筒-手机客户端定制平台"" />
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
     <link rel="stylesheet" href="./css/edit.css" />
+    <link rel="stylesheet" href="./css/edit-ad.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script type="text/javascript"
     src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
     </script>
 
     <script type="text/javascript" src="./js/edit.js"></script>
-    <style type="text/css">
-        #content .phonePreview .preview-content{
-            width:318px;
-            height:478px;
-            background:url("./img/edit/preview_bkg.PNG") repeat-y 0px 0px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            margin-top: 39px;
-            margin-left: 26px;
-        }
-        #content .phonePreview .preview-content .P_home{
-            margin-top: 0px;
-        }
-        #content .phonePreview .preview-content .P_ad{
-            margin-left: 6px;
-            margin-top: 0px;
-            margin-bottom: 6px;
-            cursor:pointer;
-            width:305px;
-            height:103px;
-        }
-        #content .phonePreview .preview-content .P_ad:hover{
-            margin-left: 6px;
-            margin-top: 0px;
-            margin-bottom: 6px;
-            cursor:pointer;
-            border:2px solid #ff6600;
-            background-color: #000;
-            opacity:0.8;
-        }
-        #content .phonePreview .preview-content .P_box{
-            margin-left: 4px;
-        }
-        #content .phonePreview .preview-content .P_box .item-box{
-            width:92px;
-            height:92px;
-            border: 1px solid gainsboro;
-            border-color: #cccccc;
-            display:inline-block;
-            margin-left: 2px;
-            cursor:pointer;
-        }
-        #content .phonePreview .preview-content .P_box .item-box .subject{
-            width:58px;
-            font-size:20px;
-            color:#ffffff;
-            float:left;
-            font-family: Microsoft YaHei ;
-        }
-        #content .phonePreview .preview-content .P_box .item-box img{
-            margin-top: -1px;
-        }
-        #content .phonePreview .preview-content .P_box .item-box1{
-            background-color: #d0c3a3;
-        }
-        #content .phonePreview .preview-content .P_box .item-box6{
-            background-color: #c1c9ab;
-        }
-        #content .phonePreview .preview-content .P_box .item-box8{
-            background-color: #cc9a86;
-        }
-        #content .phonePreview .preview-content .P_new{
-            width:318px;
-            height:478px;
-        }
-        #content .phonePreview .preview-content .P_footer{
-            position: absolute;
-            top: 635px;
-        }
-        #content .ad-pos{
-            float:left;
-            text-align: left;
-            margin-left: 20px;
-            width:598px;
-            position: relative;
-        }
-        #content .ad-pos .ad-list{
-            width:598px;
-            margin-top:10px;
-        }
-        #content .ad-pos .ad-list .ad-item{
-            width:588px;
-            height:135px;
-            background-color: #f0f0f0;
-            margin-bottom: 10px;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-pic{
-            display:inline-block;
-            margin: 11px 0px 0px 10px;
-            width: 313px;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-button{
-            width:80px;
-            display: inline-block;
-            margin-left:6px;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-button img{
-            margin-top: 6px;
-            cursor:pointer;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-shift{
-            width: 52px;
-            display: inline-block;
-            margin-left: 118px;
-            margin-bottom: -9px;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-up1{
-            width: 0;
-            height: 0;
-            border-left: 13px solid transparent;
-            border-right: 13px solid transparent;
-            border-bottom: 23px solid #d8d8d8;
-            cursor:pointer;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-up2{
-            width: 0;
-            height: 0;
-            border-left: 13px solid transparent;
-            border-right: 13px solid transparent;
-            border-bottom: 23px solid #808080;
-            cursor:pointer;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-box1{
-            border-bottom: 2px solid gainsboro;
-            border-color: #dedede;
-            width:52px;
-            height:62px;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-box{
-           margin-bottom: 25px;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-down1{
-            width: 0;
-            height: 0;
-            border-left: 13px solid transparent;
-            border-right: 13px solid transparent;
-            border-top: 23px solid #d8d8d8;
-            cursor:pointer;
-        }
-        #content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-down2{
-            width: 0;
-            height: 0;
-            border-left: 13px solid transparent;
-            border-right: 13px solid transparent;
-            border-top: 23px solid #808080;
-            cursor:pointer;
-        }
-        #content .ad-pos .title{
-            font-size:16px;
-            font-weight:bold;
-            display:block;
-            margin:5px 0px;
-        }
-        #content .ad-pos .tip{
-            font-size:12px;
-            clear:both;
-            display:block;
-        }
-        #content .ad-pos .tip2{
-            margin-bottom: 15px;
-        }
-        #content .ad-pos .add_button{
-            position:absolute;
-            top: 38px;
-            right: 38px;
-            cursor:pointer;
-        }
-        #content .ad-pos .nSave{
-            text-align: center;
-            margin-top: 26px;
-        }
-        #content .ad-pos .add-ad{
-            display:none;
-            margin-top: 15px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        #content .ad-pos .add-ad div{
-            margin-bottom: 9px;
-        }
-        #content .ad-pos .add-ad .store-product{
-            width: 598px;
-            height: 550px;
-            background-color: #f0f0f0;
-        }
-        #content .ad-pos .add-ad .store-product .search-input{
-            margin-left: 13px;
-            padding-top: 10px;
-        }
-        #content .ad-pos .add-ad .store-product .search-input img{
-            vertical-align: middle;
-        }
-        #content .ad-pos .add-ad .store-product .box-left{
-            width:240px;
-            height:477px;
-            border: 1px solid gainsboro;
-            border-color: #cccccc;
-            display: inline-block;
-            background-color: #fff;
-            margin-left: 14px;
-            float:left;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        #content .ad-pos .add-ad .store-product .item-sub{
-            width:234px;
-            float:left;
-            height: 68px;
-            padding-left: 6px;
-            padding-top: 6px;
-            border-bottom: 1px solid gainsboro;
-            border-color: #e3e3e3;
-            cursor:pointer;
-        }
-        .item-sub-focus{
-            background-color: #d0c3a3;
-        }
 
-        #content .ad-pos .add-ad .store-product .item-sub .item-sub-pic{
-            display: inline-block;
-        }
-        #content .ad-pos .add-ad .store-product .item-sub .item-sub-dscptn{
-            display: inline-block;
-        }
-        #content .ad-pos .add-ad .store-product .item-sub .title{
-            font-size: 14px;
-            font-weight: normal;
-            text-overflow:ellipsis;
-            overflow-x: hidden;
-        }
-        #content .ad-pos .add-ad .store-product .item-sub .price{
-            font-size: 12px;
-            font-weight: normal;
-            color:#ff6600;
-        }
-        #content .ad-pos .add-ad .store-product .button{
-            width:80px;
-            height:73px;
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 128px;
-            margin-left:3px;
-        }
-        #content .ad-pos .add-ad .store-product .button .add-transfer-button{
-            cursor:pointer;
-        }
-        #content .ad-pos .add-ad .store-product .box-right{
-            width:240px;
-            height:477px;
-            border: 1px solid gainsboro;
-            border-color: #cccccc;
-            display: inline-block;
-            background-color: #fff;
-            margin-left: -4px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        #content .ad-pos .add-ad .keyword-input{
-            display:none;
-        }
-        #content .ad-pos .add-ad .store-item{
-            display:none;
-        }
-        #content .ad-pos .add-ad .store-keyword-search{
-            display:none;
-        }
-
-
-    </style>
 </head>
 <body>
 <div id="body" >
@@ -302,9 +35,9 @@
         <section class="phonePreview">
             <div class="preview-content">
                 <div class="P_home"><img src="./img/edit/phone_home.PNG" /></div>
-                <div class="P_ad"><img src="./img/edit/phone_ad.PNG" /></div>
-                <ul class="P_box">
-                    <li class="item-box item-box1">
+                <div class="P_ad" id="P_ad"><img src="./img/edit/phone_ad.PNG" /></div>
+                <ul class="P_box" id="P_box">
+                    <li class="item-box item-title item-box1">
                         <div class="subject">古典复兴</div>
                     </li>
                     <li class="item-box">
@@ -313,11 +46,11 @@
                     <li class="item-box"></li>
                     <li class="item-box"></li>
                     <li class="item-box"></li>
-                    <li class="item-box item-box6">
+                    <li class="item-box item-title item-box6">
                         <div class="subject">淘我喜欢</div>
                     </li>
                     <li class="item-box"></li>
-                    <li class="item-box item-box8">
+                    <li class="item-box item-title item-box8">
                         <div class="subject">文艺小资</div>
                     </li>
                     <li class="item-box"></li>
@@ -328,7 +61,7 @@
             </div>
 
         </section>
-        <section class="ad-pos">
+        <section class="ad-pos" id="ad-pos">
             <div class="title">广告位</div>
             <div class="tip">操作方法：鼠标在页面上移动，可以选择需要编辑的模块，最多可以添加5张图片，</div>
             <div class="tip2">图片格式：JPG，PNG 图片尺寸：640*220</div>
@@ -340,7 +73,7 @@
                     <div class="ad-item-button">
                         <img src="./img/edit/check-link.PNG" />
                         <img src="./img/edit/edit.PNG" />
-                        <button id="delete_ad_item"><img src="./img/edit/delete.PNG" /></button>
+                        <button id="delete_ad_item" class="deleteAd"><img src="./img/edit/delete.PNG" /></button>
                     </div>
                     <div class="ad-item-shift">
                         <div class="item-shift-box">
@@ -356,7 +89,7 @@
                     <div class="ad-item-button">
                         <img src="./img/edit/check-link.PNG" />
                         <img src="./img/edit/edit.PNG" />
-                        <button><img src="./img/edit/delete.PNG" /></button>
+                        <button class="deleteAd"><img src="./img/edit/delete.PNG" /></button>
                     </div>
                     <div class="ad-item-shift">
                         <div class="item-shift-box">
@@ -372,7 +105,7 @@
                     <div class="ad-item-button">
                         <img src="./img/edit/check-link.PNG" />
                         <img src="./img/edit/edit.PNG" />
-                        <button><img src="./img/edit/delete.PNG" /></button>
+                        <button class="deleteAd"><img src="./img/edit/delete.PNG" /></button>
                     </div>
                     <div class="ad-item-shift">
                         <div class="item-shift-box">
@@ -384,7 +117,7 @@
                     </div>
                 </li>
             </ul>
-            <div id="save-button" class="nSave"><img src="./img/edit/save.PNG" /></div>
+            <div id="ad-save" class="nSave"><img src="./img/edit/save.PNG" /></div>
             <div class="add-ad" id="add-ad">
                 <div class="">上传图片：&nbsp&nbsp<input type="file" /> </div>
                 <div class="">编辑标题：&nbsp&nbsp<input type="text" placeholder="不超过6个字哦！"/> </div>
@@ -462,6 +195,99 @@
                 <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <span id="add-ad-button"><img src="./img/edit/add-button.PNG" /></span>&nbsp&nbsp&nbsp&nbsp&nbsp
                     <span id="cancel-button"><img src="./img/edit/cancel-button.PNG" /></span>
+                </div>
+            </div>
+        </section>
+        <section id="ThreeSubject" class="ThreeSubject">
+            <div class="title">尝试制作三个专题吧，很简单哦！</div>
+            <div class="tip">操作方法：鼠标在页面上移动，可以选择需要编辑的模块</div>
+            <div class="displayModule"><input type="checkbox" checked="checked"/>&nbsp显示模块</div>
+            <div class="divisionLine"></div>
+            <ul class="sub-list" id="sub-list">
+                <div class="sub-num">1</div>
+                <li class="sub-item">
+                    <div class="sub-item-text">古典复兴</div>
+                    <div class="sub-item-button">
+                        <img src="./img/edit/check-link.PNG" />
+                        <button class="editSub"><img src="./img/edit/edit.PNG" /></button>
+                        <button class="deleteSub"><img src="./img/edit/delete.PNG" /></button>
+                    </div>
+                    <div class="sub-item-shift">
+                        <div class="item-shift-box">
+                            <div class="item-shift-up2"></div>
+                        </div>
+                        <div class="item-shift-box">
+                            <div class="item-shift-down2"></div>
+                        </div>
+                    </div>
+                </li>
+                <div class="sub-num">2</div>
+                <li class="sub-item">
+                    <div class="sub-item-text">淘我喜欢</div>
+                    <div class="sub-item-button">
+                        <img src="./img/edit/check-link.PNG" />
+                        <button class="editSub"><img src="./img/edit/edit.PNG" /></button>
+                        <button class="deleteSub"><img src="./img/edit/delete.PNG" /></button>
+                    </div>
+                    <div class="sub-item-shift">
+                        <div class="item-shift-box">
+                            <div class="item-shift-up2"></div>
+                        </div>
+                        <div class="item-shift-box">
+                            <div class="item-shift-down2"></div>
+                        </div>
+                    </div>
+                </li>
+                <div class="sub-num">3</div>
+                <li class="sub-item">
+                    <div class="sub-item-text">文艺小资</div>
+                    <div class="sub-item-button">
+                        <img src="./img/edit/check-link.PNG" />
+                        <button class="editSub"><img src="./img/edit/edit.PNG" /></button>
+                        <button class="deleteSub"><img src="./img/edit/delete.PNG" /></button>
+                    </div>
+                    <div class="sub-item-shift">
+                        <div class="item-shift-box">
+                            <div class="item-shift-up2"></div>
+                        </div>
+                        <div class="item-shift-box">
+                            <div class="item-shift-down2"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div id="sub-save" class="nSave"><img src="./img/edit/save.PNG" /></div>
+            <div class="edit-sub" id="edit-sub">
+                <div class="">编辑标题：&nbsp&nbsp<input id="sub-title-input" type="text" placeholder="输入4个中文字符"/> </div>
+                <div class="">添加链接：
+                    <select id="sub-link-select">
+                        <option value="1">选择链接类型</option>
+                        <option value="2">店内关键词搜索</option>
+                        <option value="3">选择店内类目</option>
+                        <option value="4">在店内类目中搜索关键词</option>
+                    </select>
+                </div>
+                <div class="sub-keyword" id="sub-keyword">填写搜索关键词：<input type="text" /> </div>
+                <div class="sub-store-item" id="sub-store-item">选择店内类目：
+                    <select>
+                        <option>T恤</option>
+                        <option>宝贝上新</option>
+                        <option>上装</option>
+                    </select>
+                </div>
+                <div class="sub-store-keyword" id="sub-store-keyword">
+                    <div>输入关键词：<input type="text" placeholder="复古" /> </div>
+                    <div>选择店铺类目：
+                        <select>
+                            <option>T恤</option>
+                            <option>宝贝上新</option>
+                            <option>上装</option>
+                        </select>
+                    </div>
+                </div>
+                <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="sub-button" id="add-sub-button"><img src="./img/edit/add-button.PNG" /></span>&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span class="sub-button" id="cancel-sub-button"><img src="./img/edit/cancel-button.PNG" /></span>
                 </div>
             </div>
         </section>

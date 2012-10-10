@@ -11,11 +11,14 @@ YUI().use('node','node-event-delegate',function(Y){
     var nLinkSelect = Y.one('#add-link-select');
     var nAdList = Y.one('#ad-list');
     var nAddAdButton = Y.one('#add-ad-button');
-    var nSave = Y.one('#save-button');
-    var nAdListArray = nAdList.all('.ad-item');
+    var nAdSave = Y.one('#ad-save');
+    var getAdList=function(){
+        return nAdList.all('.ad-item');
+    };
+    var nAdListArray = getAdList();
     var nAdListArray2 = nAdListArray.get('length');
     var nAdArrayLength = nAdListArray.get('length').length;
-    Y.log(nAdListArray.size());
+    //Y.log(nAdListArray.size());
     //Y.log(nAdListArray.item(0));
     //Y.log(nAdListArray.item(nAdArrayLength-1));
     //Y.log(nAdListArray.get('length').length);
@@ -28,15 +31,45 @@ YUI().use('node','node-event-delegate',function(Y){
     var nAddTransferBtn = Y.one('#add-transfer-button');
     var nOutTransferBtn = Y.one('#out-transfer-button');
 
+    var nPAd = Y.one('#P_ad');
+    var nPBox = Y.one('#P_box');
+    var nAdPos = Y.one('#ad-pos');
+    var n3Sub = Y.one('#ThreeSubject');
+    var nSubList = Y.one('#sub-list');
+    var nSubSave = Y.one('#sub-save');
 
+    var nEditSub = Y.one('#edit-sub');
+    var nSubLinkSelect = Y.one('#sub-link-select');
+    var nCancelSub = Y.one('#cancel-sub-button');
+    var nAddSub = Y.one('#add-sub-button');
+
+    //判断广告图片数量，继而执行进入添加广告功能页面
+    function checkAdAmount(){
+        nAdListArray = getAdList();
+        if(nAdListArray.size() > 4){
+            alert("亲，最多可以添加5张图片哟！");
+        }else{
+            Y.one('#ad-list').setStyle('display','none');
+            Y.one('#add-ad').setStyle('display','block');
+            nAdSave.setStyle('display','none');
+            nAddButton.setStyle('display','none');
+        }
+    };
+    //右上角添加广告按钮绑定事件
     nAddButton.on('click',function(){
         checkAdAmount();
     });
+
+    //点击删除广告list中各广告
+    nAdList.delegate('click',function(){
+        this.ancestor('.ad-item').remove();
+    },'.deleteAd');
+
     nCancelButton.on('click',function(){
         Y.one('#ad-list').setStyle('display','block');
         Y.one('#add-ad').setStyle('display','none');
         nAddButton.setStyle('display','block');
-        nSave.setStyle('display','block');
+        nAdSave.setStyle('display','block');
     });
     //选择不同的添加链接控制不同部分的显示
     function linkSelect(){
@@ -65,10 +98,7 @@ YUI().use('node','node-event-delegate',function(Y){
     nLinkSelect.on('click',function(){
         linkSelect();
     });
-    //点击删除广告list中各广告
-    nAdList.delegate('click',function(){
-        this.ancestor('li').remove();
-    },'button');
+
 
     //点击添加按钮添加广告list中的广告
     function addAd(){
@@ -78,7 +108,7 @@ YUI().use('node','node-event-delegate',function(Y){
                 '<div class="ad-item-button">'+
                     '<img src="./img/edit/check-link.PNG" />'+
                     '<img src="./img/edit/edit.PNG" />'+
-                    '<button><img src="./img/edit/delete.PNG" /></button>'+
+                    '<button class="deleteAd"><img src="./img/edit/delete.PNG" /></button>'+
                 '</div>'+
                 '<div class="ad-item-shift">'+
                     '<div class="item-shift-box">'+
@@ -90,25 +120,16 @@ YUI().use('node','node-event-delegate',function(Y){
                 '</div>'+
             '</li>'
         );
+        nAdListArray = getAdList();
     };
     nAddAdButton.on('click',function(){
         addAd();
         Y.one('#ad-list').setStyle('display','block');
         Y.one('#add-ad').setStyle('display','none');
-        nSave.setStyle('display','block');
+        nAdSave.setStyle('display','block');
         nAddButton.setStyle('display','block');
     });
-    //判断广告图片数量，继而执行添加广告功能
-    function checkAdAmount(){
-        if(nAdListArray.size() > 4){
-            alert("亲，最多可以添加5张图片哟！");
-        }else{
-            Y.one('#ad-list').setStyle('display','none');
-            Y.one('#add-ad').setStyle('display','block');
-            nSave.setStyle('display','none');
-            nAddButton.setStyle('display','none');
-        }
-    };
+
     //上下移动的图标变化
     /*
     function shiftIcon(){
@@ -162,6 +183,85 @@ YUI().use('node','node-event-delegate',function(Y){
     nOutTransferBtn.on('click',function(){
         move(nBoxRight,nBoxLeft);
     });
+
+    //不同功能模块的显隐切换
+    nPAd.on('click',function(){
+        nAdPos.setStyle('display','block');
+        nPAd.setStyle('border','2px solid #ff6600');
+        nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
+        n3Sub.setStyle('display','none');
+    });
+    nPBox.delegate('click',function(){
+        nPBox.all('.item-title').setStyle('border','2px solid #ff6600');
+        nPAd.setStyle('border','none');
+        nAdPos.setStyle('display','none');
+        n3Sub.setStyle('display','block');
+    },'.item-title');
+
+    //专题删除功能
+    nSubList.delegate('click',function(){
+        this.ancestor('.sub-item').remove();
+    },'.deleteSub')
+
+    //专题编辑功能
+    nSubList.delegate('click',function(){
+        nSubList.setStyle('display','none');
+        nSubSave.setStyle('display','none');
+        nEditSub.setStyle('display','block');
+    },'.editSub')
+
+    nCancelSub.on('click',function(){
+        nSubList.setStyle('display','block');
+        nSubSave.setStyle('display','block');
+        nEditSub.setStyle('display','none');
+    })
+    nAddSub.on('click',function(){
+        addSub();
+    })
+    function addSub(){
+        var subTitle = Y.one('#sub-title-input').get('value');
+        Y.all('.sub-item-text').setContent(subTitle);
+        //this.ancestor('.sub-item-text').setContent(subTitle);
+        nSubList.setStyle('display','block');
+        nSubSave.setStyle('display','block');
+        nEditSub.setStyle('display','none');
+    }
+
+
+    //专题链接选择显隐切换功能
+    function subLinkSelect(){
+        if(nSubLinkSelect.get('selectedIndex') == 1){
+            Y.one('#sub-keyword').setStyle('display','block');
+            Y.one('#sub-store-item').setStyle('display','none');
+            Y.one('#sub-store-keyword').setStyle('display','none');
+            Y.one('#add-sub-button').setStyle('display','inline-block');
+            Y.one('#cancel-sub-button').setStyle('display','inline-block');
+        }else if(nSubLinkSelect.get('selectedIndex') == 2){
+            Y.one('#sub-keyword').setStyle('display','none');
+            Y.one('#sub-store-item').setStyle('display','block');
+            Y.one('#sub-store-keyword').setStyle('display','none');
+            Y.one('#add-sub-button').setStyle('display','inline-block');
+            Y.one('#cancel-sub-button').setStyle('display','inline-block');
+        }else if(nSubLinkSelect.get('selectedIndex') == 3){
+            Y.one('#sub-keyword').setStyle('display','none');
+            Y.one('#sub-store-item').setStyle('display','none');
+            Y.one('#sub-store-keyword').setStyle('display','block');
+            Y.one('#add-sub-button').setStyle('display','inline-block');
+            Y.one('#cancel-sub-button').setStyle('display','inline-block');
+        }else if(nSubLinkSelect.get('selectedIndex') == 0){
+            Y.one('#sub-keyword').setStyle('display','none');
+            Y.one('#sub-store-item').setStyle('display','none');
+            Y.one('#sub-store-keyword').setStyle('display','none');
+            Y.one('#add-sub-button').setStyle('display','none');
+            Y.one('#cancel-sub-button').setStyle('display','none');
+        }
+    }
+    nSubLinkSelect.on('click',function(){
+        subLinkSelect();
+    })
+
+
+
 
 });
 

@@ -29,10 +29,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/edit.css">
+      <file leaf-file-name="edit-ad.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/edit-ad.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="1" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
+            <state line="122" column="1" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="edit-ad-pos.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="9" selection-start="1316" selection-end="1316" vertical-scroll-proportion="106.07692">
+            <state line="234" column="30" selection-start="11682" selection-end="11682" vertical-scroll-proportion="-25.153847">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,7 @@
       <file leaf-file-name="edit.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="5" selection-start="5907" selection-end="5907" vertical-scroll-proportion="0.6291946">
+            <state line="17" column="35" selection-start="522" selection-end="522" vertical-scroll-proportion="0.35591134">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/appearance-design.html" />
         <option value="$PROJECT_DIR$/content-edit.html" />
         <option value="$PROJECT_DIR$/edit-homepage.html" />
         <option value="$PROJECT_DIR$/design-page-blendent.html" />
@@ -80,16 +79,17 @@
         <option value="$PROJECT_DIR$/css/homepage.css" />
         <option value="$PROJECT_DIR$/home-page.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/js/edit.js" />
         <option value="$PROJECT_DIR$/edit-ad-pos.html" />
+        <option value="$PROJECT_DIR$/css/edit-ad.css" />
+        <option value="$PROJECT_DIR$/js/edit.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -117,6 +117,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -165,18 +166,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -236,13 +236,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="0" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20062451" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20047733" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -310,11 +310,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/design.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="17" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" />
@@ -370,13 +365,6 @@
         <state line="28" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.5890585" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="1316" selection-end="1316" vertical-scroll-proportion="106.07692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/edit.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="1" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
@@ -391,9 +379,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/edit-ad.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="1" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="30" selection-start="11682" selection-end="11682" vertical-scroll-proportion="-25.153847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="5" selection-start="5907" selection-end="5907" vertical-scroll-proportion="0.6291946">
+        <state line="17" column="35" selection-start="522" selection-end="522" vertical-scroll-proportion="0.35591134">
           <folding />
         </state>
       </provider>

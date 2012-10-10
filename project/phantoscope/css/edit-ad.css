@@ -1,0 +1,417 @@
+
+
+/****************begin 广告位样式****************/
+#content .phonePreview .preview-content{
+    width:318px;
+    height:478px;
+    background:url("../img/edit/preview_bkg.PNG") repeat-y 0px 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 39px;
+    margin-left: 26px;
+}
+#content .phonePreview .preview-content .P_home{
+    margin-top: 0px;
+}
+#content .phonePreview .preview-content .P_ad{
+    margin-left: 6px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    cursor:pointer;
+    width:305px;
+    height:103px;
+    border:2px solid gainsboro;
+}
+#content .phonePreview .preview-content .P_ad:hover{
+    margin-left: 6px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    cursor:pointer;
+    border:2px solid #ff6600;
+}
+#content .phonePreview .preview-content .P_box{
+    margin-left: 4px;
+}
+#content .phonePreview .preview-content .P_box .item-box{
+    width:86px;
+    height:92px;
+    border: 1px solid gainsboro;
+    border-color: #cccccc;
+    display:inline-block;
+    margin-left: 2px;
+    cursor:pointer;
+}
+#content .phonePreview .preview-content .P_box .item-box:hover{
+    border:2px solid #ff6600;
+    width:86px;
+    height:92px;
+    display:inline-block;
+    margin-left: 2px;
+    cursor:pointer;
+}
+#content .phonePreview .preview-content .P_box .item-box .subject{
+    width:58px;
+    font-size:20px;
+    color:#ffffff;
+    float:left;
+    font-family: Microsoft YaHei ;
+}
+#content .phonePreview .preview-content .P_box .item-box img{
+    margin-top: -1px;
+}
+#content .phonePreview .preview-content .P_box .item-box1{
+    background-color: #d0c3a3;
+}
+#content .phonePreview .preview-content .P_box .item-box6{
+    background-color: #c1c9ab;
+}
+#content .phonePreview .preview-content .P_box .item-box8{
+    background-color: #cc9a86;
+}
+#content .phonePreview .preview-content .P_new{
+    width:318px;
+    height:478px;
+}
+#content .phonePreview .preview-content .P_footer{
+    position: absolute;
+    top: 635px;
+}
+#content .ad-pos{
+    float:left;
+    text-align: left;
+    margin-left: 20px;
+    width:598px;
+    position: relative;
+}
+#content .ad-pos .ad-list{
+    width:598px;
+    margin-top:10px;
+}
+#content .ad-pos .ad-list .ad-item{
+    width:588px;
+    height:135px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-pic{
+    display:inline-block;
+    margin: 11px 0px 0px 10px;
+    width: 313px;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-button{
+    width:80px;
+    display: inline-block;
+    margin-left:6px;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-button img{
+    margin-top: 6px;
+    cursor:pointer;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-shift{
+    width: 52px;
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-up1{
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 23px solid #d8d8d8;
+    cursor:pointer;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-up2{
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 23px solid #808080;
+    cursor:pointer;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-box1{
+    border-bottom: 2px solid gainsboro;
+    border-color: #dedede;
+    width:52px;
+    height:62px;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-box{
+   margin-bottom: 25px;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-down1{
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 23px solid #d8d8d8;
+    cursor:pointer;
+}
+#content .ad-pos .ad-list .ad-item .ad-item-shift .item-shift-down2{
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 23px solid #808080;
+    cursor:pointer;
+}
+#content .ad-pos .title{
+    font-size:16px;
+    font-weight:bold;
+    display:block;
+    margin:5px 0px;
+}
+#content .ad-pos .tip{
+    font-size:12px;
+    clear:both;
+    display:block;
+}
+#content .ad-pos .tip2{
+    margin-bottom: 15px;
+}
+#content .ad-pos .add_button{
+    position:absolute;
+    top: 38px;
+    right: 38px;
+    cursor:pointer;
+}
+#content .ad-pos .nSave{
+    text-align: center;
+    margin-top: 26px;
+}
+#content .ad-pos .add-ad{
+    display:none;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#content .ad-pos .add-ad div{
+    margin-bottom: 9px;
+}
+#content .ad-pos .add-ad .store-product{
+    width: 598px;
+    height: 550px;
+    background-color: #f0f0f0;
+}
+#content .ad-pos .add-ad .store-product .search-input{
+    margin-left: 13px;
+    padding-top: 10px;
+}
+#content .ad-pos .add-ad .store-product .search-input img{
+    vertical-align: middle;
+}
+#content .ad-pos .add-ad .store-product .box-left{
+    width:240px;
+    height:477px;
+    border: 1px solid gainsboro;
+    border-color: #cccccc;
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 14px;
+    float:left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#content .ad-pos .add-ad .store-product .item-sub{
+    width:234px;
+    float:left;
+    height: 68px;
+    padding-left: 6px;
+    padding-top: 6px;
+    border-bottom: 1px solid gainsboro;
+    border-color: #e3e3e3;
+    cursor:pointer;
+}
+.item-sub-focus{
+    background-color: #d0c3a3;
+}
+
+#content .ad-pos .add-ad .store-product .item-sub .item-sub-pic{
+    display: inline-block;
+}
+#content .ad-pos .add-ad .store-product .item-sub .item-sub-dscptn{
+    display: inline-block;
+}
+#content .ad-pos .add-ad .store-product .item-sub .title{
+    font-size: 14px;
+    font-weight: normal;
+    text-overflow:ellipsis;
+    overflow-x: hidden;
+}
+#content .ad-pos .add-ad .store-product .item-sub .price{
+    font-size: 12px;
+    font-weight: normal;
+    color:#ff6600;
+}
+#content .ad-pos .add-ad .store-product .button{
+    width:80px;
+    height:73px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 128px;
+    margin-left:3px;
+}
+#content .ad-pos .add-ad .store-product .button .add-transfer-button{
+    cursor:pointer;
+}
+#content .ad-pos .add-ad .store-product .box-right{
+    width:240px;
+    height:477px;
+    border: 1px solid gainsboro;
+    border-color: #cccccc;
+    display: inline-block;
+    background-color: #fff;
+    margin-left: -4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#content .ad-pos .add-ad .keyword-input{
+    display:none;
+}
+#content .ad-pos .add-ad .store-item{
+    display:none;
+}
+#content .ad-pos .add-ad .store-keyword-search{
+    display:none;
+}
+
+/****************end 广告位样式****************/
+
+
+/**********begin 三个专题编辑的样式*******************/
+
+#content .ThreeSubject{
+    float:left;
+    text-align: left;
+    margin-left: 20px;
+    width:598px;
+    position: relative;
+    display: none;
+}
+#content .ThreeSubject .nSave{
+    text-align: center;
+    margin-top: 26px;
+    clear:both;
+}
+#content .ThreeSubject .title{
+    font-size:16px;
+    font-weight:bold;
+    display:block;
+    margin:15px 0px 5px;
+}
+#content .ThreeSubject .tip{
+    font-size:12px;
+    clear:both;
+    display:block;
+    margin-bottom: 18px;
+}
+#content .ThreeSubject .displayModule{
+    position:absolute;
+    top: 17px;
+    right: 29px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#content .ThreeSubject .sub-list{
+    width:598px;
+    margin-top:10px;
+}
+#content .ThreeSubject .sub-list .sub-item{
+    width:596px;
+    height:80px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+#content .ThreeSubject .sub-list .sub-num{
+    background-color: #fff;
+    font-size: 42px;
+    display:inline-block;
+    width:40px;
+    height:80px;
+    float:left;
+    clear:both;
+}
+#content .ThreeSubject .sub-list .sub-item .sub-item-text{
+    font-size: 16px;
+    font-weight: bold;
+    color:#808080;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 27px;
+}
+#content .ThreeSubject .sub-list .sub-item .sub-item-button{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 13px;
+}
+#content .ThreeSubject .sub-list .sub-item .sub-item-button img{
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+
+#content .ThreeSubject .sub-list .sub-item .sub-item-shift{
+    width: 52px;
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+}
+#content .ThreeSubject .sub-list .sub-item .sub-item-shift .item-shift-up1{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 20px solid #d8d8d8;
+    cursor:pointer;
+}
+#content .ThreeSubject .sub-list .sub-item .sub-item-shift .item-shift-up2{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 20px solid #808080;
+    cursor:pointer;
+}
+#content .ThreeSubject .sub-list .sub-item .sub-item-shift .item-shift-box{
+    margin-bottom: 10px;
+}
+#content .ThreeSubject .sub-list .sub-item .sub-item-shift .item-shift-down1{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 20px solid #d8d8d8;
+    cursor:pointer;
+}
+#content .ThreeSubject .sub-list .sub-item .sub-item-shift .item-shift-down2{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 20px solid #808080;
+    cursor:pointer;
+}
+#content .ThreeSubject .edit-sub{
+    display:none;
+}
+#content .ThreeSubject .edit-sub{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#content .ThreeSubject .edit-sub div{
+    margin-bottom: 9px;
+}
+#content .ThreeSubject .edit-sub .sub-keyword{
+    display: none;
+}
+#content .ThreeSubject .edit-sub .sub-store-item{
+    display: none;
+}
+#content .ThreeSubject .edit-sub .sub-store-keyword{
+    display: none;
+}
+#content .ThreeSubject .edit-sub .sub-button{
+    display: none;
+}
+
+/**********end 三个专题编辑的样式*******************/
