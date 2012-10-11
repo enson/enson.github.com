@@ -72,6 +72,53 @@
     width:318px;
     height:478px;
 }
+#content .phonePreview .preview-content .P_new .P_new_title{
+    color:#918478;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#content .phonePreview .preview-content .P_new .P_new_bb{
+    border:2px solid #fff;
+}
+#content .phonePreview .preview-content .P_new .P_new_bb:hover{
+    border:2px solid #ff6600;
+}
+#content .phonePreview .preview-content .P_new .P_new_item{
+    width:142px;
+    height:146px;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+}
+#content .phonePreview .preview-content .P_hot{
+    width:318px;
+    height:478px;
+    margin-top: 15px;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_title{
+    color:#918478;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_bb{
+    border:2px solid #fff;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_bb:hover{
+    border:2px solid #ff6600;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_item{
+    width:90px;
+    height:124px;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+}
 #content .phonePreview .preview-content .P_footer{
     position: absolute;
     top: 635px;
@@ -426,3 +473,253 @@
 }
 
 /**********end 三个专题编辑的样式*******************/
+
+
+
+/**********begin 六个宝贝编辑的样式*******************/
+#content .six-bb{
+    float:left;
+    text-align: left;
+    margin-left: 20px;
+    width:598px;
+    position: relative;
+    display: none;
+}
+#content .six-bb .nSave{
+    text-align: center;
+    margin-top: 26px;
+    clear:both;
+}
+#content .six-bb .title{
+    font-size:16px;
+    font-weight:bold;
+    display:block;
+    margin:15px 0px 5px;
+}
+#content .six-bb .tip{
+    font-size:12px;
+    clear:both;
+    display:block;
+    margin-bottom: 18px;
+}
+#content .six-bb .import_button{
+    position:absolute;
+    top: 24px;
+    right: 29px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#content .six-bb .bb-list{
+    width:598px;
+    margin-top:10px;
+    position:relative;
+}
+#content .six-bb .bb-list .bb-item{
+    width: 558px;
+    height: 80px;
+    background-color: #F0F0F0;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    display:inline-block;
+}
+#content .six-bb .bb-list .bb-num{
+    background-color: #fff;
+    font-size: 42px;
+    display:inline-block;
+    width:40px;
+    height:80px;
+    position: absolute;
+}
+#content .ThreeSubject .bb-list .bb-num1{
+    position: absolute;
+}
+#content .ThreeSubject .bb-list .bb-num2{
+    top:90px;
+}
+#content .ThreeSubject .bb-list .bb-num3{
+    top:180px;
+}
+#content .ThreeSubject .bb-list .bb-num4{
+    top:270px;
+}
+#content .ThreeSubject .bb-list .bb-num5{
+    top:360px;
+}
+#content .ThreeSubject .bb-list .bb-num6{
+    top:420px;
+}
+#content .six-bb .bb-list .bb-item .bb-item-pic{
+    display:inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+    width:59px;
+    height:59px;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+}
+#content .six-bb .bb-list .bb-item .bb-item-dscptn{
+    display:inline-block;
+    margin-left: 12px;
+    width: 280px;
+}
+#content .six-bb .bb-list .bb-item .title{
+    font-size: 14px;
+    font-weight: normal;
+}
+#content .six-bb .bb-list .bb-item .price{
+    font-size: 12px;
+    font-weight: normal;
+    color: #F60;
+}
+#content .six-bb .bb-list .bb-item .bb-item-button{
+    display:inline-block;
+    margin-left: 14px;
+}
+#content .six-bb .bb-list .bb-item .bb-item-shift{
+    width: 52px;
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+}
+#content .six-bb .bb-list .bb-item .bb-item-shift .item-shift-up1{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 20px solid #d8d8d8;
+    cursor:pointer;
+}
+#content .six-bb .bb-list .bb-item .bb-item-shift .item-shift-up2{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 20px solid #808080;
+    cursor:pointer;
+}
+#content .six-bb .bb-list .bb-item .bb-item-shift .item-shift-box{
+    margin-bottom: 10px;
+}
+#content .six-bb .bb-list .bb-item .bb-item-shift .item-shift-down1{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 20px solid #d8d8d8;
+    cursor:pointer;
+}
+#content .six-bb .bb-list .bb-item .bb-item-shift .item-shift-down2{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 20px solid #808080;
+    cursor:pointer;
+}
+#content .six-bb .bb-cancel-button{
+    display:none;
+}
+#content .six-bb .bb-add-button{
+    display:none;
+}
+
+
+/**********end 六个宝贝编辑的样式*******************/
+
+
+/**********begin 宝贝上新模块的样式*******************/
+#content .update-bb{
+    float:left;
+    text-align: left;
+    margin-left: 20px;
+    width:598px;
+    position: relative;
+    display: none;
+}
+#content .update-bb .nSave{
+    text-align: center;
+    margin-top: 26px;
+    clear:both;
+}
+#content .update-bb .title{
+    font-size:16px;
+    font-weight:bold;
+    display:block;
+    margin:15px 0px 5px;
+}
+#content .update-bb .tip{
+    font-size:12px;
+    clear:both;
+    display:block;
+    margin-bottom: 18px;
+}
+#content .update-bb .displayModule{
+    position:absolute;
+    top: 17px;
+    right: 29px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/**********end 宝贝上新模块的样式*******************/
+
+
+/**********begin 热销宝贝模块的样式*******************/
+#content .hot-sell{
+    float:left;
+    text-align: left;
+    margin-left: 20px;
+    width:598px;
+    position: relative;
+    display: none;
+}
+#content .hot-sell .nSave{
+    text-align: center;
+    margin-top: 26px;
+    clear:both;
+}
+#content .hot-sell .title{
+    font-size:16px;
+    font-weight:bold;
+    display:block;
+    margin:15px 0px 5px;
+}
+#content .hot-sell .title button{
+    float:right;
+}
+#content .hot-sell .tip{
+    font-size:12px;
+    clear:both;
+    display:block;
+    margin-bottom: 7px;
+}
+#content .hot-sell .displayModule{
+    position:absolute;
+    top: 20px;
+    right: 29px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#content .hot-sell .disable-box{
+    width:608px;
+    height: 100px;
+    background-color: #f0f0f0;
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+#content .hot-sell .disable-box .text{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#content .hot-sell .disable-box .link{
+    color:#3b639f;
+    text-decoration: underline;
+    font-size: 14px;
+    display: inline-block;
+}
+#content .hot-sell .disable-box .cancel-dis{
+    float:right;
+    margin-right: 30px;
+}
+/**********end 热销宝贝模块的样式*******************/

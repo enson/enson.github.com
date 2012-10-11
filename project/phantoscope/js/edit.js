@@ -26,10 +26,10 @@ YUI().use('node','node-event-delegate',function(Y){
     //Y.log(nAdListArray.get('length'));
     //Y.log(nAdListArray2[0]);
 
-    var nBoxLeft = Y.one('#box-left');
-    var nBoxRight = Y.one('#box-right');
-    var nAddTransferBtn = Y.one('#add-transfer-button');
-    var nOutTransferBtn = Y.one('#out-transfer-button');
+    var nBoxLeft = Y.one('.box-left');
+    var nBoxRight = Y.one('.box-right');
+    var nAddTransferBtn = Y.one('.add-transfer-button');
+    var nOutTransferBtn = Y.one('.out-transfer-button');
 
     var nPAd = Y.one('#P_ad');
     var nPBox = Y.one('#P_box');
@@ -43,6 +43,81 @@ YUI().use('node','node-event-delegate',function(Y){
     var nCancelSub = Y.one('#cancel-sub-button');
     var nAddSub = Y.one('#add-sub-button');
 
+    var nSixBb = Y.one('#six-bb');
+    var nImportBb = Y.one('#import-button');
+    var nBbList = Y.one('#bb-list');
+    var nBbAdd = Y.one('#bb-add-button');
+    var nBbCancel = Y.one('#bb-cancel-button');
+
+    var nPNewBb = Y.one('#P_new_bb');
+    var nUpdateBb = Y.one('.update-bb');
+    var nPHot = Y.one('#P_hot_bb');
+
+    var nHotSell = Y.one('.hot-sell');
+    var nHotStoreBb = Y.one('#hot-store-product');
+
+
+
+
+    //不同功能模块的显隐切换
+    nPAd.on('click',function(){
+        nAdPos.setStyle('display','block');
+        nPAd.setStyle('border','2px solid #ff6600');
+        nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
+        nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
+        nPNewBb.setStyle('border','2px solid #fff');
+        n3Sub.setStyle('display','none');
+        nSixBb.setStyle('display','none');
+        nUpdateBb.setStyle('display','none');
+        nHotSell.setStyle('display','none');
+    });
+    nPBox.delegate('click',function(){
+        nPBox.all('.item-title').setStyle('border','2px solid #ff6600');
+        nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
+        nPAd.setStyle('border','none');
+        nPNewBb.setStyle('border','2px solid #fff');
+        nAdPos.setStyle('display','none');
+        n3Sub.setStyle('display','block');
+        nSixBb.setStyle('display','none');
+        nUpdateBb.setStyle('display','none');
+        nHotSell.setStyle('display','none');
+    },'.item-title');
+    nPBox.delegate('click',function(){
+        nPBox.all('.item-bb').setStyle('border','2px solid #ff6600');
+        nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
+        nPAd.setStyle('border','none');
+        nPNewBb.setStyle('border','2px solid #fff');
+        nAdPos.setStyle('display','none');
+        n3Sub.setStyle('display','none');
+        nSixBb.setStyle('display','block');
+        nUpdateBb.setStyle('display','none');
+        nHotSell.setStyle('display','none');
+    },'.item-bb');
+    nPNewBb.on('click',function(){
+        nPNewBb.setStyle('border','2px solid #ff6600');
+        nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
+        nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
+        nPAd.setStyle('border','none');
+        nAdPos.setStyle('display','none');
+        n3Sub.setStyle('display','none');
+        nSixBb.setStyle('display','none');
+        nUpdateBb.setStyle('display','block');
+        nHotSell.setStyle('display','none');
+    });
+    nPHot.on('click',function(){
+        nPNewBb.setStyle('border','2px solid #fff');
+        nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
+        nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
+        nPAd.setStyle('border','none');
+        nPHot.setStyle('border','2px solid #ff6600');
+        nAdPos.setStyle('display','none');
+        n3Sub.setStyle('display','none');
+        nSixBb.setStyle('display','none');
+        nUpdateBb.setStyle('display','none');
+        nHotSell.setStyle('display','block');
+    })
+
+
     //判断广告图片数量，继而执行进入添加广告功能页面
     function checkAdAmount(){
         nAdListArray = getAdList();
@@ -55,13 +130,26 @@ YUI().use('node','node-event-delegate',function(Y){
             nAddButton.setStyle('display','none');
         }
     };
+
+    //各广告上下移动
+    nAdList.delegate('click',function(){
+        for(var i=0; i<nAdListArray.size(); i++){
+            if(this.ancestor('.ad-item') == nAdListArray.item(i)){
+                var prevAdItem = nAdListArray.item(i-1);
+                nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                break;
+            }
+        }
+        Y.log(nAdListArray.size());
+    },'.item-shift-up2');
+
     //右上角添加广告按钮绑定事件
     nAddButton.on('click',function(){
         checkAdAmount();
     });
 
     //点击删除广告list中各广告
-    nAdList.delegate('click',function(){
+    nAdList.delegate('click',function(e){
         this.ancestor('.ad-item').remove();
     },'.deleteAd');
 
@@ -71,7 +159,7 @@ YUI().use('node','node-event-delegate',function(Y){
         nAddButton.setStyle('display','block');
         nAdSave.setStyle('display','block');
     });
-    //选择不同的添加链接控制不同部分的显示
+    //添加广告-选择不同的添加链接控制不同部分的显示
     function linkSelect(){
         if(nLinkSelect.get('selectedIndex') == 1){
             Y.one('#store-product').setStyle('display','block');
@@ -142,17 +230,6 @@ YUI().use('node','node-event-delegate',function(Y){
         nAdListArray.item(0)
     }
     */
-    //各广告上下移动
-    nAdList.delegate('click',function(){
-        for(var i=0; i<nAdListArray.size(); i++){
-            if(this.ancestor('.ad-item') == nAdListArray.item(i)){
-                var prevAdItem = nAdListArray.item(i-1);
-                nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
-                break;
-            }
-        }
-        Y.log(nAdListArray.size());
-    },'.item-shift-up2');
 
     //店铺宝贝框添加移除功能
     nBoxLeft.delegate('click',function(){
@@ -183,29 +260,6 @@ YUI().use('node','node-event-delegate',function(Y){
     nOutTransferBtn.on('click',function(){
         move(nBoxRight,nBoxLeft);
     });
-
-    //不同功能模块的显隐切换
-    nPAd.on('click',function(){
-        nAdPos.setStyle('display','block');
-        nPAd.setStyle('border','2px solid #ff6600');
-        nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
-        nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
-        n3Sub.setStyle('display','none');
-    });
-    nPBox.delegate('click',function(){
-        nPBox.all('.item-title').setStyle('border','2px solid #ff6600');
-        nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
-        nPAd.setStyle('border','none');
-        nAdPos.setStyle('display','none');
-        n3Sub.setStyle('display','block');
-    },'.item-title');
-    nPBox.delegate('click',function(){
-        nPBox.all('.item-bb').setStyle('border','2px solid #ff6600');
-        nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
-        nPAd.setStyle('border','none');
-        nAdPos.setStyle('display','none');
-        n3Sub.setStyle('display','none');
-    },'.item-bb');
 
     //专题删除功能
     nSubList.delegate('click',function(){
@@ -240,7 +294,7 @@ YUI().use('node','node-event-delegate',function(Y){
     }
 
 
-    //专题链接选择显隐切换功能
+    //三个专题-链接选择显隐切换功能
     function subLinkSelect(){
         if(nSubLinkSelect.get('selectedIndex') == 1){
             Y.one('#sub-keyword').setStyle('display','block');
@@ -272,8 +326,37 @@ YUI().use('node','node-event-delegate',function(Y){
         subLinkSelect();
     })
 
+    //六个宝贝-点击批量导入宝贝按钮
+    nImportBb.on('click',function(){
+        nImportBb.setStyle('display','none');
+        nBbList.setStyle('display','none');
+        nBbAdd.setStyle('display','inline-block');
+        nBbCancel.setStyle('display','inline-block');
+        Y.one('#bb-store-product').setStyle('display','block');
+        Y.one('#bb-save').setStyle('display','none');
+    })
+    //六个宝贝-取消按钮事件
+    nBbCancel.on('click',function(){
+        Y.one('#bb-store-product').setStyle('display','none');
+        nImportBb.setStyle('display','block');
+        nBbList.setStyle('display','block');
+        nBbAdd.setStyle('display','none');
+        nBbCancel.setStyle('display','none');
+        Y.one('#bb-save').setStyle('display','block');
+    })
+    //六个宝贝-修改宝贝与添加宝贝事件
+    nBbList.delegate('click',function(){
+        Y.one('#bb-store-product').setStyle('display','block');
+        nBbAdd.setStyle('display','inline-block');
+        nBbCancel.setStyle('display','inline-block');
+        nBbList.setStyle('display','none');
+        Y.one('#bb-save').setStyle('display','none');
+    },'.modifyBb')
 
-
+    //热销模块选择宝贝--弹出宝贝框
+    Y.one('.select-bb').on('click',function(){
+        nHotStoreBb.setStyle('display','block');
+    })
 
 });
 

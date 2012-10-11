@@ -1,0 +1,45 @@
+
+
+.phonePreview2{
+    float:left;
+    width:370px;
+    margin-top: 10px;
+    margin-left: 1px;
+    height:786px;
+    background: url("../img/edit/phone_bkg.png") no-repeat 0px 0px;
+    position:relative;
+}
+.phonePreview2 .tao-tip{
+    position:absolute;
+    top: 486px;
+    left: 92px;
+}
+.add-channel{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    width: 598px;
+    position: relative;
+}
+.add-channel .title{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0px;
+}
+.add-channel .tip{
+    font-size: 12px;
+    clear: both;
+    display: block;
+    color:#808080;
+}
+.add-channel .tip2{
+    margin-bottom: 10px;
+}
+.add-channel .add-channel{
+    position:absolute;
+    top: 20px;
+    left:448px;
+    font-size: 16px;
+    font-weight: bold;
+}
