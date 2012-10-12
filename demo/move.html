@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Author" CONTENT="majianan">
+<SCRIPT language=javascript>
+    var currentSel = null;
+    function setButton(obj){        
+        if(obj.length==0) return;
+        currentSel = obj;
+        if(obj.id=="leftSel"){
+            document.getElementById("btnLeft").disabled = true;
+            document.getElementById("btnRight").disabled = false;                
+            reSelect(document.getElementById("rightSel"));            
+        }else{
+            document.getElementById("btnLeft").disabled = false;
+            document.getElementById("btnRight").disabled = true;               
+            reSelect(document.getElementById("leftSel"));                
+        }       
+    }
+
+      function move(){
+          if(arguments.length==1){
+              moveUp(arguments[0]);
+          }else if(arguments.length==2){
+              moveRight(arguments[0],arguments[1]);
+          }
+      }
+
+      function moveUp(direction){
+          if(currentSel == null) return;
+          if(direction){//up
+            if (currentSel.selectedIndex > 0) {  
+                for(var i=0;i<currentSel.length;i++){
+                    if(currentSel[i].selected){
+                        var oOption = currentSel.options[i];
+                        var oPrevOption = currentSel.options[i---1];
+                        currentSel.insertBefore(oOption, oPrevOption);
+                    }
+                }                
+            } 
+          }else{//down
+            for(var i=currentSel.length-1;i>=0;i--){
+                if(currentSel[i].selected){
+                    if(i==currentSel.length-1) return;
+                    var oOption = currentSel.options[i];
+                    var oNextOption = currentSel.options[i+1];
+                    currentSel.insertBefore(oNextOption, oOption);                        
+                }
+            }
+          }
+      }
+
+    function moveRight(src,des){
+        if(src.selectedIndex==-1){
+            alert("Please select first!");
+            return;
+        }
+        for(var i=0;i<src.length;i++){
+            if(src[i].selected){
+                des.appendChild(src.options[i--]);
+            }
+        }
+        setButton(des);
+    }
+    
+    function reSelect(obj){
+        for(var i=0; i<obj.length; i++){
+            if(obj[i].selected) obj[i].selected = false;
+        }
+    }
+    </SCRIPT>
+
+ </HEAD>
+
+ <BODY>
+  <form id="form1">
+      <table width="40%" align="center">
+          <tr>
+              <td>
+                  <input type="button" value=" Up " id="btnUp" onClick="move(true);" style="width:65"/>
+                <br />
+                <input type="button" value=" Down " id="btnDowm" onClick="move(false);" style="width:65" />                
+              </td>
+              <td>
+                  <select multiple id="leftSel" onclick="setButton(this)" ondblclick="document.getElementById('btnRight').click()" style="height:200px;width:100px;">
+
+                    <option value="1">Java</option>
+                    <option value="2">JavaScript</option>
+                    <option value="3">C++</option>
+                    <option value="4">HTML</option>
+                </select>
+            </td>
+            <td>
+                <input type="button" value=" >> " id="btnRight" onClick="move(document.getElementById('leftSel'),document.getElementById('rightSel'));" style="width:65" />
+                <br />
+                <input type="button" value=" << " id="btnLeft" onClick="move(document.getElementById('rightSel'),document.getElementById('leftSel'));" style="width:65" />
+                </td>
+                <td>
+                    <select multiple id="rightSel" onclick="setButton(this)"  ondblclick="document.getElementById('btnLeft').click()" style="height:200px;width:100px;" >
+ 
+                    <option value="5">CSS</option>
+                    <option value="6">.Net</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+ </BODY>
+</HTML>
