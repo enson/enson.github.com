@@ -6,14 +6,16 @@
     margin-top: 10px;
     margin-left: 1px;
     height:786px;
-    background: url("../img/edit/phone_bkg.png") no-repeat 0px 0px;
+    background: url("../img/edit/phone_bkg2.png") no-repeat 0px 0px;
     position:relative;
 }
 .phonePreview2 .tao-tip{
     position:absolute;
     top: 486px;
-    left: 92px;
+    left: 103px;
 }
+
+
 .add-channel{
     float: left;
     text-align: left;
@@ -42,4 +44,117 @@
     left:448px;
     font-size: 16px;
     font-weight: bold;
+}
+.add-channel .channel-list{
+    width:598px;
+    margin-top:10px;
+    position:relative;
+}
+.add-channel .channel-list .channel-item{
+    width: 598px;
+    height: 80px;
+    background-color: #F0F0F0;
+    margin-bottom: 10px;
+}
+.add-channel .channel-list .channel-item .channel-item-text{
+    font-size: 16px;
+    font-weight: bold;
+    color:#808080;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 27px;
+    width:125px;
+}
+.add-channel .channel-list .channel-item .channel-item-button{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 13px;
+}
+.add-channel .channel-list .channel-item .channel-item-button img{
+    margin-right: 5px;
+    cursor:pointer;
+}
+.add-channel .channel-list .channel-item .channel-item-shift{
+    width: 52px;
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+}
+.add-channel .channel-list .channel-item .channel-item-shift .item-shift-up1{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 20px solid #d8d8d8;
+    cursor:pointer;
+}
+.add-channel .channel-list .channel-item .channel-item-shift .item-shift-up2{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 20px solid #808080;
+    cursor:pointer;
+}
+.add-channel .channel-list .channel-item .channel-item-shift .item-shift-box{
+    margin-bottom: 10px;
+}
+.add-channel .channel-list .channel-item .channel-item-shift .item-shift-down1{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 20px solid #d8d8d8;
+    cursor:pointer;
+}
+.add-channel .channel-list .channel-item .channel-item-shift .item-shift-down2{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 20px solid #808080;
+    cursor:pointer;
+}
+
+.add-channel .edit-channel{
+    display:none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.add-channel .edit-channel div{
+    margin-bottom: 9px;
+}
+.add-channel .edit-channel .channel-keyword{
+    display: none;
+}
+.add-channel .edit-channel .channel-store-item{
+    display: none;
+    width:618px;
+    height: 378px;
+    background-color: #f0f0f0;
+}
+.add-channel .edit-channel .channel-store-item .C-store-title{
+    margin-left: 6px;
+    padding-top: 6px;
+}
+.add-channel .edit-channel .channel-store-item .leftSel{
+    display: inline-block;
+    color:#3b639f;
+    margin-left: 5px;
+}
+.add-channel .edit-channel .channel-store-item .rightSel{
+    display: inline-block;
+    color:#3b639f;
+}
+.add-channel .edit-channel .channel-store-item .button{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 128px;
+}
+.add-channel .edit-channel .channel-store-keyword{
+    display: none;
+}
+.add-channel .edit-channel .channel-button{
+    display: none;
 }

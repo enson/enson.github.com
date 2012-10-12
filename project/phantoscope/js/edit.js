@@ -131,6 +131,11 @@ YUI().use('node','node-event-delegate',function(Y){
         }
     };
 
+    //右上角添加广告按钮绑定事件
+    nAddButton.on('click',function(){
+        checkAdAmount();
+    });
+
     //各广告上下移动
     nAdList.delegate('click',function(){
         for(var i=0; i<nAdListArray.size(); i++){
@@ -142,11 +147,6 @@ YUI().use('node','node-event-delegate',function(Y){
         }
         Y.log(nAdListArray.size());
     },'.item-shift-up2');
-
-    //右上角添加广告按钮绑定事件
-    nAddButton.on('click',function(){
-        checkAdAmount();
-    });
 
     //点击删除广告list中各广告
     nAdList.delegate('click',function(e){
@@ -250,7 +250,7 @@ YUI().use('node','node-event-delegate',function(Y){
         for(var i=0;i < nItemListArray.size();i++){
             if(nItemListArray.item(i).hasClass('item-sub-focus')){
                 des.append(nItemListArray.item(i--));
-                break;
+               break;
             }
         }
     }
@@ -267,23 +267,23 @@ YUI().use('node','node-event-delegate',function(Y){
         nSubList.setStyle('display','none');
         nSubSave.setStyle('display','none');
         nEditSub.setStyle('display','block');
-    },'.deleteSub')
+    },'.deleteSub');
 
     //专题编辑功能
     nSubList.delegate('click',function(){
         nSubList.setStyle('display','none');
         nSubSave.setStyle('display','none');
         nEditSub.setStyle('display','block');
-    },'.editSub')
+    },'.editSub');
 
     nCancelSub.on('click',function(){
         nSubList.setStyle('display','block');
         nSubSave.setStyle('display','block');
         nEditSub.setStyle('display','none');
-    })
+    });
     nAddSub.on('click',function(){
         addSub();
-    })
+    });
     function addSub(){
         var subTitle = Y.one('#sub-title-input').get('value');
         Y.all('.sub-item-text').setContent(subTitle);
