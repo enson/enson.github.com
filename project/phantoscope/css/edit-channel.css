@@ -152,6 +152,29 @@
     vertical-align: top;
     margin-top: 128px;
 }
+.add-channel .edit-channel .channel-store-item2{
+    width:618px;
+    height: 378px;
+    background-color: #f0f0f0;
+}
+.add-channel .edit-channel .channel-store-item2 .C-store-title{
+    margin-left: 6px;
+    padding-top: 6px;
+}
+.add-channel .edit-channel .channel-store-item2 .leftSel{
+    display: inline-block;
+    color:#3b639f;
+    margin-left: 5px;
+}
+.add-channel .edit-channel .channel-store-item2 .rightSel{
+    display: inline-block;
+    color:#3b639f;
+}
+.add-channel .edit-channel .channel-store-item2 .button{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 128px;
+}
 .add-channel .edit-channel .channel-store-keyword{
     display: none;
 }
