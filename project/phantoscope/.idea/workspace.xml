@@ -32,7 +32,7 @@
       <file leaf-file-name="edit-bb.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/edit-bb.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="260" column="23" selection-start="6081" selection-end="6081" vertical-scroll-proportion="0.0">
+            <state line="238" column="0" selection-start="5638" selection-end="5638" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="edit-bb.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edit-bb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="45" selection-start="8571" selection-end="8571" vertical-scroll-proportion="-13.615385">
+            <state line="164" column="45" selection-start="8571" selection-end="8571" vertical-scroll-proportion="-63.307693">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#5;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -61,28 +61,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-s.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login-s.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login-s.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="12" selection-start="874" selection-end="874" vertical-scroll-proportion="0.6931408">
+            <state line="13" column="27" selection-start="0" selection-end="1740" vertical-scroll-proportion="-6.923077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-channel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
+      <file leaf-file-name="login-xiaoer&amp;seller.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login-xiaoer&amp;seller.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="56" selection-start="5435" selection-end="5435" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="45" column="27" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-16.076923">
+              <folding>
+                <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-channel.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edit-channel.html">
+      <file leaf-file-name="login-admin.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login-admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="33" selection-start="5852" selection-end="5852" vertical-scroll-proportion="-9.038462">
+            <state line="14" column="22" selection-start="469" selection-end="469" vertical-scroll-proportion="0.33754513">
               <folding />
             </state>
           </provider>
@@ -98,8 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/design.css" />
-        <option value="$PROJECT_DIR$/css/homepage.css" />
         <option value="$PROJECT_DIR$/home-page.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/edit.css" />
@@ -114,6 +114,8 @@
         <option value="$PROJECT_DIR$/js/edit-bb.js" />
         <option value="$PROJECT_DIR$/edit-bb.html" />
         <option value="$PROJECT_DIR$/login-s.html" />
+        <option value="$PROJECT_DIR$/login-xiaoer&amp;seller.html" />
+        <option value="$PROJECT_DIR$/login-admin.html" />
       </list>
     </option>
   </component>
@@ -280,7 +282,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1304" height="768" extended-state="0" />
+    <frame x="0" y="0" width="1304" height="768" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -354,20 +356,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="0" selection-start="9256" selection-end="9256" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-appearance-xiaoer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="404" selection-end="404" vertical-scroll-proportion="-0.8051002">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design-page-blendent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="13" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.41231343">
@@ -396,13 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.05862069">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="279" column="12" selection-start="13872" selection-end="13944" vertical-scroll-proportion="-10.461538">
@@ -417,20 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edit-channel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="33" selection-start="5852" selection-end="5852" vertical-scroll-proportion="-9.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="56" selection-start="5435" selection-end="5435" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/edit-channel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="170" column="18" selection-start="4046" selection-end="4046" vertical-scroll-proportion="0.0">
@@ -438,21 +405,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/edit-bb.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="260" column="23" selection-start="6081" selection-end="6081" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edit-bb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="45" selection-start="8571" selection-end="8571" vertical-scroll-proportion="-13.615385">
+        <state line="164" column="45" selection-start="8571" selection-end="8571" vertical-scroll-proportion="-63.307693">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#5;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#0;n#div#7;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#1;n#div#7;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/edit-bb.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="0" selection-start="5638" selection-end="5638" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="0" selection-start="4918" selection-end="4918" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-channel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="49" selection-start="5717" selection-end="5717" vertical-scroll-proportion="-5.1153846">
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#4;n#div#5;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#1;n#div#1;n#div#4;n#div#5;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,9 +448,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/login-xiaoer&amp;seller.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="27" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-16.076923">
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="29" selection-start="709" selection-end="718" vertical-scroll-proportion="0.7602862">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/login-s.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="12" selection-start="874" selection-end="874" vertical-scroll-proportion="0.6931408">
+        <state line="13" column="27" selection-start="0" selection-end="1740" vertical-scroll-proportion="-6.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login-admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="469" selection-end="469" vertical-scroll-proportion="0.33754513">
           <folding />
         </state>
       </provider>

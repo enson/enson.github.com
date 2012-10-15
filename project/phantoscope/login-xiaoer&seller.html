@@ -12,7 +12,7 @@
         #content{
             text-align: left;
             margin: 0 auto;
-            width: 382px;
+            width: 658px;
             margin-top: 15px;
             height:550px;
         }
@@ -24,9 +24,25 @@
         #content div{
             margin-bottom:10px ;
         }
-        #content .make-btn{
-            margin-bottom: 15px;
-            margin-left: 130px;
+        #content table{
+            border:1px solid gainsboro;
+            width:658px;
+            text-align: center;
+        }
+        #content table th{
+            height:55px;
+            font-size: 16px;
+        }
+        #content table td{
+            height:38px;
+            font-size: 14px;
+        }
+        #content table .app-name{
+            font-weight:bold;
+        }
+        #content table .manage{
+            color:#3b639f;
+            text-decoration: underline;
             cursor:pointer;
         }
         #body{
@@ -45,11 +61,27 @@
         </div>
     </header>
     <div id="content">
-        <div class="title">$!username </div>
-        <div class="title">你还没有拥有自己的应用哦，现在就开始制作吧！</div>
-        <div class="tip">提示：万花筒平台支持Android和iPhone两个平台的应用制作</div>
-        <button class="make-btn"><img src="./img/homepage/start-make.PNG" /></button>
-        <button class="cancel-btn"><img src="./img/homepage/cancel-btn.PNG" /></button>
+        <div class="title">$!username ,以下是你的应用的信息：</div>
+        <table border='1'>
+            <tbody>
+                <tr style="background-color:#f3f3f3;">
+                    <th>应用名称</th>
+                    <th>创建日期</th>
+                    <th>发布日期</th>
+                    <th>最近维护日期</th>
+                    <th>应用状态</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td class="app-name">淘宝零食街</td>
+                    <td>2012-09-03</td>
+                    <td>2012-09-03</td>
+                    <td>2012-09-03</td>
+                    <td>已发布</td>
+                    <td class="manage">管理</td>
+                </tr>
+            </tbody>
+        </table>
 
 
     </div>
