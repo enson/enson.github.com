@@ -20,6 +20,8 @@ YUI().use('node','node-event-delegate',function(Y){
 
     var nLeftBox = Y.one('.leftSel');
     var nRightBox = Y.one('.rightSel');
+    var nLeftBox2 = Y.one('.leftSel2');
+    var nRightBox2 = Y.one('.rightSel2');
 
     //删除频道功能
     nChannelList.delegate('click',function(){
@@ -130,8 +132,15 @@ YUI().use('node','node-event-delegate',function(Y){
     Y.one('.add-transfer-button').on('click',function(){
         moveRight(nLeftBox,nRightBox);
     });
-    Y.one('.add-transfer-button2').on('click',function(){
+    Y.one('.out-transfer-button').on('click',function(){
         moveRight(nRightBox,nLeftBox);
+    });
+
+    Y.one('.add-transfer-button2').on('click',function(){
+        moveRight(nLeftBox2,nRightBox2);
+    })
+    Y.one('.out-transfer-button2').on('click',function(){
+        moveRight(nRightBox2,nLeftBox2);
     });
 
 

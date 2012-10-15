@@ -1,0 +1,271 @@
+
+.phonePreview3{
+    float:left;
+    width:370px;
+    margin-top: 10px;
+    margin-left: 1px;
+    height:786px;
+    background: url("../img/edit/phone_bkg3.png") no-repeat 0px 0px;
+    position:relative;
+}
+.phonePreview3 .tao-tip{
+    position:absolute;
+    top: 486px;
+    left: 103px;
+}
+
+.add-class{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    width: 598px;
+    position: relative;
+}
+.add-class .title{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0px;
+}
+.add-class .title input{
+    width:265px;
+}
+.add-class .title2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.add-class .tip{
+    font-size: 12px;
+    clear: both;
+    display: block;
+    color:#808080;
+    margin-bottom: 10px;
+}
+.add-class .add-class{
+    position:absolute;
+    top: 20px;
+    left:448px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.add-class .class-button{
+    display: inline-block;
+    margin-left: 53px;
+    vertical-align: middle;
+}
+.add-class .class-list{
+    width:598px;
+    margin-top:10px;
+    position:relative;
+}
+.add-class .class-list .class-item{
+    width: 613px;
+    background-color: #F0F0F0;
+    margin-bottom: 10px;
+    position: relative;
+}
+.add-class .class-list .class-item .class-text{
+    width:338px;
+    display: inline-block;
+    margin: 10px 6px;
+}
+.add-class .class-list .class-item .class-text .class-name{
+    font-size: 15px;
+}
+.add-class .class-list .class-item .class-text ul{
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.add-class .class-list .class-item .class-text ul li{
+    width:100px;
+    height: 29px;
+    display: inline-block;
+    background-color: #fff;
+    color:#808080;
+    font-size: 15px;
+    text-align:center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.add-class .class-list .class-item .button{
+    display:inline-block;
+    width:86px;
+    position: absolute;
+    top: 36px;
+}
+
+.add-class .class-list .class-item .class-item-shift{
+    width: 52px;
+    display: inline-block;
+    float: right;
+    margin-top: 28px;
+    margin-right: 10px;
+}
+.add-class .class-list .class-item .class-item-shift .item-shift-up1{
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 32px solid #d8d8d8;
+    cursor:pointer;
+}
+.add-class .class-list .class-item .class-item-shift .item-shift-up2{
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 32px solid #808080;
+    cursor:pointer;
+}
+.add-class .class-list .class-item .class-item-shift .item-shift-box{
+    margin-bottom: 10px;
+}
+.add-class .class-list .class-item .class-item-shift .item-shift-down1{
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 32px solid #d8d8d8;
+    cursor:pointer;
+}
+.add-class .class-list .class-item .class-item-shift .item-shift-down2{
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 32px solid #808080;
+    cursor:pointer;
+}
+.add-class .nSave{
+    text-align: center;
+    margin-top: 26px;
+    clear:both;
+}
+.add-class .subClass{
+    display: none;
+}
+
+
+
+
+.add-class .subClass .subClass-list{
+    width:598px;
+    margin-top:10px;
+    position:relative;
+}
+.add-class .subClass .subClass-list .subClass-item{
+    width: 598px;
+    height: 80px;
+    background-color: #F0F0F0;
+    margin-bottom: 10px;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-text{
+    color:#808080;
+    margin-left: 10px;
+    margin-top: 27px;
+    width:100px;
+    height: 29px;
+    display: inline-block;
+    background-color: #fff;
+    font-size: 15px;
+    text-align:center;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-button{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 13px;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-button img{
+    margin-right: 5px;
+    cursor:pointer;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-shift{
+    width: 52px;
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-up1{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 20px solid #d8d8d8;
+    cursor:pointer;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-up2{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 20px solid #808080;
+    cursor:pointer;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-box{
+    margin-bottom: 10px;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-down1{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 20px solid #d8d8d8;
+    cursor:pointer;
+}
+.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-down2{
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 20px solid #808080;
+    cursor:pointer;
+}
+.add-class .keyword-input{
+    display: none;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;;
+}
+.add-class .keyword-input input{
+    width:248px;
+}
+.add-class .keyword-input div{
+    margin-bottom: 8px;
+}
+.add-class .class-store{
+    display:none;
+}
+
+
+.add-class .class-store{
+    display: none;
+    width:618px;
+    height: 396px;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+}
+.add-class .class-store .C-store-title{
+    margin-left: 6px;
+    padding-top: 6px;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.add-class .class-store .leftSel{
+    display: inline-block;
+    color:#3b639f;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.add-class .class-store .rightSel{
+    display: inline-block;
+    color:#3b639f;
+    margin-bottom: 10px;
+}
+.add-class .class-store .button{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 128px;
+}
+
