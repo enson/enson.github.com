@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
     <link rel="stylesheet" href="./css/design.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script type="text/javascript"
+            src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
+    </script>
+    <script type="text/javascript" src="./js/deploy-info-input.js"></script>
     <style type="text/css">
         #content .title{
             font-size: 16px;
@@ -21,9 +25,29 @@
             font-weight: normal;
             width: 7px;
         }
+        #content .title2{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        #content .title2 input{
+            width:236px;
+        }
+        #content .title2 img{
+            vertical-align: middle;
+        }
         #content .tip{
             color:#4d4d4d;
             margin-top: -9px;
+        }
+        #content .tip2{
+            color:#4d4d4d;
+            margin-top: 2px;
+        }
+        #content .intro{
+            width: 378px;
+            margin: auto;
+            text-align: left;
         }
         #content .intro textarea{
             width:378px;
@@ -32,9 +56,24 @@
             resize:none;
             margin-bottom: 15px;
         }
-
+        #content .android-pic{
+            width:378px;
+            margin:auto;
+            text-align: left;
+        }
+        #content .iPhone-pic{
+            width:378px;
+            margin:auto;
+            text-align: left;
+        }
+        #content .add-pic-btn1{
+            margin-bottom: 8px;
+            cursor:pointer;
+        }
+        #content .add-pic-btn2{
+            cursor:pointer;
+        }
     </style>
-
 </head>
 <body>
 <div id="body" >
@@ -65,9 +104,28 @@
                 <span class="">上传Android产品截图</span>
             </div>
             <div class="tip">提示：至少3张，图片格式：jpg,每张图片小于150k</div>
+            <div class="a-upload-pic">
+                <div class="title2"><input type="file" /><img src="./img/deploy/upload-btn.PNG" /></div>
+                <div class="title2"><input type="file" /><img src="./img/deploy/upload-btn.PNG" /></div>
+                <div class="title2"><input type="file" /><img src="./img/deploy/upload-btn.PNG" /></div>
+            </div>
+            <button class="add-pic-btn1"><img src="./img/deploy/add-pic-btn.PNG" /></button>
         </div>
-
-
+        <div class="divisionLine"></div>
+        <div class="iPhone-pic">
+            <div class="title">
+                <span class="required">*</span>
+                <span class="">上传iPhone产品截图</span>
+            </div>
+            <div class="tip">提示：最多5张，图片格式：jpg,tif,png,满足960*640，960*600,</div>
+            <div class="tip2">640*960,600*960,至少72DPI.</div>
+            <div class="i-upload-pic">
+                <div class="title2"><input type="file" /><img src="./img/deploy/upload-btn.PNG" /></div>
+                <div class="title2"><input type="file" /><img src="./img/deploy/upload-btn.PNG" /></div>
+                <div class="title2"><input type="file" /><img src="./img/deploy/upload-btn.PNG" /></div>
+            </div>
+            <button class="add-pic-btn2"><img src="./img/deploy/add-pic-btn.PNG" /></button>
+        </div>
 
     </div>
     <div class="nextStep">

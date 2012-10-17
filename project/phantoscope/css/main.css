@@ -29,7 +29,7 @@
 }
 #content{
     width:990px;
-    overflow-x:hidden;
+    overflow:hidden;
 }
 #content .theme{
     margin-left: -856px;
@@ -73,10 +73,17 @@
     height: 55px;
     margin: 20px auto 10px;
 }
+.nextStep input{
+    width: 243px;
+    height: 57px;
+    background: white url('../img/common/done.PNG') no-repeat 0px -1px;
+    border: none;
+}
 #footer{
     width:990px;
     overflow-x: hidden;
 }
 button{
     border: none;
+    cursor:pointer;
 }

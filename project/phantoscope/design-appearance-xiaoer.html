@@ -30,8 +30,34 @@
         #content .uploadMaterial .tip{
             margin-bottom: 5px;
         }
-        #content .uploadMaterial input{
+
+
+        input{ vertical-align:middle; margin:0; padding:0}
+        .file-box{ position:relative;width:486px}
+        .txt{ height:30px; border:1px solid #cdcdcd; width:292px;}
+        .btn{
+            background: #fff url('./img/design/scan.PNG') no-repeat 0px 0px;
+            height:31px;
+            width:81px;
+            border:none;
         }
+        .submit-btn{
+            background: #fff url('./img/design/upload.PNG') no-repeat 4px -1px;
+            height:31px;
+            width:81px;
+            border:none;
+        }
+        .file{
+            position:absolute;
+            top:0;
+            right:107px;
+            height:34px;
+            filter:alpha(opacity:0);
+            opacity: 0;
+            width:82px
+        }
+
+
     </style>
 
 </head>
@@ -64,8 +90,16 @@
         <div class="uploadMaterial">
             <div class="title">请按照UI规范，提供应用素材压缩包&nbsp&nbsp<a href="">查看规范</a></div>
             <div class="tip">提示：页面配色方案选定后，在发布应用后不可更改。</div>
-            <input type="file" />
-            <img src="./img/design/upload.PNG" />
+
+
+
+            <div class="file-box">
+                <input type='text' name='textfield' id='textfield' class='txt' />
+                <input type='button' class='btn' value='' />
+                <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                <input type="submit" name="submit" class="submit-btn" value="" />
+            </div>
+
             <div>上传中，请稍后......</div>
         </div>
 

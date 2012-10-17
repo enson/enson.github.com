@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
     <link rel="stylesheet" href="./css/design.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script type="text/javascript"
+            src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
+    </script>
+    <script type="text/javascript" src="./js/deploy-preview.js"></script>
     <style type="text/css">
         #content .text{
             text-align: left;
@@ -29,11 +33,48 @@
             width: 315px;
             margin: 10px auto;
             text-align: left;
+            position: relative;
+        }
+        #content .preview-btn .iPhone-preview-tip{
+            position: absolute;
+            border:1px solid #dcdcdc;
+            background-color: #fff;
+            width:496px;
+            height: 167px;
+            top: -173px;
+            left: -89px;
+            display: none;
+            z-index:100;
+        }
+        #content .preview-btn .iPhone-preview-tip .tip-text{
+            font-size: 14px;
+            color:#4d4d4d;
+            margin-top: 35px;
+            margin-left: 25px;
+        }
+        #content .preview-btn .iPhone-preview-tip .tip-btn{
+            width: 252px;
+            margin: 34px auto;
+        }
+        .mask-overlay{
+            display:none;
+            width:2260px;
+            height:1000px;
+            background-color:black;
+            position:fixed;
+            left:0;
+            top:0;
+            z-index:99;
+            opacity:0.5;
+            filter:alpha(opacity=50);
+            -moz-opacity:0.5;
+            overflow:hidden;
         }
     </style>
 
 </head>
 <body>
+<div id="mask-overlay" class="mask-overlay"></div>
 <div id="body" >
     <header id="header">
         <div class="header-text">
@@ -52,16 +93,22 @@
             <div class="tip">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp为了保证有用质量，我们建议您通过手机预览来检验生成效果</div>
         </div>
         <div class="preview-btn">
-            <button><img src="./img/deploy/android-preview.PNG"</button>
-            <button><img src="./img/deploy/iPhone-preview.PNG"</button>
+            <button><img src="./img/deploy/android-preview.PNG" /></button>
+            <button class="iPhone-preview-btn"><img src="./img/deploy/iPhone-preview.PNG"/></button>
+            <div class="iPhone-preview-tip" id="iPhone-preview-tip" >
+                <div class="tip-text">iPhone越狱版包不支持升级，建议在预览完成后生成iPhone正式包</div>
+                <div class="tip-btn">
+                    <button class="tip-go-download"><a href="http://www.taobao.com" target="_blank"><img src="./img/deploy/goDownload.PNG" /></a></button>
+                    <button class="tip-cancel"><img src="./img/deploy/cancel-btn.PNG" /></button>
+                </div>
+            </div>
         </div>
-
 
     </div>
     <div class="nextStep">
         <div class="title title2">预览完后，您可以：</div>
         <button><img src="./img/deploy/goEditBtn.PNG" /></button>
-        <button><img src="./img/deploy/deploy-now.JPG" /></button>
+        <button><img src="./img/deploy/deploy-now.PNG" /></button>
     </div>
     <footer id="footer" align="center">
         <img src="./img/homepage/footer-logo.PNG" />

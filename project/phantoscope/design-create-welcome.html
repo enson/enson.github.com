@@ -71,6 +71,26 @@
             margin-right: 12px;
         }
 
+
+        input{ vertical-align:middle; margin:0; padding:0}
+        .file-box{ position:relative;width:544px;display: inline-block;}
+        .txt{ height:30px; border:1px solid #cdcdcd; width:280px;font-size: 12px;margin-left: -8px;}
+        .btn{
+            background: #fff url('./img/design/scan.PNG') no-repeat 0px 0px;
+            height:31px;
+            width:81px;
+            border:none;
+        }
+        .file{
+            position:absolute;
+            top:0;
+            right:71px;
+            height:34px;
+            filter:alpha(opacity:0);
+            opacity: 0;
+            width:82px
+        }
+
     </style>
 </head>
 <body>
@@ -120,12 +140,15 @@
             <div class="divisionLine"></div>
             <div class="title">在图标上展示你的品牌:</div>
             <div class="tip">提示：你可以选择直接填写品牌名称在图标上或者将自己的品牌logo图片通过上传体现。</div>
-            <div class="uploadPic">上传图片：
-                <input type="text" style="width:0px" title="图片要求：透明底色；尺寸180*180；格式png" placeholder="图片要求：透明底色；尺寸180*180；格式png" />
-                <input type="file" style="background-image:"./img/design/button2.PNG"" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <span class="">
-                    <img src="./img/design/preview.PNG" />
-                </span>
+            <div class="uploadPic">
+                <div class="file-box"> 上传图片：
+                    <input type='text' name='textfield' id='textfield' class='txt' placeholder="图片要求：透明底色；尺寸：180*180；格式png" />
+                    <input type='button' class='btn' value='' />
+                    <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                    <span class="preview-btn">
+                        <img src="./img/design/preview.PNG" />
+                    </span>
+                </div>
             </div>
             <div class="divisionLine"></div>
             <div>提示：你可以选择直接填写品牌名称在图标上or将自己的品牌logo图片通过上传展现。
@@ -175,16 +198,13 @@
                     <div class="editButton"><img src="./img/design/add.PNG" /></div>
                 </li>
             </ul>
-
-
         </section>
-
 
 
 
     </div>
     <div class="nextStep">
-        <a href=""><img src="./img/common/done.PNG" /></a>
+        <input type="submit" value=""/>
     </div>
     <footer id="footer" align="center">
         <img src="./img/homepage/footer-logo.PNG" />
