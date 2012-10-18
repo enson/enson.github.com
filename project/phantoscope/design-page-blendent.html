@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
     <link rel="stylesheet" href="./css/design.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <!--<script type="text/javascript" src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js"></script>
-    -->
-    <script src="http://yui.yahooapis.com/3.7.2/build/yui/yui-min.js"></script>
+    <script type="text/javascript"
+            src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
+    </script>
     <style type="text/css">
         #content .selectStyle{
             float:left;
@@ -38,7 +38,7 @@
             margin-right: 6px;
             margin-top: 10px;
             cursor:pointer;
-            border:1px solid gainsboro;
+            border:3px solid transparent;
         }
         #content .selectStyle .styleItem .color1{
             background-color: #ff0000;
@@ -133,17 +133,22 @@
 
         </section>
 
-
-
-
     </div>
     <div class="nextStep">
-        <a href=""><img src="./img/common/done.PNG" /></a>
+        <input class="done-submit" type="submit" value=""/>
     </div>
     <footer id="footer" align="center">
         <img src="./img/homepage/footer-logo.PNG" />
     </footer>
-
 </div>
+<script type="text/javascript">
+    YUI().use('node','event','node-event-delegate',function(Y){
+        Y.one('.styleItem').delegate('click',function(){
+            Y.all('.selectC').setStyle('border','3px solid transparent');
+            this.setStyle('border','3px solid #ff6600');
+        },'.selectC')
+
+    })
+</script>
 </body>
 </html>

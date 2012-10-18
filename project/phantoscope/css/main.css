@@ -73,11 +73,12 @@
     height: 55px;
     margin: 20px auto 10px;
 }
-.nextStep input{
+.nextStep .done-submit{
     width: 243px;
     height: 57px;
     background: white url('../img/common/done.PNG') no-repeat 0px -1px;
     border: none;
+    cursor:pointer;
 }
 #footer{
     width:990px;

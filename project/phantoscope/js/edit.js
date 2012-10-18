@@ -66,6 +66,7 @@ YUI().use('node','node-event-delegate',function(Y){
         nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
         nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
         nPNewBb.setStyle('border','2px solid #fff');
+        nPHot.setStyle('border','2px solid #fff');
         n3Sub.setStyle('display','none');
         nSixBb.setStyle('display','none');
         nUpdateBb.setStyle('display','none');
@@ -76,6 +77,7 @@ YUI().use('node','node-event-delegate',function(Y){
         nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
         nPAd.setStyle('border','none');
         nPNewBb.setStyle('border','2px solid #fff');
+        nPHot.setStyle('border','2px solid #fff');
         nAdPos.setStyle('display','none');
         n3Sub.setStyle('display','block');
         nSixBb.setStyle('display','none');
@@ -87,6 +89,7 @@ YUI().use('node','node-event-delegate',function(Y){
         nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
         nPAd.setStyle('border','none');
         nPNewBb.setStyle('border','2px solid #fff');
+        nPHot.setStyle('border','2px solid #fff');
         nAdPos.setStyle('display','none');
         n3Sub.setStyle('display','none');
         nSixBb.setStyle('display','block');
@@ -98,6 +101,7 @@ YUI().use('node','node-event-delegate',function(Y){
         nPBox.all('.item-title').setStyle('border','1px solid gainsboro');
         nPBox.all('.item-bb').setStyle('border','1px solid gainsboro');
         nPAd.setStyle('border','none');
+        nPHot.setStyle('border','2px solid #fff');
         nAdPos.setStyle('display','none');
         n3Sub.setStyle('display','none');
         nSixBb.setStyle('display','none');
@@ -141,7 +145,8 @@ YUI().use('node','node-event-delegate',function(Y){
         for(var i=0; i<nAdListArray.size(); i++){
             if(this.ancestor('.ad-item') == nAdListArray.item(i)){
                 var prevAdItem = nAdListArray.item(i-1);
-                nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                //nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                prevAdItem.insert(nAdListArray.item(i),'before');
                 break;
             }
         }

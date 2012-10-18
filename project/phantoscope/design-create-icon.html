@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
     <link rel="stylesheet" href="./css/design.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <!--<script type="text/javascript" src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js"></script>
-    -->
-    <script src="http://yui.yahooapis.com/3.7.2/build/yui/yui-min.js"></script>
+    <script type="text/javascript"
+            src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
+    </script>
+    <script type="text/javascript" src="./js/design-create-icon.js"></script>
     <style type="text/css">
         #content .selectSize{
             float:left;
-            width:430px;
+            width:438px;
             margin-right: 28px;
         }
         #content .selectSize .sizeItem{
@@ -22,20 +23,10 @@
             height:140px;
             display:inline-block;
             background-color: #e5e5e5;
-            border:1px solid gainsboro;
+            border:3px solid gainsboro;
             margin-right: 4px;
             cursor:pointer;
         }
-        /*
-        #content .selectSize .sizeItem1{
-            background-position: 127px 183px;
-        }
-        #content .selectSize .sizeItem2{
-            background-position: 262px 183px;
-        }
-        #content .selectSize .sizeItem3{
-            background-position: 398px 183px;
-        } */
         #content .selectSize .sizeBox{
             background-color: #989898;
             border-radius: 9px;
@@ -56,10 +47,17 @@
             height:96px;
             margin:12px 8px 9px 18px;
         }
-        #content .done{
-            margin-top: 40px;
-            margin-bottom: 45px;
-            clear:both;
+        #content .selectSize .sizeBox1 img{
+            width:27px;
+            height:27px;
+        }
+        #content .selectSize .sizeBox2 img{
+            width:70px;
+            height:70px;
+        }
+        #content .selectSize .sizeBox3 img{
+            width:94px;
+            height:94px;
         }
         #content .selectSize .button1{
             cursor:pointer;
@@ -73,7 +71,6 @@
         }
         #content .vertical-line{
             border-right: 1px solid gainsboro;
-            border-color: #000;
         }
         #content .selectColor .title{
             font-size:16px;
@@ -103,13 +100,13 @@
             cursor: pointer;
         }
         #content .selectColor .bgcolor .selectC{
-            width: 36px;
-            height:36px;
-            background-color:#82c32e ;
+            width: 30px;
+            height:30px;
             display: inline-block;
             margin-right: 6px;
             margin-top: 10px;
             cursor:pointer;
+            border: 5px solid transparent;
         }
         #content .selectColor .bgcolor .color1{
             background-color: #ff0000;
@@ -123,14 +120,57 @@
         #content .selectColor .bgcolor .color4{
             background-color: #00ffff;
         }
+        #content .selectColor .bgcolor .color5{
+            background-color: #0000ff;
+        }
+        #content .selectColor .bgcolor .color6{
+            background-color: #a4005b;
+        }
+        #content .selectColor .bgcolor .color7{
+            background-color: #6a005f;
+        }
+        #content .selectColor .bgcolor .color8{
+            background-color: #110b64;
+        }
+        #content .selectColor .bgcolor .color9{
+            background-color: #004a86;
+        }
+        #content .selectColor .bgcolor .color10{
+             background-color: #00736d;
+        }
+        #content .selectColor .bgcolor .color11{
+            background-color: #a40036;
+        }
+        #content .selectColor .bgcolor .color12{
+            background-color: #7d0000;
+        }
+        #content .selectColor .bgcolor .color13{
+            background-color: #7f2e00;
+        }
+        #content .selectColor .bgcolor .color14{
+            background-color: #834f00;
+        }
+        #content .selectColor .bgcolor .color15{
+            background-color: #8a8100;
+        }
+        #content .selectColor .bgcolor .color16{
+            background-color: #496a00;
+        }
+        #content .selectColor .bgcolor .color17{
+            background-color: #005620;
+        }
+        #content .selectColor .bgcolor .color18{
+            background-color: #005982;
+        }
+        #content .selectColor .bgcolor .color19{
+            background-color: #003567;
+        }
+        #content .selectColor .bgcolor .color20{
+            background-color: #05004c;
+        }
         #content .selectColor .bgcolor{
             margin-bottom: 10px;
         }
-        .select-color-focus{
-            border:5px solid #ff6600;
-        }
-
-
 
         input{ vertical-align:middle; margin:0; padding:0}
         .file-box{ position:relative;width:500px;display: inline-block;}
@@ -144,7 +184,7 @@
         .file{
             position:absolute;
             top:0;
-            right:71px;
+            right:95px;
             height:34px;
             filter:alpha(opacity:0);
             opacity: 0;
@@ -171,15 +211,15 @@
         <div class="divisionLine"></div>
         <section class="selectSize">
             <div class="sizeItem">
-                <div class="sizeBox sizeBox1"></div>
+                <div class="sizeBox sizeBox1"><img src="" /></div>
                 <div class="sizePx">29*29</div>
             </div>
             <div class="sizeItem">
-                <div class="sizeBox sizeBox2"></div>
+                <div class="sizeBox sizeBox2"><img src="" /></div>
                 <div class="sizePx">72*72</div>
             </div>
             <div class="sizeItem">
-                <div class="sizeBox sizeBox3"></div>
+                <div class="sizeBox sizeBox3"><img src="" /></div>
                 <div class="sizePx">128*128</div>
             </div>
             <div class="button1">
@@ -196,22 +236,22 @@
                 <span id="selectC" class="selectC color2"></span>
                 <span class="selectC color3"></span>
                 <span class="selectC color4"></span>
-                <span class="selectC color1"></span>
-                <span class="selectC color2"></span>
-                <span class="selectC color3"></span>
-                <span class="selectC color4"></span>
-                <span class="selectC color1"></span>
-                <span class="selectC color2"></span>
-                <span class="selectC color3"></span>
-                <span class="selectC color4"></span>
-                <span class="selectC color2"></span>
-                <span class="selectC color3"></span>
-                <span class="selectC color1"></span>
-                <span class="selectC color2"></span>
-                <span class="selectC color4"></span>
-                <span class="selectC color2"></span>
-                <span class="selectC color3"></span>
-                <span class="selectC color2"></span>
+                <span class="selectC color5"></span>
+                <span class="selectC color6"></span>
+                <span class="selectC color7"></span>
+                <span class="selectC color8"></span>
+                <span class="selectC color9"></span>
+                <span class="selectC color10"></span>
+                <span class="selectC color11"></span>
+                <span class="selectC color12"></span>
+                <span class="selectC color13"></span>
+                <span class="selectC color14"></span>
+                <span class="selectC color15"></span>
+                <span class="selectC color16"></span>
+                <span class="selectC color17"></span>
+                <span class="selectC color18"></span>
+                <span class="selectC color19"></span>
+                <span class="selectC color20"></span>
             </div>
             <div class="divisionLine"></div>
             <div class="title">在图标上展示你的品牌:</div>
@@ -231,22 +271,12 @@
     </div>
 
     <div class="nextStep">
-        <a href=""><img src="./img/common/done.PNG" /></a>
+        <input class="done-submit" type="submit" value=""/>
     </div>
     <footer id="footer" align="center">
         <img src="./img/homepage/footer-logo.PNG" />
     </footer>
 
 </div>
-<script type="text/javascript">
-    YUI().use('event','node',function(Y){
-        Y.one('#selectC').on('click',function(){
-            Y.one('#selectC').addClass('.select-color-focus');
-
-        });
-
-    });
-
-</script>
 </body>
 </html>
