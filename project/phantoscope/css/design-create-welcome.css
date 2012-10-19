@@ -1,0 +1,234 @@
+
+/**************创建欢迎页整体样式 begin******************/
+#content .selectWelcome{
+    float:left;
+    text-align: left;
+    margin-left: 20px;
+    width:598px;
+}
+#content .selectWelcome .title{
+    font-size:16px;
+    font-weight:bold;
+    display:block;
+    margin:5px 0px;
+}
+#content .selectWelcome .tip{
+    font-size:12px;
+    clear:both;
+    display:block;
+}
+#content .selectWelcome .uploadPic{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#content .selectWelcome .uploadPic img{
+    vertical-align: middle;
+}
+#content .selectWelcome .selectTemplate li{
+    display:inline-block;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 16px;
+}
+#content .selectWelcome .selectTemplate{
+    margin-bottom: 15px;
+    cursor:pointer;
+}
+#content .selectWelcome .addBox{
+    width:83px;
+    height:83px;
+    border: 1px solid gainsboro;
+    background-color: #e5e5e5;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 40px;
+}
+#content .selectWelcome .addItem .editButton{
+    text-align: center;
+}
+#content .selectWelcome .addItem li{
+    width:85px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+input{ vertical-align:middle; margin:0; padding:0}
+.file-box{ position:relative;width:544px;display: inline-block;}
+.txt{ height:30px; border:1px solid #cdcdcd; width:280px;font-size: 12px;margin-left: -8px;}
+.btn{
+    background: #fff url('../img/design/scan.PNG') no-repeat 0px 0px;
+    height:31px;
+    width:81px;
+    border:none;
+}
+.file{
+    position:absolute;
+    top:0;
+    right:93px;
+    height:34px;
+    filter:alpha(opacity:0);
+    opacity: 0;
+    width:82px
+}
+/**************欢迎页整体样式 end******************/
+
+
+
+/**************模板样式 begin******************/
+.phonePreview .template{
+    width: 316px;
+    height: 482px;
+    border: 1px solid black;
+    position: absolute;
+    top: 41px;
+    left: 26px;
+}
+
+.phonePreview .template1{
+    display:none;
+    background-color: #000;
+}
+.phonePreview .template1 ul li{
+    width: 102px;
+    display: inline-block;
+    background-color: white;
+    float: left;
+    margin-right: 3px;
+}
+.phonePreview .template1 ul li .logo{
+    background-color: #FFDA2D;
+    height: 223px;
+}
+.phonePreview .template1 ul li .logo img{
+    display: inline-block;
+    width: 86px;
+    height: 74px;
+    margin-top: 63px;
+}
+.phonePreview .template1 ul li .bb-pic{
+    height: 110px;
+    border-bottom: 3px solid black;
+    background-color: #234567;
+}
+.phonePreview .copyright{
+    color:#a9a9a9;
+    font-family:Microsoft YaHei;
+    margin-top: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 463px;
+    width: 316px;
+}
+
+.phonePreview .template2{
+    background-color: #139620;
+    overflow: hidden;
+}
+.phonePreview .template2 .pic-box{
+    border:2px solid #fff;
+    width:110px;
+    height:110px;
+    display: inline-block;
+}
+.phonePreview .template2 .pic-box1{
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    z-index: 10;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+}
+.phonePreview .template2 .pic-box2{
+    position: absolute;
+    top: -23px;
+    left: 88px;
+    z-index: 11;
+    transform: rotate(181deg);
+    -ms-transform: rotate(181deg);
+    -moz-transform: rotate(181deg);
+    -webkit-transform: rotate(181deg);
+    -o-transform: rotate(181deg);
+}
+.phonePreview .template2 .pic-box3{
+    position: absolute;
+    top: -49px;
+    left: 169px;
+    z-index: 12;
+    transform: rotate(178deg);
+    -ms-transform: rotate(178deg);
+    -moz-transform: rotate(178deg);
+    -webkit-transform: rotate(178deg);
+    -o-transform: rotate(178deg);
+    background-color: black;
+}
+.phonePreview .template2 .pic-box4{
+    position: absolute;
+    top: -26px;
+    left: 223px;
+    z-index: 11;
+    transform: rotate(178deg);
+    -ms-transform: rotate(178deg);
+    -moz-transform: rotate(178deg);
+    -webkit-transform: rotate(178deg);
+    -o-transform: rotate(178deg);
+    background-color: #D15353;
+}
+.phonePreview .template2 .pic-box5{
+    position: absolute;
+    top: 13px;
+    left: 163px;
+    z-index: 10;
+    transform: rotate(181deg);
+    -ms-transform: rotate(181deg);
+    -moz-transform: rotate(181deg);
+    -webkit-transform: rotate(181deg);
+    -o-transform: rotate(181deg);
+    background-color: #234567;
+}
+
+
+
+.phonePreview .template3{
+    display:none;
+}
+.phonePreview .template3 .logo{
+    height:136px;
+    background-color: #d82092;
+}
+.phonePreview .template3 ul{
+    margin-left: -3px;
+}
+.phonePreview .template3 ul li{
+    width: 78px;
+    height: 82px;
+    border: 1px solid white;
+    display: inline-block;
+    background-color: #234567;
+    margin-right: -5px;
+    margin-top: -2px;
+}
+
+
+.phonePreview .template4{
+    display:none;
+}
+.phonePreview .template4 .logo{
+    height:110px;
+    background-color: #7044a1;
+}
+.phonePreview .template4 .main-pic{
+    height:353px;
+}
+
+
+
+/**************模板样式 end******************/
