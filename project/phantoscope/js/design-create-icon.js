@@ -8,12 +8,13 @@ YUI().use('node','node-event-delegate',function(Y){
     var nColorList = Y.one('.bgcolor');
     var nSelectSize = Y.one('.selectSize');
     var nPreviewBtn = Y.one('.preview-btn');
-
+    var nBkgColor = Y.one('.sizeBox').getStyle('background-color');
 
     nColorList.delegate('click',function(){
         Y.all('.selectC').setStyle('border','5px solid transparent');
         this.setStyle('border','5px solid #ff6600');
         Y.all('.sizeBox').setStyle('background-color',this.getStyle('background-color'));
+        Y.one('#input-value').setAttribute('value',this.getStyle('background-color'));
     },'.selectC')
     nSelectSize.delegate("click",function(){
         Y.all('.sizeItem').setStyle('border','3px solid gainsboro');
