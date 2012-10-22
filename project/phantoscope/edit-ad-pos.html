@@ -35,25 +35,76 @@
         <section class="phonePreview">
             <div class="preview-content">
                 <div class="P_home"><img src="./img/edit/phone_home.PNG" /></div>
-                <div class="P_ad" id="P_ad"><img src="./img/edit/phone_ad.PNG" /></div>
+                <div class="P_ad" id="P_ad">
+                    <img src="./img/edit/phone_ad.PNG" />
+                    <div class="P_ad_mask"></div>
+                    <div class="P_ad_overlay">
+                        <div class="title">广告位</div>
+                        <div class="tip">这是一个广告位，支持1-5张广告图轮流展示</div>
+                        <div class="tip">图片格式：jpg，png</div>
+                        <div class="tip">图片尺寸：320*220</div>
+                        <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                    </div>
+                </div>
                 <ul class="P_box" id="P_box">
                     <li class="item-box item-title item-box1">
                         <div class="subject">古典复兴</div>
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
                     </li>
                     <li class="item-box item-bb">
                         <img src="./img/edit/pic1.PNG" />
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
                     </li>
-                    <li class="item-box item-bb"></li>
-                    <li class="item-box item-bb"></li>
-                    <li class="item-box item-bb"></li>
+                    <li class="item-box item-bb">
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
+                    </li>
+                    <li class="item-box item-bb">
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
+                    </li>
+                    <li class="item-box item-bb">
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
+                    </li>
                     <li class="item-box item-title item-box6">
                         <div class="subject">淘我喜欢</div>
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
                     </li>
-                    <li class="item-box item-bb"></li>
+                    <li class="item-box item-bb">
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
+                    </li>
                     <li class="item-box item-title item-box8">
                         <div class="subject">文艺小资</div>
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
                     </li>
-                    <li class="item-box item-bb"></li>
+                    <li class="item-box item-bb">
+                        <div class="P_box_mask"></div>
+                        <div class="P_box_overlay">
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
+                    </li>
                 </ul>
                 <div class="P_new">
                     <div class="P_new_title">——————— 宝贝上新 ———————</div>
@@ -64,6 +115,13 @@
                         <li class="P_new_item"></li>
                         <li class="P_new_item"></li>
                         <li class="P_new_item"></li>
+                        <div class="P_new_mask"></div>
+                        <div class="P_new_overlay">
+                            <div class="title">宝贝上新</div>
+                            <div class="tip">店内最新上架的6个宝贝会显示在这里</div>
+                            <div class="tip">如果不需要，你可以去掉这个模块</div>
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
                     </ul>
                 </div>
                 <div class="P_hot">
@@ -140,8 +198,12 @@
             </ul>
             <div id="ad-save" class="nSave"><img src="./img/edit/save.PNG" /></div>
             <div class="add-ad" id="add-ad">
-                <div class="">上传图片：&nbsp&nbsp<input type="file" /> </div>
-                <div class="">编辑标题：&nbsp&nbsp<input type="text" placeholder="不超过6个字哦！"/> </div>
+                <div class="file-box">上传图片：&nbsp&nbsp
+                    <input type='text' name='textfield' id='textfield' class='txt' placeholder="图片要求：透明底色；尺寸：180*180；格式png" />
+                    <input type='button' class='btn' value='' />
+                    <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                </div>
+                <div class="">编辑标题：&nbsp<input size="36" type="text" placeholder="不超过6个字哦！"/> </div>
                 <div class="">添加链接：
                     <select id="add-link-select">
                         <option value="1">选择链接类型</option>
@@ -153,14 +215,14 @@
                 </div>
                 <div class="store-product" id="store-product">
                     <div class="search-input">搜索宝贝：
-                        <input type="text" />
+                        <input type="text" placeholder="更多宝贝请搜索..."/>
                         <img src="./img/edit/search.PNG" />
                     </div>
                     <ul class="box-left" id="box-left">
                         <li class="item-sub">
                             <div class="item-sub-pic"><img src="./img/edit/item-pic.PNG" /></div>
                             <div class="item-sub-dscptn">
-                                <div class="title">2012秋款新品欧美复古风</div>
+                                <div class="title" title="2012秋款新品欧美复古风d">2012秋款新品欧美复古风d</div>
                                 <div class="price">￥59.00</div>
                             </div>
                         </li>

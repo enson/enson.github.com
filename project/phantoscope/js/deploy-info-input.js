@@ -55,4 +55,18 @@ YUI().use('node','event','node-event-delegate',function(Y){
         //alert(this.get('value'));
         this.previous('.txt').setAttribute('value',this.get("value"));
     },'.file')
+
+    //判断有无上传文件
+    Y.one('.a-upload-pic').delegate('click',function(){
+        var nValue = this.previous('.txt').get('value');
+        if(!nValue){
+            alert('亲，你还没有上传截图哦！');
+        };
+    },'.submit-btn')
+    Y.one('.i-upload-pic').delegate('click',function(){
+        var nValue = this.previous('.txt').get('value');
+        if(!nValue){
+            alert('亲，你还没有上传截图哦！');
+        };
+    },'.submit-btn')
 });

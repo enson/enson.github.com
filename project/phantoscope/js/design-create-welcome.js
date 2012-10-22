@@ -12,34 +12,28 @@ YUI().use('node','node-event-delegate',function(Y){
 
 
     Y.one('.selectTemplate').delegate('click',function(){
-        //Y.all('.radio').setAttribute('checked','disabled');
-        this.one('.radio').setAttribute('checked','checked');
-        //Y.all('.template').setStyle('display','none');
+        Y.all('.radio').set('checked',false);
+        this.one('.radio').set('checked',true);
     },'.tem-item')
 
     //点击选择不同的模板
     Y.one('.selectTemplate').delegate('click',function(){
-        this.one('.radio').setAttribute('checked','checked');
         Y.all('.template').setStyle('display','none');
         Y.one('#template1').setStyle('display','block');
     },'.tem-item1')
     Y.one('.selectTemplate').delegate('click',function(){
-        this.one('.radio').setAttribute('checked','checked');
         Y.all('.template').setStyle('display','none');
         Y.one('#template2').setStyle('display','block');
     },'.tem-item2')
     Y.one('.selectTemplate').delegate('click',function(){
-        this.one('.radio').setAttribute('checked','checked');
         Y.all('.template').setStyle('display','none');
         Y.one('#template3').setStyle('display','block');
     },'.tem-item3')
     Y.one('.selectTemplate').delegate('click',function(){
-        this.one('.radio').setAttribute('checked','checked');
         Y.all('.template').setStyle('display','none');
         Y.one('#template4').setStyle('display','block');
     },'.tem-item4')
     Y.one('.selectTemplate').delegate('click',function(){
-        this.one('.radio').setAttribute('checked','checked');
         Y.all('.template').setStyle('display','none');
         Y.one('#template5').setStyle('display','block');
     },'.tem-item5')
@@ -57,18 +51,18 @@ YUI().use('node','node-event-delegate',function(Y){
     //点击添加宝贝图片
     Y.one('.addItem').delegate('change',function(){
         var img = '<img src="'+this.get('value')+'"/>';
+        var btnChange = '<img src="./img/design/edit.PNG" />';
         this.previous('.addBox').setContent(img);
+        this.previous('.editButton').setContent(btnChange);
     },'.addBox-file')
     //点击预览宝贝图片
     nPicPreview.on('click',function(){
-        if(Y.one('.addBox1 img').getAttribute('src')){
+        if(Y.one('.addBox1').hasChild('img')){
             Y.all('.pic-box1 img').setAttribute('src', Y.one('.addBox1 img').getAttribute('src'));
         }else{
             alert('亲，你还没有上传图片哦！');
         }
     })
-
-
 
 
 });

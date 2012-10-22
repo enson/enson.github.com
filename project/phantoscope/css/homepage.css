@@ -20,7 +20,9 @@
     float: right;
     margin-right: 100px;
     margin-top: 88px;
+    position: relative;
 }
+/*
 #content .login .login-box .input{
     margin-right: -151px;
     margin-top: -9px;
@@ -33,12 +35,14 @@
     background:transparent;
     border:none;
 }
+*/
 #content .login .button{
-    margin-right: -150px;
-    margin-top: -10px;
+    position: absolute;
+    top: 168px;
+    left: -69px;
 }
 #content .login .button span{
-    margin-left: 8px;
+    margin-left: 32px;
     font-size: 17px;
     color: white;
     text-decoration: underline;

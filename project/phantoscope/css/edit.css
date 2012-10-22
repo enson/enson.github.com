@@ -75,7 +75,6 @@
     width:240px;
     height:477px;
     border: 1px solid gainsboro;
-    border-color: #cccccc;
     display: inline-block;
     background-color: #fff;
     margin-left: 14px;
@@ -89,9 +88,9 @@
     height: 68px;
     padding-left: 6px;
     padding-top: 6px;
-    border-bottom: 1px solid gainsboro;
-    border-color: #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
     cursor:pointer;
+    position: relative;
 }
 .item-sub-focus{
     background-color: #d0c3a3;
@@ -100,14 +99,22 @@
 #content .store-product .item-sub .item-sub-pic{
     display: inline-block;
 }
+#content  .store-product .item-sub-pic img{
+    width:57px;
+    height:57px;
+}
 #content .store-product .item-sub .item-sub-dscptn{
     display: inline-block;
+    margin-left: 3px;
 }
 #content .store-product .item-sub .title{
     font-size: 14px;
     font-weight: normal;
     text-overflow:ellipsis;
-    overflow-x: hidden;
+    position: absolute;
+    top: 10px;
+    height: 20px;
+    overflow: hidden;
 }
 #content .store-product .item-sub .price{
     font-size: 12px;
@@ -129,7 +136,6 @@
     width:240px;
     height:477px;
     border: 1px solid gainsboro;
-    border-color: #cccccc;
     display: inline-block;
     background-color: #fff;
     margin-left: -4px;

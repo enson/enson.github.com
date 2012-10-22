@@ -33,15 +33,15 @@
     display:inline-block;
     font-size: 14px;
     text-align: center;
-    margin-right: 16px;
+    margin-right: 27px;
 }
 #content .selectWelcome .selectTemplate{
     margin-bottom: 15px;
     cursor:pointer;
 }
 #content .selectWelcome .addBox{
-    width:83px;
-    height:83px;
+    width:66px;
+    height:66px;
     border: 1px solid gainsboro;
     background-color: #e5e5e5;
     margin-bottom: 8px;
@@ -56,20 +56,20 @@
     position: relative;
 }
 #content .selectWelcome .addItem .box-item .addBox img{
-    width:85px;
-    height:85px;
+    width:65px;
+    height:65px;
 }
 #content .selectWelcome .addItem .box-item .addBox-file{
     position: absolute;
-    top: 97px;
+    top: 82px;
     right: 0px;
     height: 34px;
     filter: alpha(opacity:0);
     opacity: 0;
-    width: 82px;
+    width: 64px;
 }
 #content .selectWelcome .addItem li{
-    width: 86px;
+    width: 66px;
     display: inline-block;
     margin-right: 3px;
 }

@@ -5,7 +5,7 @@
  * Description:内容编辑页面的JS交互逻辑
  */
 
-YUI().use('node','node-event-delegate',function(Y){
+YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
     var nAddButton = Y.one('#add_ad_button');
     var nCancelButton = Y.one('#cancel-button');
     var nLinkSelect = Y.one('#add-link-select');
@@ -121,6 +121,32 @@ YUI().use('node','node-event-delegate',function(Y){
         nHotSell.setStyle('display','block');
     })
 
+    //鼠标移上各个图标的浮层提示
+    nPAd.on('mouseenter',function(){
+        Y.one('.P_ad_mask').setStyle('display','block');
+        Y.one('.P_ad_overlay').setStyle('display','block');
+    })
+    nPAd.on('mouseleave',function(){
+        Y.one('.P_ad_mask').setStyle('display','none');
+        Y.one('.P_ad_overlay').setStyle('display','none');
+    })
+    nPBox.delegate('mouseenter',function(){
+        Y.all('.item-title .P_box_mask').setStyle('display','block');
+        Y.all('.item-title .P_box_overlay').setStyle('display','block');
+    },'.item-title');
+    nPBox.delegate('mouseleave',function(){
+        Y.all('.item-title .P_box_mask').setStyle('display','none');
+        Y.all('.item-title .P_box_overlay').setStyle('display','none');
+    },'.item-title');
+    nPBox.delegate('mouseenter',function(){
+        Y.all('.item-bb .P_box_mask').setStyle('display','block');
+        Y.all('.item-bb .P_box_overlay').setStyle('display','block');
+    },'.item-bb');
+    nPBox.delegate('mouseleave',function(){
+        Y.all('.item-bb .P_box_mask').setStyle('display','none');
+        Y.all('.item-bb .P_box_overlay').setStyle('display','none');
+    },'.item-bb');
+
 
     //判断广告图片数量，继而执行进入添加广告功能页面
     function checkAdAmount(){
@@ -171,6 +197,7 @@ YUI().use('node','node-event-delegate',function(Y){
             Y.one('#keyword-input').setStyle('display','none');
             Y.one('#store-item').setStyle('display','none');
             Y.one('#store-keyword-search').setStyle('display','none');
+            importBb();
         }else if(nLinkSelect.get('selectedIndex') == 2){
             Y.one('#store-product').setStyle('display','none');
             Y.one('#keyword-input').setStyle('display','block');
@@ -223,37 +250,51 @@ YUI().use('node','node-event-delegate',function(Y){
         nAddButton.setStyle('display','block');
     });
 
-    //上下移动的图标变化
-    /*
-    function shiftIcon(){
-        for(var i= 0;i < nAdArrayLength;i++){
-            var t = nAdListArray.item(i);
-            if(t && t ==nAdListArray.item(0)){
+    //店铺宝贝框引入宝贝列表
+    function importBb(){
+        var url = './data2.jsonp?'+
+                  '&callback=method';
 
+        window.method = function(data){
+            var items = data.itemsArray,len = items.length;
+            var itemList = '';
+            for(var i=0;i < len;i++){
+                itemList += '<li class="item-sub">'+
+                                 '<div class="item-sub-pic"><img src="'+items[i].picUrl+'" /></div>'+
+                                 '<div class="item-sub-dscptn">'+
+                                 '<div class="title" title="'+items[i].title+'">'+items[i].title+'</div>'+
+                                    '<div class="price">￥'+items[i].salePrice+'</div>'+
+                                 '</div>'+
+                            '</li>' ;
             }
+            Y.one('.box-left').setContent(itemList);
         }
-        nAdListArray.item(0)
-    }
-    */
+        Y.jsonp(url, method);
+    };
+
 
     //店铺宝贝框添加移除功能
     nBoxLeft.delegate('click',function(){
-        this.ancestor('.item-sub').addClass('item-sub-focus');
-    },'.item-sub-dscptn');
+        Y.all('.box-left .item-sub').removeClass('item-sub-focus');
+        this.addClass('item-sub-focus');
+        //importBb();
+    },'.item-sub');
     nBoxLeft.delegate('dblclick',function(){
-        this.ancestor('.item-sub').removeClass('item-sub-focus');
-    },'.item-sub-dscptn');
+        move(nBoxLeft,nBoxRight);
+    },'.item-sub');
     nBoxRight.delegate('click',function(){
-        this.ancestor('.item-sub').removeClass('item-sub-focus');
-    },'.item-sub-dscptn');
+        Y.all('.box-right .item-sub').removeClass('item-sub-focus');
+        this.addClass('item-sub-focus');
+    },'.item-sub');
     nBoxRight.delegate('dblclick',function(){
-        this.ancestor('.item-sub').addClass('item-sub-focus');
-    },'.item-sub-dscptn');
+        move(nBoxRight,nBoxLeft);
+    },'.item-sub');
 
     function move(src,des){
         var nItemListArray = src.all('.item-sub');
         for(var i=0;i < nItemListArray.size();i++){
             if(nItemListArray.item(i).hasClass('item-sub-focus')){
+                nItemListArray.item(i).removeClass('item-sub-focus');
                 des.append(nItemListArray.item(i--));
                break;
             }
@@ -362,6 +403,12 @@ YUI().use('node','node-event-delegate',function(Y){
     Y.one('.select-bb').on('click',function(){
         nHotStoreBb.setStyle('display','block');
     })
+
+    //取消屏蔽宝贝功能
+    Y.one('.hot-sell .disable-box').delegate('click',function(){
+        this.ancestor('.text').remove();
+    },'.cancel-dis')
+
 
 });
 

@@ -8,7 +8,6 @@ YUI().use('node','node-event-delegate',function(Y){
     var nColorList = Y.one('.bgcolor');
     var nSelectSize = Y.one('.selectSize');
     var nPreviewBtn = Y.one('.preview-btn');
-    var nBkgColor = Y.one('.sizeBox').getStyle('background-color');
 
     nColorList.delegate('click',function(){
         Y.all('.selectC').setStyle('border','5px solid transparent');
