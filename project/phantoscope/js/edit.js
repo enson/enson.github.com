@@ -498,42 +498,45 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
         if(!Y.one('#bb-store-product .box-right').one('.item-sub')){
             alert("亲，你还没有选择宝贝哦！")
         }else{
-            Y.one('#bb-store-product').setStyle('display','none');
-            nImportBb.setStyle('display','block');
-            nBbList.setStyle('display','block');
-            nBbAdd.setStyle('display','none');
-            nBbCancel.setStyle('display','none');
-            Y.one('#bb-save').setStyle('display','block');
-
             var bbList = "";
             var selectList = Y.all('#bb-store-product .box-right .item-sub');
-            for( var i= 0;i< selectList.size();i++){
-                Y.log(selectList.item(0));
-                var j=i+1;
-                var picUrl = selectList.item(i).one('.item-sub-pic img').getAttribute('src');
-                var title = selectList.item(i).one('.item-sub-dscptn .title').getAttribute('title');
-                var price = selectList.item(i).one('.item-sub-dscptn .price').getContent();
-                bbList += '<div class="bb-num bb-num'+j+'">'+j+'</div>'+
-                          '<li class="bb-item">'+
-                              '<div class="bb-item-pic"><img src="'+picUrl+'" /></div>'+
-                              '<div class="bb-item-dscptn">'+
-                                  '<div class="title" title="'+title+'">'+title+'</div>'+
-                                  '<div class="price">'+price+'</div>'+
-                              '</div>'+
-                              '<div class="bb-item-button">'+
-                                  '<button class="modifyBb"><img src="./img/edit/modify-bb.PNG" /></button>'+
-                              '</div>'+
-                              '<div class="bb-item-shift">'+
-                                  '<div class="item-shift-box">'+
-                                      '<div class="item-shift-up2"></div>'+
+            if(selectList.size() > 6){
+                alert("亲，只能添加六个宝贝哦！")
+            }else{
+                for( var i= 0;i< selectList.size();i++){
+                    var j=i+1;
+                    var picUrl = selectList.item(i).one('.item-sub-pic img').getAttribute('src');
+                    var title = selectList.item(i).one('.item-sub-dscptn .title').getAttribute('title');
+                    var price = selectList.item(i).one('.item-sub-dscptn .price').getContent();
+                    bbList += '<div class="bb-num bb-num'+j+'">'+j+'</div>'+
+                              '<li class="bb-item">'+
+                                  '<div class="bb-item-pic"><img src="'+picUrl+'" /></div>'+
+                                  '<div class="bb-item-dscptn">'+
+                                      '<div class="title" title="'+title+'">'+title+'</div>'+
+                                      '<div class="price">'+price+'</div>'+
                                   '</div>'+
-                                  '<div class="item-shift-box">'+
-                                      '<div class="item-shift-down2"></div>'+
+                                  '<div class="bb-item-button">'+
+                                      '<button class="modifyBb"><img src="./img/edit/modify-bb.PNG" /></button>'+
                                   '</div>'+
-                              '</div>'+
-                          '</li>'
+                                  '<div class="bb-item-shift">'+
+                                      '<div class="item-shift-box">'+
+                                          '<div class="item-shift-up2"></div>'+
+                                      '</div>'+
+                                      '<div class="item-shift-box">'+
+                                          '<div class="item-shift-down2"></div>'+
+                                      '</div>'+
+                                  '</div>'+
+                              '</li>'
+                }
+                nBbList.setContent(bbList);
+                Y.one('#bb-store-product').setStyle('display','none');
+                nImportBb.setStyle('display','block');
+                nBbList.setStyle('display','block');
+                nBbAdd.setStyle('display','none');
+                nBbCancel.setStyle('display','none');
+                Y.one('#bb-save').setStyle('display','block');
             }
-            nBbList.setContent(bbList);
+
         }
     })
 
