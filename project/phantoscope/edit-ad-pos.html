@@ -133,6 +133,14 @@
                         <li class="P_hot_item"></li>
                         <li class="P_hot_item"></li>
                         <li class="P_hot_item"></li>
+                        <div class="P_hot_mask"></div>
+                        <div class="P_hot_overlay">
+                            <div class="title">热销TOP</div>
+                            <div class="tip">店内销量最高的6个宝贝会自动出现在这里，</div>
+                            <div class="tip">你可以选择屏蔽不希望出现在模块里的宝贝，</div>
+                            <div class="tip">如“补差价专用宝贝”</div>
+                            <div class="edit-btn"><img src="./img/common/edit.PNG"></div>
+                        </div>
                     </ul>
                 </div>
                 <div class="P_footer"><img src="./img/edit/phone_tabbar.PNG" /></div>
@@ -151,7 +159,7 @@
                     <div class="ad-item-pic"><img src="./img/edit/ad_item_pic1.PNG" /></div>
                     <div class="ad-item-button">
                         <img src="./img/edit/check-link.PNG" />
-                        <img src="./img/edit/edit.PNG" />
+                        <button class="editAd"><img src="./img/edit/edit.PNG" /></button>
                         <button id="delete_ad_item" class="deleteAd"><img src="./img/edit/delete.PNG" /></button>
                     </div>
                     <div class="ad-item-shift">
@@ -167,7 +175,7 @@
                     <div class="ad-item-pic"><img src="./img/edit/phone_ad.PNG" /></div>
                     <div class="ad-item-button">
                         <img src="./img/edit/check-link.PNG" />
-                        <img src="./img/edit/edit.PNG" />
+                        <button class="editAd"><img src="./img/edit/edit.PNG" /></button>
                         <button class="deleteAd"><img src="./img/edit/delete.PNG" /></button>
                     </div>
                     <div class="ad-item-shift">
@@ -183,7 +191,7 @@
                     <div class="ad-item-pic"><img src="./img/edit/ad_item_pic1.PNG" /></div>
                     <div class="ad-item-button">
                         <img src="./img/edit/check-link.PNG" />
-                        <img src="./img/edit/edit.PNG" />
+                        <button class="editAd"><img src="./img/edit/edit.PNG" /></button>
                         <button class="deleteAd"><img src="./img/edit/delete.PNG" /></button>
                     </div>
                     <div class="ad-item-shift">
@@ -247,8 +255,6 @@
                                 <div class="price">￥59.00</div>
                             </div>
                         </li>
-
-
                     </ul>
                     <div class="button">
                         <div class="add-transfer-button" id="add-transfer-button"><img src="./img/edit/add.PNG" /></div>
@@ -275,8 +281,9 @@
                         </select>
                     </div>
                 </div>
-                <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    <span id="add-ad-button"><img src="./img/edit/add-button.PNG" /></span>&nbsp&nbsp&nbsp&nbsp&nbsp
+                <div class="add-submit-btn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="submit" id="add-ad-button" class="add-btn" value="" />
+                    <span><img src="./img/edit/add-button.PNG" /></span>&nbsp&nbsp&nbsp&nbsp&nbsp
                     <span id="cancel-button"><img src="./img/edit/cancel-button.PNG" /></span>
                 </div>
             </div>
@@ -533,7 +540,7 @@
                 </ul>
                 <div class="button">
                     <div class="add-transfer-button" id=""><img src="./img/edit/add.PNG" /></div>
-                    <div class="add-transfer-button" id=""><img src="./img/edit/transfer-out.PNG" /></div>
+                    <div class="add-transfer-button2" id=""><img src="./img/edit/transfer-out.PNG" /></div>
                 </div>
                 <ul class="box-right" id=""></ul>
             </div>
@@ -610,7 +617,7 @@
                 </ul>
                 <div class="button">
                     <div class="add-transfer-button" id=""><img src="./img/edit/add.PNG" /></div>
-                    <div class="add-transfer-button" id=""><img src="./img/edit/transfer-out.PNG" /></div>
+                    <div class="add-transfer-button add-transfer-button2" id=""><img src="./img/edit/transfer-out.PNG" /></div>
                 </div>
                 <ul class="box-right" id=""></ul>
                 <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -623,7 +630,7 @@
 
     </div>
     <div class="nextStep">
-        <a href=""><img src="./img/common/done.PNG" /></a>
+        <input class="done-submit" type="submit" value=""/>
     </div>
     <footer id="footer" align="center">
         <img src="./img/homepage/footer-logo.PNG" />

@@ -7,60 +7,34 @@
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
     <link rel="stylesheet" href="./css/homepage.css" />
     <link rel="stylesheet" href="./css/main.css" />
-
-    <style type="text/css">
-        #content{
-            text-align: left;
-            margin: 0 auto;
-            width: 658px;
-            margin-top: 15px;
-            height:550px;
-            position: relative;
-        }
-        #content .title{
-            font-size: 16px;
-            font-weight: bold;
-            margin-top: 5px;
-        }
-        #content div{
-            margin-bottom:10px ;
-        }
-        #content table{
-            border:1px solid gainsboro;
-            width:658px;
-            text-align: center;
-        }
-        #content table th{
-            height:55px;
-            font-size: 16px;
-        }
-        #content table td{
-            height:38px;
-            font-size: 14px;
-        }
-        #content table .app-name{
-            font-weight:bold;
-        }
-        #content table .manage{
-            color:#3b639f;
-            text-decoration: underline;
-            cursor:pointer;
-        }
-        #body{
-            text-align:center;
-        }
-        #content .add-app-btn{
-            position: absolute;
-            left: 540px;
-            top: 1px;
-            cursor:pointer;
-        }
-    </style>
-
-
+    <link rel="stylesheet" href="./css/login-admin2.css" />
+    <script type="text/javascript"
+            src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
+    </script>
+    <script type="text/javascript" src="./js/login-admin2.js"></script>
 </head>
 <body>
 <div id="body" >
+    <div id="mask-overlay" class="mask-overlay"></div>
+    <div class="app-id-dialog" id="app-id-dialog" >
+        <div class="tip-text">请先填写该客户端的APPID，并上传证书文件</div>
+        <div class="tip-text">很重要！请务必准确填写</div>
+        <div class="input-text"><span class="required">*</span>AppId:&nbsp&nbsp&nbsp&nbsp
+            <input type="text" class='txt'/></div>
+        <div class="file-box"><span class="required">*</span>上传证书:
+            <input type='text' name='textfield' id="textfield" class='txt' />
+            <input type='button' class='btn' value='' />
+            <input type="file" name="fileField" class="file" size="28" onchange="document.getElementById('textfield').value=this.value" />
+            <input type="submit" name="submit" class="submit-btn" value="" />
+            <span class="upload-status">上传成功</span>
+        </div>
+        <div class="">正在上传，请稍侯...</div>
+        <div class=""></div>
+        <div class="app-btn">
+            <input type="button" class="a-btn confirm" value="确定">
+            <div class="a-btn back">返回</div>
+        </div>
+    </div>
     <header id="header">
         <div class="header-text">
             Welcome,<span id="user-name"> $!username </span>&nbsp&nbsp<a href="#">退出</a>
@@ -93,7 +67,6 @@
 
     </div>
     <footer id="footer" align="center">
-        <!--<img src="./img/homepage/footer-logo.PNG" />-->
         <img src="http://img04.taobaocdn.com/tps/i4/T1G9vVXdtdXXcDg1Zc-1001-54.png" />
     </footer>
 

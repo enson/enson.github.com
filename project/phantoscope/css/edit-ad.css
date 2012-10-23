@@ -22,6 +22,21 @@ input{ vertical-align:middle; margin:0; padding:0}
 /****************end 上传文件框样式****************/
 
 /****************begin 广告位样式****************/
+.add-submit-btn{
+    position: relative;
+}
+.add-btn{
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 86px;
+    width: 68px;
+    height: 31px;
+    background: white url('../img/edit/add-button.PNG') no-repeat 0px -1px;
+    border: none;
+    cursor: pointer;
+}
+
 #content .phonePreview .preview-content{
     width:318px;
     height:478px;
@@ -159,6 +174,41 @@ input{ vertical-align:middle; margin:0; padding:0}
 }
 #content .phonePreview .preview-content .P_new .P_new_bb{
     border:2px solid #fff;
+    position: relative;
+    cursor:pointer;
+}
+#content .phonePreview .preview-content .P_new .P_new_bb .P_new_mask{
+    background-color:#000;
+    position: absolute;
+    z-index: 20;
+    opacity: 0.4;
+    overflow: hidden;
+    width:318px;
+    height:458px;
+    top:0;
+    left:0;
+    display: none;
+}
+#content .phonePreview .preview-content .P_new .P_new_bb .P_new_overlay{
+    position: absolute;
+    z-index: 21;
+    top: 35px;
+    left: 8px;
+    text-align: left;
+    display: none;
+    color: #fff;
+}
+#content .phonePreview .preview-content .P_new .P_new_bb .P_new_overlay .title{
+    font-size: 16px;
+    font-weight: bold;
+}
+#content .phonePreview .preview-content .P_new .P_new_bb .P_new_overlay .tip{
+    font-size: 14px;
+}
+#content .phonePreview .preview-content .P_new .P_new_bb .P_new_overlay .edit-btn{
+    position: absolute;
+    top: -7px;
+    left: 200px;
 }
 #content .phonePreview .preview-content .P_new .P_new_bb:hover{
     border:2px solid #ff6600;
@@ -185,9 +235,44 @@ input{ vertical-align:middle; margin:0; padding:0}
 }
 #content .phonePreview .preview-content .P_hot .P_hot_bb{
     border:2px solid #fff;
+    position: relative;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_bb .P_hot_mask{
+    background-color:#000;
+    position: absolute;
+    z-index: 20;
+    opacity: 0.4;
+    overflow: hidden;
+    width:318px;
+    height:260px;
+    top:0;
+    left:0;
+    display: none;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_bb .P_hot_overlay{
+    position: absolute;
+    z-index: 21;
+    top: 35px;
+    left: 8px;
+    text-align: left;
+    display: none;
+    color: #fff;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_bb .P_hot_overlay .title{
+    font-size: 16px;
+    font-weight: bold;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_bb .P_hot_overlay .tip{
+    font-size: 14px;
+}
+#content .phonePreview .preview-content .P_hot .P_hot_bb .P_hot_overlay .edit-btn{
+    position: absolute;
+    top: -7px;
+    left: 200px;
 }
 #content .phonePreview .preview-content .P_hot .P_hot_bb:hover{
     border:2px solid #ff6600;
+    cursor:pointer;
 }
 #content .phonePreview .preview-content .P_hot .P_hot_item{
     width:90px;
@@ -207,6 +292,7 @@ input{ vertical-align:middle; margin:0; padding:0}
     margin-left: 20px;
     width:598px;
     position: relative;
+    display: none;
 }
 #content .ad-pos .ad-list{
     width:598px;
@@ -531,23 +617,28 @@ input{ vertical-align:middle; margin:0; padding:0}
     height:80px;
     position: absolute;
 }
-#content .ThreeSubject .bb-list .bb-num1{
+#content .six-bb .bb-list .bb-num1{
     position: absolute;
 }
-#content .ThreeSubject .bb-list .bb-num2{
+#content .six-bb .bb-list .bb-num2{
     top:90px;
+    left:0px;
 }
-#content .ThreeSubject .bb-list .bb-num3{
+#content .six-bb .bb-list .bb-num3{
     top:180px;
+    left:0px;
 }
-#content .ThreeSubject .bb-list .bb-num4{
+#content .six-bb .bb-list .bb-num4{
     top:270px;
+    left:0px;
 }
-#content .ThreeSubject .bb-list .bb-num5{
+#content .six-bb .bb-list .bb-num5{
     top:360px;
+    left:0px;
 }
-#content .ThreeSubject .bb-list .bb-num6{
-    top:420px;
+#content .six-bb .bb-list .bb-num6{
+    top:450px;
+    left:0px;
 }
 #content .six-bb .bb-list .bb-item .bb-item-pic{
     display:inline-block;
@@ -557,16 +648,22 @@ input{ vertical-align:middle; margin:0; padding:0}
     width:59px;
     height:59px;
     border: 1px solid gainsboro;
-    background-color: #fff;
+}
+#content .six-bb .bb-list .bb-item .bb-item-pic img{
+    width:57px;
+    height:57px;
 }
 #content .six-bb .bb-list .bb-item .bb-item-dscptn{
     display:inline-block;
     margin-left: 12px;
     width: 280px;
+    overflow: hidden;
+    white-space:nowrap;
 }
 #content .six-bb .bb-list .bb-item .title{
     font-size: 14px;
     font-weight: normal;
+    text-overflow: ellipsis;
 }
 #content .six-bb .bb-list .bb-item .price{
     font-size: 12px;
