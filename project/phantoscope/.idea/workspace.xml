@@ -49,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-channel.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="edit-channel.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/edit-channel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="73" selection-start="5298" selection-end="5316" vertical-scroll-proportion="-3.9230769">
+            <state line="106" column="73" selection-start="5298" selection-end="5316" vertical-scroll-proportion="2.8689408">
               <folding />
             </state>
           </provider>
@@ -67,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-channel.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit-channel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.22818792">
+            <state line="19" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +90,6 @@
         <option value="$PROJECT_DIR$/design-page-blendent.html" />
         <option value="$PROJECT_DIR$/js/login-admin2.js" />
         <option value="$PROJECT_DIR$/login-admin2.html" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/deploy-preview.html" />
         <option value="$PROJECT_DIR$/css/login-admin2.css" />
         <option value="$PROJECT_DIR$/home-page.html" />
@@ -102,6 +101,7 @@
         <option value="$PROJECT_DIR$/edit-channel.html" />
         <option value="$PROJECT_DIR$/css/edit-channel.css" />
         <option value="$PROJECT_DIR$/js/edit-channel.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -271,12 +271,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17174083" sideWeight="0.91961414" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17174083" sideWeight="0.91961414" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -347,13 +347,6 @@
     <entry file="file://$PROJECT_DIR$/js/deploy-preview.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="1" selection-start="1851" selection-end="1851" vertical-scroll-proportion="1.3422819">
           <folding />
         </state>
       </provider>
@@ -439,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edit-channel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="73" selection-start="5298" selection-end="5316" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/edit-channel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="181" column="0" selection-start="4256" selection-end="4256" vertical-scroll-proportion="0.0">
@@ -455,7 +441,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.22818792">
+        <state line="19" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="21" selection-start="582" selection-end="582" vertical-scroll-proportion="0.11409396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-channel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="73" selection-start="5298" selection-end="5316" vertical-scroll-proportion="2.8689408">
           <folding />
         </state>
       </provider>
