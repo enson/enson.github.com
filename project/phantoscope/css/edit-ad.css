@@ -486,7 +486,9 @@ input{ vertical-align:middle; margin:0; padding:0}
 #content .ThreeSubject .sub-list .sub-item .sub-item-button{
     display: inline-block;
     vertical-align: middle;
-    margin-left: 13px;
+    margin-right: 35px;
+    float: right;
+    margin-top: 27px;
 }
 #content .ThreeSubject .sub-list .sub-item .sub-item-button img{
     margin-right: 5px;
@@ -555,9 +557,7 @@ input{ vertical-align:middle; margin:0; padding:0}
 #content .ThreeSubject .edit-sub .sub-store-keyword{
     display: none;
 }
-#content .ThreeSubject .edit-sub .sub-button{
-    display: none;
-}
+
 
 /**********end 三个专题编辑的样式*******************/
 
@@ -772,6 +772,12 @@ input{ vertical-align:middle; margin:0; padding:0}
     position: relative;
     display: none;
 }
+#content .hot-sell .store-product{
+    position: absolute;
+    top:-52px;
+    left:-117px;
+    z-index: 100;
+}
 #content .hot-sell .nSave{
     text-align: center;
     margin-top: 26px;
@@ -811,14 +817,19 @@ input{ vertical-align:middle; margin:0; padding:0}
     padding-left: 10px;
 }
 #content .hot-sell .disable-box .link{
-    color:#3b639f;
+    color: #3B639F;
     text-decoration: underline;
     font-size: 14px;
     display: inline-block;
+    width: 475px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 #content .hot-sell .disable-box .cancel-dis{
-    float:right;
-    margin-right: 30px;
+    float: right;
+    margin-right: 26px;
     cursor: pointer;
+    display: inline-block;
+    width: 62px;
 }
 /**********end 热销宝贝模块的样式*******************/

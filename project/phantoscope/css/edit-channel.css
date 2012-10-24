@@ -178,6 +178,68 @@
 .add-channel .edit-channel .channel-store-keyword{
     display: none;
 }
-.add-channel .edit-channel .channel-button{
+
+
+/***************选择类目框**begin************************/
+#content .channel-store-product{
+    width: 598px;
+    height: 368px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: bold;
+}
+#content #channel-store-item{
     display: none;
 }
+#content .channel-store-product .search-input{
+    margin-left: 13px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+}
+#content  .channel-store-product .box-left{
+    width:240px;
+    height:300px;
+    border: 1px solid gainsboro;
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 14px;
+    float:left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#content .channel-store-product .item-sub{
+    width:234px;
+    float:left;
+    height: 21px;
+    padding-left: 6px;
+    cursor:pointer;
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    color:#5375a9;
+}
+.item-sub-focus{
+    background-color: #d0c3a3;
+}
+#content .channel-store-product .button{
+    width:80px;
+    height:73px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 128px;
+    margin-left:3px;
+}
+#content .channel-store-product .button .add-transfer-button{
+    cursor:pointer;
+}
+#content .channel-store-product .box-right{
+    width:240px;
+    height:300px;
+    border: 1px solid gainsboro;
+    display: inline-block;
+    background-color: #fff;
+    margin-left: -4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/***************选择类目框**end************************/

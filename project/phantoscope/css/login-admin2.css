@@ -55,9 +55,9 @@ input{ vertical-align:middle; margin:0; padding:0}
     margin-right: 5px;
 }
 .btn{
-    background: #fff url('../img/deploy/select-pic.png') no-repeat 0px 0px;
+    background: #fff url('../img/design/scan.PNG') no-repeat 0px 0px;
     height:31px;
-    width:107px;
+    width:88px;
     border:none;
     cursor: pointer;
 }
@@ -69,13 +69,13 @@ input{ vertical-align:middle; margin:0; padding:0}
     cursor: pointer;
 }
 .file{
-    position:absolute;
-    top:0;
-    right:141px;
-    height:34px;
-    filter:alpha(opacity:0);
+    position: absolute;
+    top: 0;
+    right: 158px;
+    height: 34px;
+    filter: alpha(opacity:0);
     opacity: 0;
-    width:100px;
+    width: 88px;
     cursor: pointer;
 }
 .required{

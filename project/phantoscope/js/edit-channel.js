@@ -54,28 +54,24 @@ YUI().use('node','node-event-delegate',function(Y){
     function channelLinkSelect(){
         if(nChannelLinkSelect.get('selectedIndex') == 1){
             Y.one('.channel-keyword').setStyle('display','block');
-            Y.one('.channel-store-item').setStyle('display','none');
+            Y.one('#channel-store-item').setStyle('display','none');
             Y.one('.channel-store-keyword').setStyle('display','none');
-            Y.one('#add-channel-button').setStyle('display','inline-block');
-            Y.one('#cancel-channel-button').setStyle('display','inline-block');
         }else if(nChannelLinkSelect.get('selectedIndex') == 2){
             Y.one('.channel-keyword').setStyle('display','none');
-            Y.one('.channel-store-item').setStyle('display','block');
+            Y.one('#channel-store-item').setStyle('display','block');
             Y.one('.channel-store-keyword').setStyle('display','none');
-            Y.one('#add-channel-button').setStyle('display','inline-block');
-            Y.one('#cancel-channel-button').setStyle('display','inline-block');
+            transferBB(Y.one('#channel-store-item .box-left'),Y.one('#channel-store-item .box-right'),
+                Y.one('#channel-store-item .add-transfer-button'),Y.one('#channel-store-item .add-transfer-button2'));
         }else if(nChannelLinkSelect.get('selectedIndex') == 3){
             Y.one('.channel-keyword').setStyle('display','none');
-            Y.one('.channel-store-item').setStyle('display','none');
+            Y.one('#channel-store-item').setStyle('display','none');
             Y.one('.channel-store-keyword').setStyle('display','block');
-            Y.one('#add-channel-button').setStyle('display','inline-block');
-            Y.one('#cancel-channel-button').setStyle('display','inline-block');
+            transferBB(Y.one('#channel-store-item2 .box-left'),Y.one('#channel-store-item2 .box-right'),
+                Y.one('#channel-store-item2 .add-transfer-button'),Y.one('#channel-store-item2 .add-transfer-button2'));
         }else if(nChannelLinkSelect.get('selectedIndex') == 0){
             Y.one('.channel-keyword').setStyle('display','none');
-            Y.one('.channel-store-item').setStyle('display','none');
+            Y.one('#channel-store-item').setStyle('display','none');
             Y.one('.channel-store-keyword').setStyle('display','none');
-            Y.one('#add-channel-button').setStyle('display','none');
-            Y.one('#cancel-channel-button').setStyle('display','none');
         }
     }
     nChannelLinkSelect.on('click',function(){
@@ -118,6 +114,7 @@ YUI().use('node','node-event-delegate',function(Y){
     }
 
     //频道--店铺类目框功能
+    /*
     function moveRight(src,des){
         if(src.get('selectedIndex') == -1){
             alert("亲，你还没有选择类目哦!");
@@ -142,6 +139,42 @@ YUI().use('node','node-event-delegate',function(Y){
     Y.one('.out-transfer-button2').on('click',function(){
         moveRight(nRightBox2,nLeftBox2);
     });
+    */
+
+
+    function transferBB(nLeft,nRight,nAddBtn,nOutBtn){
+        nLeft.delegate('click',function(){
+            Y.all('.box-left .item-sub').removeClass('item-sub-focus');
+            this.addClass('item-sub-focus');
+        },'.item-sub');
+        nLeft.delegate('dblclick',function(){
+            move(nLeft,nRight);
+        },'.item-sub');
+        nRight.delegate('click',function(){
+            Y.all('.box-right .item-sub').removeClass('item-sub-focus');
+            this.addClass('item-sub-focus');
+        },'.item-sub');
+        nRight.delegate('dblclick',function(){
+            move(nRight,nLeft);
+        },'.item-sub');
+
+        function move(src,des){
+            var nItemListArray = src.all('.item-sub');
+            for(var i=0;i < nItemListArray.size();i++){
+                if(nItemListArray.item(i).hasClass('item-sub-focus')){
+                    nItemListArray.item(i).removeClass('item-sub-focus');
+                    des.append(nItemListArray.item(i--));
+                    break;
+                }
+            }
+        };
+        nAddBtn.on('click',function(){
+            move(nLeft,nRight);
+        });
+        nOutBtn.on('click',function(){
+            move(nRight,nLeft);
+        });
+    };
 
 
 

@@ -5,7 +5,7 @@
  * Description:内容编辑页面的JS交互逻辑
  */
 
-YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
+YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function(Y){
     var nAddButton = Y.one('#add_ad_button');
     var nCancelButton = Y.one('#cancel-button');
     var nLinkSelect = Y.one('#add-link-select');
@@ -85,6 +85,7 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
         nSixBb.setStyle('display','none');
         nUpdateBb.setStyle('display','none');
         nHotSell.setStyle('display','none');
+        shiftLi(nAdList);
     });
     nPBox.delegate('click',function(){
         nPBox.all('.item-title').setStyle('border','2px solid #ff6600');
@@ -109,6 +110,7 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
         nSixBb.setStyle('display','block');
         nUpdateBb.setStyle('display','none');
         nHotSell.setStyle('display','none');
+        shiftLi(nBbList);
     },'.item-bb');
     nPNewBb.on('click',function(){
         nPNewBb.setStyle('border','2px solid #ff6600');
@@ -197,18 +199,62 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
         checkAdAmount();
     });
 
-    //各广告上下移动
+    //各list中li类目上下移动功能函数
+    function shiftLi(nList){
+        nList.delegate('click',function(){
+            var getList=function(){
+                return nList.all('li');
+            };
+            var nListArray = getList();
+            for(var i=0; i<nListArray.size(); i++){
+                if(this.ancestor('li') == nListArray.item(i)){
+                    var prevItem = nListArray.item(i-1);
+                    //nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                    prevItem.insert(nListArray.item(i),'before');
+                    break;
+                }
+            }
+        },'.item-shift-up2');
+        nList.delegate('click',function(){
+            var getList=function(){
+                return nList.all('li');
+            };
+            var nListArray = getList();
+            for(var i=0; i<nListArray.size(); i++){
+                if(this.ancestor('li') == nListArray.item(i)){
+                    var nextItem = nListArray.item(i+1);
+                    //nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                    nListArray.item(i).insert(nextItem,'before');
+                    break;
+                }
+            }
+        },'.item-shift-down2');
+    };
+
+    /*
     nAdList.delegate('click',function(){
+        nAdListArray = getAdList();
         for(var i=0; i<nAdListArray.size(); i++){
             if(this.ancestor('.ad-item') == nAdListArray.item(i)){
-                var prevAdItem = nAdListArray.item(i-1);
-                //nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
-                prevAdItem.insert(nAdListArray.item(i),'before');
+                    var prevAdItem = nAdListArray.item(i-1);
+                    //nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                    prevAdItem.insert(nAdListArray.item(i),'before');
                 break;
             }
         }
-        Y.log(nAdListArray.size());
     },'.item-shift-up2');
+    nAdList.delegate('click',function(){
+        nAdListArray = getAdList();
+        for(var i=0; i<nAdListArray.size(); i++){
+            if(this.ancestor('.ad-item') == nAdListArray.item(i)){
+                var nextAdItem = nAdListArray.item(i+1);
+                //nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                nAdListArray.item(i).insert(nextAdItem,'before');
+                break;
+            }
+        }
+    },'.item-shift-down2');
+    */
 
     //点击删除广告list中各广告
     nAdList.delegate('click',function(e){
@@ -252,6 +298,11 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
             Y.one('#keyword-input').setStyle('display','none');
             Y.one('#store-item').setStyle('display','none');
             Y.one('#store-keyword-search').setStyle('display','block');
+        }else if(nLinkSelect.get('selectedIndex') == 0){
+            Y.one('#store-product').setStyle('display','none');
+            Y.one('#keyword-input').setStyle('display','none');
+            Y.one('#store-item').setStyle('display','none');
+            Y.one('#store-keyword-search').setStyle('display','none');
         }
     };
     nLinkSelect.on('click',function(){
@@ -282,6 +333,7 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
         nAdListArray = getAdList();
     };
     nAddAdButton.on('click',function(){
+        //if()
         addAd();
         Y.one('#ad-list').setStyle('display','block');
         Y.one('#add-ad').setStyle('display','none');
@@ -306,7 +358,7 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
                                  '</div>'+
                                  '<input type="hidden" value="'+items[i].auctionId+'"/> '+
                             '</li>' ;
-            }
+            };
             Y.all('.box-left').setContent(itemList);
         }
         Y.jsonp(url, method);
@@ -354,14 +406,14 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
             this.addClass('item-sub-focus');
         },'.item-sub');
         nLeft.delegate('dblclick',function(){
-            move(nLeft,nRight);
+            uniqueMove(nLeft,nRight);
         },'.item-sub');
         nRight.delegate('click',function(){
             Y.all('.box-right .item-sub').removeClass('item-sub-focus');
             this.addClass('item-sub-focus');
         },'.item-sub');
         nRight.delegate('dblclick',function(){
-            move(nRight,nLeft);
+            uniqueMove(nRight,nLeft);
         },'.item-sub');
 
         function uniqueMove(src,des){
@@ -396,14 +448,6 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
         });
     };
 
-    //专题删除功能
-    nSubList.delegate('click',function(){
-        this.ancestor('.sub-item').remove();
-        nSubList.setStyle('display','none');
-        nSubSave.setStyle('display','none');
-        nEditSub.setStyle('display','block');
-    },'.deleteSub');
-
     //专题编辑功能
     nSubList.delegate('click',function(){
         nSubList.setStyle('display','none');
@@ -435,26 +479,18 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
             Y.one('#sub-keyword').setStyle('display','block');
             Y.one('#sub-store-item').setStyle('display','none');
             Y.one('#sub-store-keyword').setStyle('display','none');
-            Y.one('#add-sub-button').setStyle('display','inline-block');
-            Y.one('#cancel-sub-button').setStyle('display','inline-block');
         }else if(nSubLinkSelect.get('selectedIndex') == 2){
             Y.one('#sub-keyword').setStyle('display','none');
             Y.one('#sub-store-item').setStyle('display','block');
             Y.one('#sub-store-keyword').setStyle('display','none');
-            Y.one('#add-sub-button').setStyle('display','inline-block');
-            Y.one('#cancel-sub-button').setStyle('display','inline-block');
         }else if(nSubLinkSelect.get('selectedIndex') == 3){
             Y.one('#sub-keyword').setStyle('display','none');
             Y.one('#sub-store-item').setStyle('display','none');
             Y.one('#sub-store-keyword').setStyle('display','block');
-            Y.one('#add-sub-button').setStyle('display','inline-block');
-            Y.one('#cancel-sub-button').setStyle('display','inline-block');
         }else if(nSubLinkSelect.get('selectedIndex') == 0){
             Y.one('#sub-keyword').setStyle('display','none');
             Y.one('#sub-store-item').setStyle('display','none');
             Y.one('#sub-store-keyword').setStyle('display','none');
-            Y.one('#add-sub-button').setStyle('display','none');
-            Y.one('#cancel-sub-button').setStyle('display','none');
         }
     }
     nSubLinkSelect.on('click',function(){
@@ -542,11 +578,40 @@ YUI().use('node','event','node-base','node-event-delegate','jsonp',function(Y){
 
     //热销模块选择宝贝--弹出宝贝框
     Y.one('.select-bb').on('click',function(){
+        Y.one('#mask-overlay').setStyle('display','block');
         nHotStoreBb.setStyle('display','block');
         transferBB(Y.one('#hot-store-product .box-left'),Y.one('#hot-store-product .box-right'),
             Y.one('#hot-store-product .add-transfer-button'),Y.one('#hot-store-product .add-transfer-button2'));
         importBB();
     })
+
+    //热销宝贝模块--选择宝贝弹出框添加与取消按钮事件
+    Y.one('.hot-cancel-button').on('click',function(){
+        Y.one('#mask-overlay').setStyle('display','none');
+        nHotStoreBb.setStyle('display','none');
+    })
+    Y.one('.hot-add-button').on('click',function(){
+        if(!Y.one('#hot-store-product .box-right').one('.item-sub')){
+            alert('亲，你还没有选择要屏蔽的宝贝哦！')
+        }else{
+            Y.one('#mask-overlay').setStyle('display','none');
+            nHotStoreBb.setStyle('display','none');
+            var disableList = "";
+            var selectList = Y.all('#hot-store-product .box-right .item-sub');
+            for( var i= 0;i< selectList.size();i++){
+                var title = selectList.item(i).one('.item-sub-dscptn .title').getAttribute('title');
+                disableList += '<li class="text">'+
+                                   '<div class="link">'+title+'</div>'+
+                                   '<div class="link cancel-dis">取消屏蔽</div>'+
+                               '</li>'
+            }
+            Y.one('.hot-sell .disable-box').setContent(disableList);
+        }
+    })
+
+    var dd = new Y.DD.Drag({
+        node:'#hot-store-product'
+    }).addHandle('#hot-store-product');
 
     //取消屏蔽宝贝功能
     Y.one('.hot-sell .disable-box').delegate('click',function(){
