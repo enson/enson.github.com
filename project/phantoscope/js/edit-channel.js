@@ -18,10 +18,6 @@ YUI().use('node','node-event-delegate',function(Y){
     };
     var nCListArray = getCList();
 
-    var nLeftBox = Y.one('.leftSel');
-    var nRightBox = Y.one('.rightSel');
-    var nLeftBox2 = Y.one('.leftSel2');
-    var nRightBox2 = Y.one('.rightSel2');
 
     //删除频道功能
     nChannelList.delegate('click',function(){

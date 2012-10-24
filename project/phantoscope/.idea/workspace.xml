@@ -58,19 +58,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-channel.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit-channel.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/edit-channel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="1" selection-start="4508" selection-end="4508" vertical-scroll-proportion="0.45805368">
+            <state line="181" column="0" selection-start="4256" selection-end="4256" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-channel.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="edit-channel.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="63" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.22818792">
               <folding />
             </state>
           </provider>
@@ -99,9 +99,9 @@
         <option value="$PROJECT_DIR$/edit-ad-pos.html" />
         <option value="$PROJECT_DIR$/css/edit-ad.css" />
         <option value="$PROJECT_DIR$/js/edit.js" />
-        <option value="$PROJECT_DIR$/js/edit-channel.js" />
         <option value="$PROJECT_DIR$/edit-channel.html" />
         <option value="$PROJECT_DIR$/css/edit-channel.css" />
+        <option value="$PROJECT_DIR$/js/edit-channel.js" />
       </list>
     </option>
   </component>
@@ -416,13 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="63" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="508" column="53" selection-start="26202" selection-end="26202" vertical-scroll-proportion="-7.0384617">
@@ -432,16 +425,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit.js">
+    <entry file="file://$PROJECT_DIR$/css/edit-ad.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="378" column="69" selection-start="15192" selection-end="15192" vertical-scroll-proportion="-9.24">
+        <state line="502" column="21" selection-start="11851" selection-end="11851" vertical-scroll-proportion="11.16">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/edit-ad.css">
+    <entry file="file://$PROJECT_DIR$/js/edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="502" column="21" selection-start="11851" selection-end="11851" vertical-scroll-proportion="11.16">
+        <state line="378" column="69" selection-start="15192" selection-end="15192" vertical-scroll-proportion="-9.24">
           <folding />
         </state>
       </provider>
@@ -455,7 +448,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/edit-channel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="1" selection-start="4508" selection-end="4508" vertical-scroll-proportion="0.45805368">
+        <state line="181" column="0" selection-start="4256" selection-end="4256" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.22818792">
           <folding />
         </state>
       </provider>
