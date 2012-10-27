@@ -280,29 +280,26 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
             Y.one('#store-product').setStyle('display','block');
             Y.one('#keyword-input').setStyle('display','none');
             Y.one('#store-item').setStyle('display','none');
-            Y.one('#store-keyword-search').setStyle('display','none');
             importBB();
             uniqueTransferBB(nBoxLeft,nBoxRight,nAddTransferBtn,nOutTransferBtn);
         }else if(nLinkSelect.get('selectedIndex') == 2){
             Y.one('#store-product').setStyle('display','none');
             Y.one('#keyword-input').setStyle('display','block');
             Y.one('#store-item').setStyle('display','none');
-            Y.one('#store-keyword-search').setStyle('display','none');
         }else if(nLinkSelect.get('selectedIndex') == 3){
             Y.one('#store-product').setStyle('display','none');
             Y.one('#keyword-input').setStyle('display','none');
             Y.one('#store-item').setStyle('display','block');
-            Y.one('#store-keyword-search').setStyle('display','none');
+            importCate();
         }else if(nLinkSelect.get('selectedIndex') == 4){
             Y.one('#store-product').setStyle('display','none');
-            Y.one('#keyword-input').setStyle('display','none');
-            Y.one('#store-item').setStyle('display','none');
-            Y.one('#store-keyword-search').setStyle('display','block');
+            Y.one('#keyword-input').setStyle('display','block');
+            Y.one('#store-item').setStyle('display','block');
+            importCate();
         }else if(nLinkSelect.get('selectedIndex') == 0){
             Y.one('#store-product').setStyle('display','none');
             Y.one('#keyword-input').setStyle('display','none');
             Y.one('#store-item').setStyle('display','none');
-            Y.one('#store-keyword-search').setStyle('display','none');
         }
     };
     nLinkSelect.on('click',function(){
@@ -364,6 +361,24 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
         Y.jsonp(url, method);
     };
 
+    //店铺类目数据引入
+    function importCate(){
+        var catUrl = './catData.jsonp?'+
+                     '&callback=importCat';
+        window.importCat = function(data){
+            var items = data.cats,len = items.length;
+            var itemsList = '';
+            for(var i=0;i < len;i++){
+                itemsList += '<option value="'+items[i].id+'">'+items[i].name+'</option>';
+                var subCat = items[i].subCats;
+                for(var j=0;j< subCat.length;j++){
+                    itemsList += '<option value="'+subCat[j].id+'">---'+subCat[j].name+'</option>';
+                }
+            }
+            Y.all('.store-item select').setContent(itemsList);
+        }
+        Y.jsonp(catUrl,importCat);
+    };
 
     //店铺宝贝框添加移除功能
     function transferBB(nLeft,nRight,nAddBtn,nOutBtn){
@@ -448,6 +463,7 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
         });
     };
 
+
     //专题编辑功能
     nSubList.delegate('click',function(){
         nSubList.setStyle('display','none');
@@ -478,19 +494,17 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
         if(nSubLinkSelect.get('selectedIndex') == 1){
             Y.one('#sub-keyword').setStyle('display','block');
             Y.one('#sub-store-item').setStyle('display','none');
-            Y.one('#sub-store-keyword').setStyle('display','none');
         }else if(nSubLinkSelect.get('selectedIndex') == 2){
             Y.one('#sub-keyword').setStyle('display','none');
             Y.one('#sub-store-item').setStyle('display','block');
-            Y.one('#sub-store-keyword').setStyle('display','none');
+            importCate();
         }else if(nSubLinkSelect.get('selectedIndex') == 3){
-            Y.one('#sub-keyword').setStyle('display','none');
-            Y.one('#sub-store-item').setStyle('display','none');
-            Y.one('#sub-store-keyword').setStyle('display','block');
+            Y.one('#sub-keyword').setStyle('display','block');
+            Y.one('#sub-store-item').setStyle('display','block');
+            importCate();
         }else if(nSubLinkSelect.get('selectedIndex') == 0){
             Y.one('#sub-keyword').setStyle('display','none');
             Y.one('#sub-store-item').setStyle('display','none');
-            Y.one('#sub-store-keyword').setStyle('display','none');
         }
     }
     nSubLinkSelect.on('click',function(){
@@ -544,8 +558,7 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
                     var picUrl = selectList.item(i).one('.item-sub-pic img').getAttribute('src');
                     var title = selectList.item(i).one('.item-sub-dscptn .title').getAttribute('title');
                     var price = selectList.item(i).one('.item-sub-dscptn .price').getContent();
-                    bbList += '<div class="bb-num bb-num'+j+'">'+j+'</div>'+
-                              '<li class="bb-item">'+
+                    bbList += '<li class="bb-item">'+
                                   '<div class="bb-item-pic"><img src="'+picUrl+'" /></div>'+
                                   '<div class="bb-item-dscptn">'+
                                       '<div class="title" title="'+title+'">'+title+'</div>'+
@@ -562,7 +575,13 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
                                           '<div class="item-shift-down2"></div>'+
                                       '</div>'+
                                   '</div>'+
-                              '</li>'
+                              '</li>'+
+                              '<div class="bb-num bb-num1">1</div>'+
+                              '<div class="bb-num bb-num2">2</div>'+
+                              '<div class="bb-num bb-num3">3</div>'+
+                              '<div class="bb-num bb-num4">4</div>'+
+                              '<div class="bb-num bb-num5">5</div>'+
+                              '<div class="bb-num bb-num6">6</div>';
                 }
                 nBbList.setContent(bbList);
                 Y.one('#bb-store-product').setStyle('display','none');

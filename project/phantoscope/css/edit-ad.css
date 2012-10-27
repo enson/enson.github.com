@@ -598,6 +598,7 @@ input{ vertical-align:middle; margin:0; padding:0}
 }
 #content .six-bb .bb-list{
     width:598px;
+    height:510px;
     margin-top:10px;
     position:relative;
 }
@@ -618,7 +619,8 @@ input{ vertical-align:middle; margin:0; padding:0}
     position: absolute;
 }
 #content .six-bb .bb-list .bb-num1{
-    position: absolute;
+    top:0px;
+    left:0px;
 }
 #content .six-bb .bb-list .bb-num2{
     top:90px;
@@ -664,6 +666,8 @@ input{ vertical-align:middle; margin:0; padding:0}
     font-size: 14px;
     font-weight: normal;
     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
 }
 #content .six-bb .bb-list .bb-item .price{
     font-size: 12px;

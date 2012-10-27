@@ -1,0 +1,466 @@
+importCat(
+{
+
+    "cats": [
+        {
+            "id": "70330394",
+            "subCats": [ ],
+            "imagePath": "http://img03.taobaocdn.com/imgextra/i3/21968005/T2Nx07XXVXXXXXXXXX_!!21968005.jpg",
+            "name": "新品一页浏览"
+        },
+        {
+            "id": "258696785",
+            "subCats": [ ],
+            "imagePath": "http://img04.taobaocdn.com/imgextra/i4/21968005/T2yh07XapXXXXXXXXX_!!21968005.jpg",
+            "name": "入门单品"
+        },
+        {
+            "id": "341668818",
+            "subCats": [ ],
+            "imagePath": "http://img01.taobaocdn.com/imgextra/i1/21968005/T2qgN7XbRcXXXXXXXX_!!21968005.jpg",
+            "name": "会员5折品"
+        },
+        {
+            "id": "47872790",
+            "subCats": [ ],
+            "imagePath": "http://img03.taobaocdn.com/imgextra/i3/21968005/T2K407XX0XXXXXXXXX_!!21968005.jpg",
+            "name": "热卖"
+        },
+        {
+            "id": "502022082",
+            "subCats": [
+                {
+                    "id": "502022083",
+                    "imagePath": "",
+                    "name": "春娇俏"
+                },
+                {
+                    "id": "502022084",
+                    "imagePath": "",
+                    "name": "夏热卖"
+                },
+                {
+                    "id": "502022085",
+                    "imagePath": "",
+                    "name": "秋主义"
+                },
+                {
+                    "id": "502022086",
+                    "imagePath": "",
+                    "name": "冬惊艳"
+                }
+            ],
+            "imagePath": "http://img04.taobaocdn.com/imgextra/i4/21968005/T2rCBiXoJNXXXXXXXX_!!21968005.jpg",
+            "name": "四季时装"
+        },
+        {
+            "id": "536690370",
+            "subCats": [
+                {
+                    "id": "536690371",
+                    "imagePath": "",
+                    "name": "简单冒险系列"
+                },
+                {
+                    "id": "536690372",
+                    "imagePath": "",
+                    "name": "烂漫自由系列"
+                },
+                {
+                    "id": "536690373",
+                    "imagePath": "",
+                    "name": "女权独立系列"
+                },
+                {
+                    "id": "536690374",
+                    "imagePath": "",
+                    "name": "尖端印象系列"
+                }
+            ],
+            "imagePath": "",
+            "name": "风格系类"
+        },
+        {
+            "id": "62321946",
+            "subCats": [
+                {
+                    "id": "629151541",
+                    "imagePath": "",
+                    "name": "ISSUE 114"
+                },
+                {
+                    "id": "626554446",
+                    "imagePath": "",
+                    "name": "ISSUE 113 衣Q进阶"
+                },
+                {
+                    "id": "623922598",
+                    "imagePath": "",
+                    "name": "ISSUE 112 上城女孩"
+                },
+                {
+                    "id": "618992593",
+                    "imagePath": "",
+                    "name": "ISSUE 111 初冬典范"
+                },
+                {
+                    "id": "613439410",
+                    "imagePath": "",
+                    "name": "ISSUE 110 摩登狂欢"
+                },
+                {
+                    "id": "610028698",
+                    "imagePath": "",
+                    "name": "ISSUE 109 私橱盛宴"
+                },
+                {
+                    "id": "537313644",
+                    "imagePath": "",
+                    "name": "ISSUE 108 艳丽初秋"
+                },
+                {
+                    "id": "534225712",
+                    "imagePath": "",
+                    "name": "ISSUE 107 轻奢入秋"
+                },
+                {
+                    "id": "530307201",
+                    "imagePath": "",
+                    "name": "ISSUE 106 桃花主义"
+                },
+                {
+                    "id": "527447944",
+                    "imagePath": "",
+                    "name": "ISSUE 105 新欢欲望"
+                },
+                {
+                    "id": "521706184",
+                    "imagePath": "",
+                    "name": "ISSUE 104 多事之秋II"
+                },
+                {
+                    "id": "519594067",
+                    "imagePath": "",
+                    "name": "ISSUE 103 城中热事"
+                },
+                {
+                    "id": "515630068",
+                    "imagePath": "",
+                    "name": "ISSUE 102 Chic女郎"
+                },
+                {
+                    "id": "513478304",
+                    "imagePath": "",
+                    "name": "ISSUE 101夏日夏色"
+                },
+                {
+                    "id": "510446000",
+                    "imagePath": "",
+                    "name": "ISSUE 100 玩夏嘉年华"
+                },
+                {
+                    "id": "506977762",
+                    "imagePath": "",
+                    "name": "ISSUE 99 仲夏梦境"
+                },
+                {
+                    "id": "503675345",
+                    "imagePath": "",
+                    "name": "ISSUE 98 大促心机"
+                },
+                {
+                    "id": "501993206",
+                    "imagePath": "",
+                    "name": "ISSUE 97 时尚课堂"
+                },
+                {
+                    "id": "499015724",
+                    "imagePath": "",
+                    "name": "ISSUE 96 非典型印象"
+                },
+                {
+                    "id": "495515444",
+                    "imagePath": "",
+                    "name": "ISSUE 95 玩趣发光季"
+                },
+                {
+                    "id": "491788587",
+                    "imagePath": "",
+                    "name": "ISSUE 94 疯狂白日梦"
+                },
+                {
+                    "id": "489426952",
+                    "imagePath": "",
+                    "name": "ISSUE 93 甜蜜都市"
+                },
+                {
+                    "id": "486932643",
+                    "imagePath": "",
+                    "name": "ISSUE 92 香榭街区"
+                },
+                {
+                    "id": "482855756",
+                    "imagePath": "",
+                    "name": "ISSUE 91 迷幻公园"
+                },
+                {
+                    "id": "480061497",
+                    "imagePath": "",
+                    "name": "ISSUE 90 鲜亮升级"
+                },
+                {
+                    "id": "476573550",
+                    "imagePath": "",
+                    "name": "ISSUE 89 漫游记"
+                },
+                {
+                    "id": "474056520",
+                    "imagePath": "",
+                    "name": "ISSUE 88 花都猎艳"
+                },
+                {
+                    "id": "470087927",
+                    "imagePath": "",
+                    "name": "ISSUE 87 绿野花踪"
+                },
+                {
+                    "id": "466826886",
+                    "imagePath": "",
+                    "name": "ISSUE 86 春派熟女"
+                },
+                {
+                    "id": "463016248",
+                    "imagePath": "",
+                    "name": "ISSUE 85 时装冒险"
+                },
+                {
+                    "id": "459151711",
+                    "imagePath": "",
+                    "name": "ISSUE 84 ICON小姐"
+                },
+                {
+                    "id": "455282817",
+                    "imagePath": "",
+                    "name": "ISSUE 83 龙纹身女孩"
+                },
+                {
+                    "id": "451544925",
+                    "imagePath": "",
+                    "name": "ISSUE 82 米兰街头"
+                },
+                {
+                    "id": "448205892",
+                    "imagePath": "",
+                    "name": "ISSUE 81 交错时代"
+                },
+                {
+                    "id": "442199070",
+                    "imagePath": "",
+                    "name": "ISSUE 80 双面情人"
+                },
+                {
+                    "id": "464268949",
+                    "imagePath": "",
+                    "name": "ISSUE 79 开运桃花"
+                }
+            ],
+            "imagePath": "http://img04.taobaocdn.com/imgextra/i4/21968005/T25N07XXhXXXXXXXXX_!!21968005.jpg",
+            "name": "新品"
+        },
+        {
+            "id": "62325476",
+            "subCats": [
+                {
+                    "id": "62326362",
+                    "imagePath": "",
+                    "name": "背心/吊带"
+                },
+                {
+                    "id": "62326448",
+                    "imagePath": "",
+                    "name": "T-shirt"
+                },
+                {
+                    "id": "488091631",
+                    "imagePath": "",
+                    "name": "衬衫"
+                },
+                {
+                    "id": "488096548",
+                    "imagePath": "",
+                    "name": "打底衫"
+                },
+                {
+                    "id": "463706229",
+                    "imagePath": "",
+                    "name": "雪纺衫/蕾丝衫"
+                },
+                {
+                    "id": "62326804",
+                    "imagePath": "",
+                    "name": "针织衫/毛衣"
+                },
+                {
+                    "id": "62326848",
+                    "imagePath": "",
+                    "name": "马甲/西装"
+                },
+                {
+                    "id": "62326888",
+                    "imagePath": "",
+                    "name": "外套/风衣"
+                },
+                {
+                    "id": "62326932",
+                    "imagePath": "",
+                    "name": "棉服/羽绒服/大衣"
+                },
+                {
+                    "id": "401758820",
+                    "imagePath": "",
+                    "name": "毛呢外套"
+                },
+                {
+                    "id": "401765813",
+                    "imagePath": "",
+                    "name": "皮衣皮草"
+                }
+            ],
+            "imagePath": "http://img03.taobaocdn.com/imgextra/i3/21968005/T2N3N7XaRcXXXXXXXX_!!21968005.jpg",
+            "name": "上装"
+        },
+        {
+            "id": "17557560",
+            "subCats": [
+                {
+                    "id": "61369570",
+                    "imagePath": "",
+                    "name": "连衣裙"
+                },
+                {
+                    "id": "62329138",
+                    "imagePath": "",
+                    "name": "短裙/半身裙"
+                },
+                {
+                    "id": "495756652",
+                    "imagePath": "",
+                    "name": "吊带/背心裙"
+                },
+                {
+                    "id": "488100826",
+                    "imagePath": "",
+                    "name": "长裙"
+                }
+            ],
+            "imagePath": "http://img04.taobaocdn.com/imgextra/i4/21968005/T2FwN7XbdcXXXXXXXX_!!21968005.jpg",
+            "name": "裙装"
+        },
+        {
+            "id": "18156782",
+            "subCats": [
+                {
+                    "id": "61366282",
+                    "imagePath": "",
+                    "name": "长袜&打底裤"
+                },
+                {
+                    "id": "61366352",
+                    "imagePath": "",
+                    "name": "短裤&中裤"
+                },
+                {
+                    "id": "61366396",
+                    "imagePath": "",
+                    "name": "休闲长裤"
+                },
+                {
+                    "id": "61366456",
+                    "imagePath": "",
+                    "name": "牛仔裤"
+                },
+                {
+                    "id": "209374338",
+                    "imagePath": "",
+                    "name": "连身裤"
+                }
+            ],
+            "imagePath": "http://img04.taobaocdn.com/imgextra/i4/21968005/T243J7XcJcXXXXXXXX_!!21968005.jpg",
+            "name": "裤装"
+        },
+        {
+            "id": "16092876",
+            "subCats": [
+                {
+                    "id": "115249141",
+                    "imagePath": "",
+                    "name": "帽子"
+                },
+                {
+                    "id": "61369982",
+                    "imagePath": "",
+                    "name": "包包"
+                },
+                {
+                    "id": "61369700",
+                    "imagePath": "",
+                    "name": "鞋/靴"
+                },
+                {
+                    "id": "61369906",
+                    "imagePath": "",
+                    "name": "项链/手链/脚链"
+                },
+                {
+                    "id": "61373992",
+                    "imagePath": "",
+                    "name": "头饰/胸花/围巾"
+                },
+                {
+                    "id": "61371266",
+                    "imagePath": "",
+                    "name": "皮带/腰带/腰饰"
+                },
+                {
+                    "id": "370070306",
+                    "imagePath": "",
+                    "name": "眼镜"
+                }
+            ],
+            "imagePath": "http://img04.taobaocdn.com/imgextra/i4/21968005/T2yx07XapXXXXXXXXX_!!21968005.jpg",
+            "name": "配饰"
+        },
+        {
+            "id": "353936363",
+            "subCats": [ ],
+            "imagePath": "http://img04.taobaocdn.com/imgextra/i4/21968005/T2.3N7XXNcXXXXXXXX_!!21968005.jpg",
+            "name": "内衣/泳衣"
+        },
+        {
+            "id": "108131080",
+            "subCats": [ ],
+            "imagePath": "http://image.taobao.linezing.com/dp_icons/log.gif?uid=49829",
+            "name": "量子恒道统计"
+        },
+        {
+            "id": "127148770",
+            "subCats": [ ],
+            "imagePath": "http://img02.taobaocdn.com/imgextra/i2/21968005/T26eKGXeFaXXXXXXXX_!!21968005.jpg",
+            "name": "77"
+        },
+        {
+            "id": "451571391",
+            "subCats": [ ],
+            "imagePath": "http://img02.taobaocdn.com/imgextra/i2/21968005/T2Ik1tXdNbXXXXXXXX_!!21968005.jpg",
+            "name": "生e经"
+        },
+        {
+            "id": "452641973",
+            "subCats": [ ],
+            "imagePath": "http://c3.superboss.cc/s?333651142.gif",
+            "name": "超级店长统计"
+        }
+    ]
+
+}
+)

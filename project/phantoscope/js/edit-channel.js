@@ -4,7 +4,7 @@
  * Time: 下午7:03
  * Description:内容编辑-客户端频道页面的交互逻辑
  */
-YUI().use('node','node-event-delegate',function(Y){
+YUI().use('node','node-event-delegate','jsonp',function(Y){
     var nAddChannel = Y.one('#add_channel_button');
     var nChannelList = Y.one('#channel-list');
     var nEditChannel = Y.one('.edit-channel');
@@ -51,23 +51,21 @@ YUI().use('node','node-event-delegate',function(Y){
         if(nChannelLinkSelect.get('selectedIndex') == 1){
             Y.one('.channel-keyword').setStyle('display','block');
             Y.one('#channel-store-item').setStyle('display','none');
-            Y.one('.channel-store-keyword').setStyle('display','none');
         }else if(nChannelLinkSelect.get('selectedIndex') == 2){
             Y.one('.channel-keyword').setStyle('display','none');
             Y.one('#channel-store-item').setStyle('display','block');
-            Y.one('.channel-store-keyword').setStyle('display','none');
             transferBB(Y.one('#channel-store-item .box-left'),Y.one('#channel-store-item .box-right'),
                 Y.one('#channel-store-item .add-transfer-button'),Y.one('#channel-store-item .add-transfer-button2'));
+            importCate();
         }else if(nChannelLinkSelect.get('selectedIndex') == 3){
-            Y.one('.channel-keyword').setStyle('display','none');
-            Y.one('#channel-store-item').setStyle('display','none');
-            Y.one('.channel-store-keyword').setStyle('display','block');
+            Y.one('.channel-keyword').setStyle('display','block');
+            Y.one('#channel-store-item').setStyle('display','block');
             transferBB(Y.one('#channel-store-item2 .box-left'),Y.one('#channel-store-item2 .box-right'),
                 Y.one('#channel-store-item2 .add-transfer-button'),Y.one('#channel-store-item2 .add-transfer-button2'));
+            importCate();
         }else if(nChannelLinkSelect.get('selectedIndex') == 0){
             Y.one('.channel-keyword').setStyle('display','none');
             Y.one('#channel-store-item').setStyle('display','none');
-            Y.one('.channel-store-keyword').setStyle('display','none');
         }
     }
     nChannelLinkSelect.on('click',function(){
@@ -108,6 +106,25 @@ YUI().use('node','node-event-delegate',function(Y){
         nCListArray = getCList();
         Y.all('.channel-item-button img').setStyle('margin-right','5px');
     }
+
+    //店铺类目数据引入
+    function importCate(){
+        var catUrl = './catData.jsonp?'+
+            '&callback=importCat';
+        window.importCat = function(data){
+            var items = data.cats,len = items.length;
+            var itemsList = '';
+            for(var i=0;i < len;i++){
+                itemsList += '<li class="item-sub" title="'+items[i].id+'">'+items[i].name+'</li>';
+                var subCat = items[i].subCats;
+                for(var j=0;j< subCat.length;j++){
+                    itemsList += '<li class="item-sub" title="'+subCat[j].id+'">'+subCat[j].name+'</li>';
+                }
+            }
+            Y.one('.box-left').setContent(itemsList);
+        }
+        Y.jsonp(catUrl,importCat);
+    };
 
     //频道--店铺类目框功能
     /*
@@ -172,6 +189,41 @@ YUI().use('node','node-event-delegate',function(Y){
         });
     };
 
+    //频道list上下移动功能函数
+    function shiftLi(nList){
+        nList.delegate('click',function(){
+            var getList=function(){
+                return nList.all('li');
+            };
+            var nListArray = getList();
+            for(var i=0; i<nListArray.size(); i++){
+                if(this.ancestor('li') == nListArray.item(i)){
+                    var prevItem = nListArray.item(i-1);
+                    //nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                    prevItem.insert(nListArray.item(i),'before');
+                    break;
+                }
+            }
+        },'.item-shift-up2');
+        nList.delegate('click',function(){
+            var getList=function(){
+                return nList.all('li');
+            };
+            var nListArray = getList();
+            for(var i=0; i<nListArray.size(); i++){
+                if(this.ancestor('li') == nListArray.item(i)){
+                    var nextItem = nListArray.item(i+1);
+                    //nAdList.insertBefore( nAdListArray.item(i), prevAdItem);
+                    nListArray.item(i).insert(nextItem,'before');
+                    break;
+                }
+            }
+        },'.item-shift-down2');
+    };
+
+    window.onload = function(){
+        shiftLi(nChannelList);
+    };
 
 
 });

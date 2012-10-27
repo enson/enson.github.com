@@ -61,6 +61,7 @@
 }
 .add-class .class-list .class-item{
     width: 613px;
+    height:118px;
     background-color: #F0F0F0;
     margin-bottom: 10px;
     position: relative;
@@ -73,11 +74,11 @@
 .add-class .class-list .class-item .class-text .class-name{
     font-size: 15px;
 }
-.add-class .class-list .class-item .class-text ul{
+.add-class .class-list .class-item .class-text .subClass-text{
     margin-left: 10px;
     margin-top: 6px;
 }
-.add-class .class-list .class-item .class-text ul li{
+.add-class .class-list .class-item .class-text .subClass-text span{
     width:100px;
     height: 29px;
     display: inline-block;
@@ -170,6 +171,9 @@
     background-color: #fff;
     font-size: 15px;
     text-align:center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .add-class .subClass .subClass-list .subClass-item .subClass-item-button{
     display: inline-block;
@@ -268,4 +272,74 @@
     vertical-align: top;
     margin-top: 128px;
 }
+
+.add-class .firstClass{
+    display: none;
+}
+
+/***************选择类目框**begin************************/
+#content .class-store{
+    width: 598px;
+    height: 388px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+#content .class-store .search-input{
+    margin-left: 13px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+}
+#content  .class-store .box-left{
+    width:240px;
+    height:300px;
+    border: 1px solid gainsboro;
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 14px;
+    float:left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#content .class-store .item-sub{
+    width:234px;
+    float:left;
+    height: 21px;
+    padding-left: 6px;
+    cursor:pointer;
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    color:#5375a9;
+}
+.item-sub-focus{
+    background-color: #d0c3a3;
+}
+#content .class-store .button{
+    width:80px;
+    height:73px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 128px;
+    margin-left:3px;
+}
+#content .class-store .button .add-transfer-button{
+    cursor:pointer;
+}
+#content .class-store .button .add-transfer-button2{
+    cursor:pointer;
+}
+#content .class-store .box-right{
+    width:240px;
+    height:300px;
+    border: 1px solid gainsboro;
+    display: inline-block;
+    background-color: #fff;
+    margin-left: -4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/***************选择类目框**end************************/
 

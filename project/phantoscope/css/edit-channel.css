@@ -232,6 +232,9 @@
 #content .channel-store-product .button .add-transfer-button{
     cursor:pointer;
 }
+#content .channel-store-product .button .add-transfer-button2{
+    cursor:pointer;
+}
 #content .channel-store-product .box-right{
     width:240px;
     height:300px;
