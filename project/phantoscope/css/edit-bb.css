@@ -143,25 +143,56 @@
     margin-top: 26px;
     clear:both;
 }
-.add-class .subClass{
+.firstClass{
     display: none;
 }
 
 
 
+.subClassSection{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    width: 598px;
+    position: relative;
+    display: none;
+}
+.subClassSection .title{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0px;
+}
+.subClassSection .title input{
+    width:265px;
+}
+.subClassSection .title2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.subClassSection .tip{
+    font-size: 12px;
+    clear: both;
+    display: block;
+    color:#808080;
+    margin-bottom: 10px;
+}
 
-.add-class .subClass .subClass-list{
+
+
+
+ .subClass .subClass-list{
     width:598px;
     margin-top:10px;
     position:relative;
 }
-.add-class .subClass .subClass-list .subClass-item{
+ .subClass .subClass-list .subClass-item{
     width: 598px;
     height: 80px;
     background-color: #F0F0F0;
     margin-bottom: 10px;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-text{
+.subClass .subClass-list .subClass-item .subClass-item-text{
     color:#808080;
     margin-left: 10px;
     margin-top: 27px;
@@ -175,22 +206,22 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-button{
+ .subClass .subClass-list .subClass-item .subClass-item-button{
     display: inline-block;
     vertical-align: middle;
     margin-left: 13px;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-button img{
+ .subClass .subClass-list .subClass-item .subClass-item-button img{
     margin-right: 5px;
     cursor:pointer;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-shift{
+ .subClass .subClass-list .subClass-item .subClass-item-shift{
     width: 52px;
     display: inline-block;
     float: right;
     margin-top: 15px;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-up1{
+.subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-up1{
     width: 0;
     height: 0;
     border-left: 9px solid transparent;
@@ -198,7 +229,7 @@
     border-bottom: 20px solid #d8d8d8;
     cursor:pointer;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-up2{
+ .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-up2{
     width: 0;
     height: 0;
     border-left: 9px solid transparent;
@@ -206,10 +237,10 @@
     border-bottom: 20px solid #808080;
     cursor:pointer;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-box{
+ .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-box{
     margin-bottom: 10px;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-down1{
+ .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-down1{
     width: 0;
     height: 0;
     border-left: 9px solid transparent;
@@ -217,7 +248,7 @@
     border-top: 20px solid #d8d8d8;
     cursor:pointer;
 }
-.add-class .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-down2{
+ .subClass .subClass-list .subClass-item .subClass-item-shift .item-shift-down2{
     width: 0;
     height: 0;
     border-left: 9px solid transparent;
@@ -225,56 +256,17 @@
     border-top: 20px solid #808080;
     cursor:pointer;
 }
-.add-class .keyword-input{
-    display: none;
+ .keyword-input{
     margin-top: 10px;
-    font-size: 15px;
-    font-weight: bold;;
-}
-.add-class .keyword-input input{
-    width:248px;
-}
-.add-class .keyword-input div{
-    margin-bottom: 8px;
-}
-.add-class .class-store{
-    display:none;
-}
-
-
-.add-class .class-store{
-    display: none;
-    width:618px;
-    height: 396px;
-    background-color: #f0f0f0;
-    margin-top: 10px;
-}
-.add-class .class-store .C-store-title{
-    margin-left: 6px;
-    padding-top: 6px;
-    margin-bottom: 6px;
     font-size: 15px;
     font-weight: bold;
-}
-.add-class .class-store .leftSel{
-    display: inline-block;
-    color:#3b639f;
-    margin-left: 5px;
-    margin-bottom: 10px;
-}
-.add-class .class-store .rightSel{
-    display: inline-block;
-    color:#3b639f;
-    margin-bottom: 10px;
-}
-.add-class .class-store .button{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 128px;
-}
-
-.add-class .firstClass{
     display: none;
+}
+ .keyword-input input{
+    width:248px;
+}
+ .keyword-input div{
+    margin-bottom: 8px;
 }
 
 /***************选择类目框**begin************************/

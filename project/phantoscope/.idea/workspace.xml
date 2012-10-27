@@ -20,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit-ad-pos.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="edit-ad-pos.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="52" selection-start="6433" selection-end="6433" vertical-scroll-proportion="102.15385">
+            <state line="215" column="35" selection-start="11003" selection-end="11003" vertical-scroll-proportion="0.45062837">
               <folding>
                 <element signature="n#style#0;n#div#7;n#section#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -31,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="524" column="6" selection-start="20544" selection-end="20544" vertical-scroll-proportion="0.34500876">
+            <state line="555" column="13" selection-start="21894" selection-end="21894" vertical-scroll-proportion="-4.48">
               <folding />
             </state>
           </provider>
@@ -52,7 +52,19 @@
       <file leaf-file-name="edit-bb.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edit-bb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="25" selection-start="9628" selection-end="9628" vertical-scroll-proportion="-5.076923">
+            <state line="64" column="30" selection-start="2933" selection-end="2933" vertical-scroll-proportion="-9.0">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit-bb.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/edit-bb.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="259" column="21" selection-start="5916" selection-end="5916" vertical-scroll-proportion="-6.52">
               <folding />
             </state>
           </provider>
@@ -61,25 +73,7 @@
       <file leaf-file-name="edit-bb.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/edit-bb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="287" column="13" selection-start="10869" selection-end="10869" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit-channel.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edit-channel.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="0" selection-start="6033" selection-end="6034" vertical-scroll-proportion="-7.423077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit-channel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="17" selection-start="4974" selection-end="4974" vertical-scroll-proportion="0.0">
+            <state line="59" column="47" selection-start="1989" selection-end="1989" vertical-scroll-proportion="-19.72">
               <folding />
             </state>
           </provider>
@@ -95,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/login-admin2.css" />
         <option value="$PROJECT_DIR$/home-page.html" />
         <option value="$PROJECT_DIR$/assist-preview-wait.html" />
         <option value="$PROJECT_DIR$/deploy-packing.html" />
@@ -105,12 +98,13 @@
         <option value="$PROJECT_DIR$/login-s.html" />
         <option value="$PROJECT_DIR$/css/homepage.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/edit-bb.html" />
-        <option value="$PROJECT_DIR$/js/edit-bb.js" />
-        <option value="$PROJECT_DIR$/css/edit-bb.css" />
         <option value="$PROJECT_DIR$/edit-channel.html" />
         <option value="$PROJECT_DIR$/js/edit-channel.js" />
         <option value="$PROJECT_DIR$/edit-ad-pos.html" />
+        <option value="$PROJECT_DIR$/css/edit-bb.css" />
+        <option value="$PROJECT_DIR$/edit-bb.html" />
+        <option value="$PROJECT_DIR$/js/edit-bb.js" />
+        <option value="$PROJECT_DIR$/design-page-blendent.html" />
       </list>
     </option>
   </component>
@@ -339,13 +333,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/edit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="1" selection-start="2811" selection-end="2811" vertical-scroll-proportion="0.54362416">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login-xiaoer&amp;seller.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -388,48 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/edit-ad.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="707" column="14" selection-start="16550" selection-end="16550" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/edit-bb.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="24" selection-start="3896" selection-end="3896" vertical-scroll-proportion="0.6577181">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit-bb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="287" column="13" selection-start="10869" selection-end="10869" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit-bb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="25" selection-start="9628" selection-end="9628" vertical-scroll-proportion="-5.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit-channel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="0" selection-start="6033" selection-end="6034" vertical-scroll-proportion="-7.423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="17" selection-start="4974" selection-end="4974" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/design-create-welcome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-12.629565">
@@ -437,19 +382,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
+    <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="52" selection-start="6433" selection-end="6433" vertical-scroll-proportion="102.15385">
+        <state line="121" column="17" selection-start="4974" selection-end="4974" vertical-scroll-proportion="0.48489934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-channel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="0" selection-start="6033" selection-end="6034" vertical-scroll-proportion="0.34649912">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-page-blendent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="22" selection-start="5075" selection-end="5075" vertical-scroll-proportion="0.518851">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/edit-ad.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="707" column="14" selection-start="16550" selection-end="16550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/edit-bb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="47" selection-start="1989" selection-end="1989" vertical-scroll-proportion="-19.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/edit-bb.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="259" column="21" selection-start="5916" selection-end="5916" vertical-scroll-proportion="-6.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-bb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="30" selection-start="2933" selection-end="2933" vertical-scroll-proportion="-9.0">
           <folding>
-            <element signature="n#style#0;n#div#7;n#section#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="524" column="6" selection-start="20544" selection-end="20544" vertical-scroll-proportion="0.34500876">
+        <state line="555" column="13" selection-start="21894" selection-end="21894" vertical-scroll-proportion="-4.48">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="35" selection-start="11003" selection-end="11003" vertical-scroll-proportion="0.45062837">
+          <folding>
+            <element signature="n#style#0;n#div#7;n#section#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

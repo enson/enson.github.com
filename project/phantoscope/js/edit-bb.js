@@ -8,7 +8,7 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
     var nAddClass = Y.one('#add_class_button');
     var nClassList = Y.one('#class-list');
     var nClassSave = Y.one('#class-save');
-    var nSubClass= Y.one('.subClass');
+    var nSubClass= Y.one('.subClassSection');
     var nFirstClass = Y.one('.firstClass');
 
     var nCancelSubClass = Y.one('#cancel-subClass-button');
@@ -37,9 +37,7 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
     },'.deleteClass');
     //编辑进入二级分类编辑页面
     nClassList.delegate('click',function(){
-        nAddClass.setStyle('display','none');
-        nClassList.setStyle('display','none');
-        nClassSave.setStyle('display','none');
+        Y.one('.add-class').setStyle('display','none');
         nSubClass.setStyle('display','block');
         shiftLi(nSubClassList);
     },'.editClass');
@@ -48,7 +46,6 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
     nAddClass.on('click',function(){
         nAddClass.setStyle('display','none');
         nClassList.setStyle('display','none');
-        nClassSave.setStyle('display','none');
         nFirstClass.setStyle('display','block');
     })
 
@@ -56,13 +53,11 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
     nCancelFirstClass.on('click',function(){
         nAddClass.setStyle('display','block');
         nClassList.setStyle('display','block');
-        nClassSave.setStyle('display','block');
         nFirstClass.setStyle('display','none');
     })
     nAddFirstClass.on('click',function(){
         nAddClass.setStyle('display','block');
         nClassList.setStyle('display','block');
-        nClassSave.setStyle('display','block');
         nFirstClass.setStyle('display','none');
         var title = Y.one('.firstClass .title input').get('value');
         nClassList.append(
@@ -91,15 +86,11 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
 
     //二级分类-下方添加和取消按钮事件
     nCancelSubClass.on('click',function(){
-        nAddClass.setStyle('display','block');
-        nClassList.setStyle('display','block');
-        nClassSave.setStyle('display','block');
+        Y.one('.add-class').setStyle('display','block');
         nSubClass.setStyle('display','none');
     });
     nAddSubClass.on('click',function(){
-        nAddClass.setStyle('display','block');
-        nClassList.setStyle('display','block');
-        nClassSave.setStyle('display','block');
+        Y.one('.add-class').setStyle('display','block');
         nSubClass.setStyle('display','none');
     })
 
@@ -110,17 +101,17 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
 
     //二级分类-添加自定义关键词事件
     nAddKeyword.on('click',function(){
-        nSubClass.setStyle('display','none');
+        Y.one('.subClass').setStyle('display','none');
         nKeywordInput.setStyle('display','block');
     })
 
     //二级分类-自定义关键词输入的添加和取消事件
     nKeywordCancelBtn.on('click',function(){
-        nSubClass.setStyle('display','block');
+        Y.one('.subClass').setStyle('display','block');
         nKeywordInput.setStyle('display','none');
     })
     nKeywordAddBtn.on('click',function(){
-        nSubClass.setStyle('display','block');
+        Y.one('.subClass').setStyle('display','block');
         nKeywordInput.setStyle('display','none');
         var keyWord = Y.one('.keyword-input input').get('value');
         nSubClassList.append(
@@ -145,7 +136,7 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
 
     //二级分类-批量导入类目
     nImportClass.on('click',function(){
-        nSubClass.setStyle('display','none');
+        Y.one('.subClass').setStyle('display','none');
         nClassStore.setStyle('display','block');
         transferBB(Y.one('.class-store .box-left'),Y.one('.class-store .box-right'),
             Y.one('.class-store .add-transfer-button'),Y.one('.class-store .add-transfer-button2'));
@@ -174,7 +165,7 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
 
     //二级分类--导入店铺类目 --添加与取消事件
     nStoreAddBtn.on('click',function(){
-        nSubClass.setStyle('display','block');
+        Y.one('.subClass').setStyle('display','block');
         nClassStore.setStyle('display','none');
         var list = Y.all('.class-store .box-right .item-sub');
         var itemsList = '';
@@ -200,7 +191,7 @@ YUI().use('node','node-event-delegate','jsonp',function(Y){
 
     })
     nStoreCancelBtn.on('click',function(){
-        nSubClass.setStyle('display','block');
+        Y.one('.subClass').setStyle('display','block');
         nClassStore.setStyle('display','none');
     })
 
