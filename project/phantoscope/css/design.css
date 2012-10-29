@@ -38,6 +38,13 @@
     font-weight:bold;
     margin:10px 0px;
     vertical-align: middle;
+    position: relative;
+}
+.done-icon{
+    position: absolute;
+    top: 2px;
+    right: 278px;
+    display: none;
 }
 #content .flowStep .detail li span{
     font-size: 14px;
@@ -57,7 +64,6 @@
     width: 16px;
     height:16px;
     border: 1px solid #cdcccc;
-    background-color:#82c32e ;
     display: inline-block;
     margin-left: -3px;
 }

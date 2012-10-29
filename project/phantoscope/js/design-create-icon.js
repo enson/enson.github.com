@@ -16,8 +16,9 @@ YUI().use('node','node-event-delegate',function(Y){
         Y.one('#input-value').setAttribute('value',this.getStyle('background-color'));
     },'.selectC')
     nSelectSize.delegate("click",function(){
-        Y.all('.sizeItem').setStyle('border','3px solid gainsboro');
         this.setStyle('border','3px solid #ff6600');
+        Y.all('.sizeItem').setStyle('border','3px solid gainsboro');
+        Y.one('.sizeBox1 img').set('src','')
     },'.sizeItem')
 
 

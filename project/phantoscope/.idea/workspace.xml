@@ -20,60 +20,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit-ad-pos.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
+      <file leaf-file-name="design-create-icon.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design-create-icon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="35" selection-start="11003" selection-end="11003" vertical-scroll-proportion="0.45062837">
-              <folding>
-                <element signature="n#style#0;n#div#7;n#section#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/edit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="555" column="13" selection-start="21894" selection-end="21894" vertical-scroll-proportion="-4.48">
+            <state line="36" column="18" selection-start="1581" selection-end="1581" vertical-scroll-proportion="-10.307693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-ad.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/edit-ad.css">
+      <file leaf-file-name="design-create-icon.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/design-create-icon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="707" column="14" selection-start="16550" selection-end="16550" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="869" selection-end="869" vertical-scroll-proportion="0.65604025">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-bb.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edit-bb.html">
+      <file leaf-file-name="design-create-icon.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/design-create-icon.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="30" selection-start="2933" selection-end="2933" vertical-scroll-proportion="-9.0">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit-bb.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/edit-bb.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="259" column="21" selection-start="5916" selection-end="5916" vertical-scroll-proportion="-6.52">
+            <state line="160" column="0" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-bb.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/edit-bb.js">
+      <file leaf-file-name="design-page-blendent.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design-page-blendent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="47" selection-start="1989" selection-end="1989" vertical-scroll-proportion="-19.72">
+            <state line="173" column="0" selection-start="7249" selection-end="7249" vertical-scroll-proportion="-14.884615">
               <folding />
             </state>
           </provider>
@@ -89,22 +66,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/home-page.html" />
-        <option value="$PROJECT_DIR$/assist-preview-wait.html" />
-        <option value="$PROJECT_DIR$/deploy-packing.html" />
-        <option value="$PROJECT_DIR$/css/edit-channel.css" />
-        <option value="$PROJECT_DIR$/js/edit.js" />
-        <option value="$PROJECT_DIR$/css/edit-ad.css" />
-        <option value="$PROJECT_DIR$/login-s.html" />
-        <option value="$PROJECT_DIR$/css/homepage.css" />
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/edit-channel.html" />
-        <option value="$PROJECT_DIR$/js/edit-channel.js" />
         <option value="$PROJECT_DIR$/edit-ad-pos.html" />
         <option value="$PROJECT_DIR$/css/edit-bb.css" />
         <option value="$PROJECT_DIR$/edit-bb.html" />
         <option value="$PROJECT_DIR$/js/edit-bb.js" />
         <option value="$PROJECT_DIR$/design-page-blendent.html" />
+        <option value="$PROJECT_DIR$/css/design-create-welcome.css" />
+        <option value="$PROJECT_DIR$/login-admin2.html" />
+        <option value="$PROJECT_DIR$/js/login-admin2.js" />
+        <option value="$PROJECT_DIR$/design-create-welcome.html" />
+        <option value="$PROJECT_DIR$/js/design-create-welcome.js" />
+        <option value="$PROJECT_DIR$/css/design.css" />
+        <option value="$PROJECT_DIR$/js/design-appearance.js" />
+        <option value="$PROJECT_DIR$/design-appearance.html" />
+        <option value="$PROJECT_DIR$/css/design-create-icon.css" />
+        <option value="$PROJECT_DIR$/design-create-icon.html" />
+        <option value="$PROJECT_DIR$/js/design-create-icon.js" />
       </list>
     </option>
   </component>
@@ -194,12 +171,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="fileTemplates" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -333,120 +310,117 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login-xiaoer&amp;seller.html">
+    <entry file="file://$PROJECT_DIR$/js/edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="555" column="13" selection-start="21894" selection-end="21894" vertical-scroll-proportion="1.6543624">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home-page.html">
+    <entry file="file://$PROJECT_DIR$/css/login-admin2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.58070177">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8557047">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/homepage.css">
+    <entry file="file://$PROJECT_DIR$/js/login-admin2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="0.6275168">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/login-admin2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="27" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login-s.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="87" selection-start="1503" selection-end="1503" vertical-scroll-proportion="-14.730769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/edit-channel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="43" selection-start="5544" selection-end="5544" vertical-scroll-proportion="0.6577181">
-          <folding />
+        <state line="121" column="16" selection-start="4297" selection-end="4297" vertical-scroll-proportion="0.51166964">
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/design-create-welcome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-12.629565">
+        <state line="454" column="17" selection-start="10140" selection-end="10140" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit-channel.js">
+    <entry file="file://$PROJECT_DIR$/js/design-create-welcome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="17" selection-start="4974" selection-end="4974" vertical-scroll-proportion="0.48489934">
+        <state line="155" column="0" selection-start="4790" selection-end="4790" vertical-scroll-proportion="3.1107383">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edit-channel.html">
+    <entry file="file://$PROJECT_DIR$/design-create-welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="0" selection-start="6033" selection-end="6034" vertical-scroll-proportion="0.34649912">
+        <state line="179" column="119" selection-start="8870" selection-end="8902" vertical-scroll-proportion="0.5798923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/deploy-info-input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="95" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.37192982">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/design-appearance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="51" selection-start="202" selection-end="202" vertical-scroll-proportion="0.19966443">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-appearance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="21" selection-start="3844" selection-end="3844" vertical-scroll-proportion="0.57271093">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/design.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="2" selection-start="1477" selection-end="1477" vertical-scroll-proportion="2.0251677">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design-page-blendent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="22" selection-start="5075" selection-end="5075" vertical-scroll-proportion="0.518851">
+        <state line="173" column="0" selection-start="7249" selection-end="7249" vertical-scroll-proportion="-14.884615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/edit-ad.css">
+    <entry file="file://$PROJECT_DIR$/css/design-create-icon.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="707" column="14" selection-start="16550" selection-end="16550" vertical-scroll-proportion="0.0">
+        <state line="160" column="0" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit-bb.js">
+    <entry file="file://$PROJECT_DIR$/design-create-icon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="47" selection-start="1989" selection-end="1989" vertical-scroll-proportion="-19.72">
+        <state line="36" column="18" selection-start="1581" selection-end="1581" vertical-scroll-proportion="-10.307693">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/edit-bb.css">
+    <entry file="file://$PROJECT_DIR$/js/design-create-icon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="259" column="21" selection-start="5916" selection-end="5916" vertical-scroll-proportion="-6.52">
+        <state line="23" column="0" selection-start="869" selection-end="869" vertical-scroll-proportion="0.65604025">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit-bb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="30" selection-start="2933" selection-end="2933" vertical-scroll-proportion="-9.0">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="555" column="13" selection-start="21894" selection-end="21894" vertical-scroll-proportion="-4.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="35" selection-start="11003" selection-end="11003" vertical-scroll-proportion="0.45062837">
-          <folding>
-            <element signature="n#style#0;n#div#7;n#section#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

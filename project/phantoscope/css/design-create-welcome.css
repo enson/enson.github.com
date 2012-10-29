@@ -450,9 +450,26 @@ input{ vertical-align:middle; margin:0; padding:0}
     width: 106px;
     height: 100px;
 }
-
-
-
+.phonePreview .template5 .logo img{
+    width:106px;
+    height:100px;
+}
 
 
 /**************模板样式 end******************/
+
+#logo1 img{
+    visibility: hidden;
+}
+#logo2 img{
+    visibility: hidden;
+}
+#logo3 img{
+    visibility: hidden;
+}
+#logo4 img{
+    visibility: hidden;
+}
+#logo5 img{
+    visibility: hidden;
+}
