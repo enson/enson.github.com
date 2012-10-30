@@ -7,10 +7,17 @@
     font-weight:bold;
     margin:10px 0px;
     vertical-align: middle;
+    position: relative;
 }
 #content .flowStep .detail li span{
     font-size: 14px;
     font-weight: normal;
+}
+.done-icon {
+    position: absolute;
+    top: 2px;
+    right: 278px;
+    display: none;
 }
 #content .flowStep p{
     font-size: 12px;

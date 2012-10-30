@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
     <link rel="stylesheet" href="./css/edit.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script type="text/javascript"
+            src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
+    </script>
+    <script type="text/javascript" src="./js/common.js"></script>
 
 </head>
 <body>
@@ -18,52 +22,54 @@
     </header>
     <div id="content">
         <div class="flowTab" style="width:1011px">
-            <span class="tab1"><img src="./img/edit/designTab.PNG" /></span>
-            <span class="tab2"><img src="./img/edit/editTab.PNG" /></span>
-            <span class="tab3"><img src="./img/common/deployTab.PNG" /></span>
+            <span class="tab1"><a href=""><img src="./img/common/designTab2.PNG" /></a></span>
+            <span class="tab2"><a href=""><img src="./img/common/editTab3.PNG" /></a></span>
+            <span class="tab3"><a href=""><img src="./img/common/deployTab.PNG" /></a></span>
         </div>
 
         <div class="flowStep">
             <ul class="detail">
-                <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp客户端首页：&nbsp&nbsp
+                <li class="status-homepage">&nbsp&nbsp&nbsp&nbsp&nbsp创建图标：&nbsp&nbsp
                     <span class="scheduleBar scheduleBar-complete"></span>
                     <span class="scheduleBar scheduleBar-complete"></span>
                     <span class="scheduleBar scheduleBar-complete"></span>
                     <span class="scheduleBar scheduleBar-complete"></span>
                     <span class="scheduleBar scheduleBar-complete"></span>
                     <a href=""><img src="./img/common/edit.PNG"/></a>
-                    <span>已完成</span>
-                    <img src="./img/common/ok.PNG"/>
+                    <span class="status-text">已完成</span>
+                    <span class="done-icon"><img src="./img/common/ok.PNG"/></span>
 
                 </li>
-                <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp频道页：&nbsp&nbsp&nbsp
+                <li class="status-channel">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp欢迎页：&nbsp&nbsp&nbsp
                     <span class="scheduleBar scheduleBar-incomplete"></span>
                     <span class="scheduleBar scheduleBar-incomplete"></span>
                     <span class="scheduleBar scheduleBar-incomplete"></span>
                     <span class="scheduleBar scheduleBar-unstart"></span>
                     <span class="scheduleBar scheduleBar-unstart"></span>
                     <a href=""><img src="./img/common/edit.PNG"/></a>
-                    <span>编辑中</span>
+                    <span class="status-text">编辑中</span>
+                    <span class="done-icon"><img src="./img/common/ok.PNG"/></span>
                 </li>
-                <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp宝贝大全：&nbsp&nbsp
+                <li class="status-bb">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp页面配色：&nbsp&nbsp
                     <span class="scheduleBar scheduleBar-unstart"></span>
                     <span class="scheduleBar scheduleBar-unstart"></span>
                     <span class="scheduleBar scheduleBar-unstart"></span>
                     <span class="scheduleBar scheduleBar-unstart"></span>
                     <span class="scheduleBar scheduleBar-unstart"></span>
                     <a href=""><img src="./img/common/edit.PNG"/></a>
-                    <span>未开始</span>
+                    <span class="status-text">未开始</span>
+                    <span class="done-icon"><img src="./img/common/ok.PNG"/></span>
                 </li>
                 <p>提示：外观设计包含三项内容，全部完成之后才可进入下一步哦！</p>
             </ul>
 
         </div>
-
+        <input type="hidden" class="appStatus" value="8"/>
     </div>
     <div class="nextStep">
         <a href=""><img src="./img/edit/previous_step.PNG" /></a>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <a href=""><img src="./img/edit/next_step.PNG" /></a>
+        <span class="nextStepDeploy"><a href=""><img src="./img/edit/next_step.PNG" /></a></span>
     </div>
     <footer id="footer" align="center">
         <img src="./img/homepage/footer-logo.PNG" />

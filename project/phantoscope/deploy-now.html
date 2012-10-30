@@ -19,9 +19,19 @@
         .title{
             font-size: 16px;
             font-weight: bold;
+            position: relative;
+        }
+        .title2{
+            height:140px;
+        }
+        .wapLink{
+            color:#3b639f;
+            text-decoration: underline;
+            font-size: 14px;
+            font-weight: normal;
         }
         #content .tip{
-            color:#4d4d4d;
+            color:#808080;
         }
         .ww-light{
             display:inline-block;
@@ -37,6 +47,12 @@
         .ww-block {
             display: block;
             margin-top: 3px;
+        }
+        .erwei{
+            position: absolute;
+            left: 146px;
+            top: 5px;
+            text-align: center;
         }
     </style>
 
@@ -65,8 +81,13 @@
         </div>
         <div class="divisionLine"></div>
         <div class="text">
-            <div class="title">从WAP页面下载：</div>
-            <div class="title">扫描二维码下载：</div>
+            <div class="title">从WAP页面下载：<a href="http://www.taobao.com" class="wapLink">www.taobao.com</a></div>
+            <div class="title title2">扫描二维码下载：
+                <div class="erwei">
+                    <img src="./img/edit/pic1.PNG" />
+                    <div class="erwei-btn"><a href="http://www.taobao.com"><img src="./img/deploy/code-down.png" /></a></div>
+                </div>
+            </div>
         </div>
 
     </div>

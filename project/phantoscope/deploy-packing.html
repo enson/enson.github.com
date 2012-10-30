@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css" />
     <link rel="stylesheet" href="./css/design.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script type="text/javascript"
+            src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
+    </script>
+    <script type="text/javascript" src="./js/common.js"></script>
     <style type="text/css">
-        #content .text{
+        #content .packing-tip{
             text-align: left;
             width:520px;
-            margin:10px auto;
-            height:490px;
+            margin:30px auto;
+            height:455px;
         }
         .title{
             font-size: 16px;
             font-weight: bold;
+        }
+        .text1{
+            display: none;
+        }
+        .text2{
+            display: none;
         }
     </style>
 
@@ -30,11 +40,11 @@
     </header>
     <div id="content">
         <div class="flowTab" style="width:1011px">
-            <span class="tab1"><img src="./img/common/designTab2.png" /></span>
-            <span class="tab2"><img src="./img/common/editTab2.png" /></span>
-            <span class="tab3"><img src="./img/common/deployTab2.png" /></span>
+            <span class="tab1"><a href=""><img src="./img/common/designTab2.PNG" /></a></span>
+            <span class="tab2"><a href=""><img src="./img/common/editTab2.PNG" /></a></span>
+            <span class="tab3"><a href=""><img src="./img/common/deployTab2.PNG" /></a></span>
         </div>
-        <div class="text">
+        <div class="packing-tip">
             <div class="text1">
                 <div class="title">亲，正在生成客户端预览包，这个过程需要一些时间，请稍作等待。</div>
                 <div class="title">打包完成后，旺旺会弹出提醒，请保持旺旺通畅。</div>
@@ -46,7 +56,7 @@
             </div>
 
         </div>
-
+        <input type="hidden" class="appStatus" value="8"/>
 
     </div>
     <footer id="footer" align="center">

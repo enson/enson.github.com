@@ -132,13 +132,35 @@ YUI().use('node','node-event-delegate',function(Y){
         container.setContent(img);
     }
     */
+
+    //点击添加宝贝图片--切换按钮
+    Y.one('.addItem').delegate('change',function(){
+        var btnChange = '<img src="./img/design/edit.PNG" />';
+        this.previous('.editButton').setContent(btnChange);
+    },'.addBox-file')
     //点击预览宝贝图片
+    function previewBB(picBox,addBox){
+        picBox.setContent('<img src="'+addBox.getAttribute('src')+'" />');
+    };
     nPicPreview.on('click',function(){
-        if(Y.one('.addBox1').hasChild('img')){
-            Y.all('.pic-box1 img').setAttribute('src', Y.one('.addBox1 img').getAttribute('src'));
-        }else{
-            alert('亲，你还没有上传图片哦！');
-        }
+        //var src = Y.one('.addBox1 img').getAttribute('src');
+        //var img = '<img src="'+src+'" />';
+        Y.all('.pic-box1').setContent('<img src="'+Y.one('.addBox1 img').getAttribute('src')+'" />');
+        Y.all('.pic-box2').setContent('<img src="'+Y.one('.addBox2 img').getAttribute('src')+'" />');
+        Y.all('.pic-box3').setContent('<img src="'+Y.one('.addBox3 img').getAttribute('src')+'" />');
+        Y.all('.pic-box4').setContent('<img src="'+Y.one('.addBox4 img').getAttribute('src')+'" />');
+        Y.all('.pic-box5').setContent('<img src="'+Y.one('.addBox5 img').getAttribute('src')+'" />');
+        Y.all('.pic-box6').setContent('<img src="'+Y.one('.addBox6 img').getAttribute('src')+'" />');
+        Y.all('.pic-box7').setContent('<img src="'+Y.one('.addBox7 img').getAttribute('src')+'" />');
+        Y.all('.pic-box8').setContent('<img src="'+Y.one('.addBox8 img').getAttribute('src')+'" />');
+        Y.all('.pic-box9').setContent('<img src="'+Y.one('.addBox9 img').getAttribute('src')+'" />');
+        Y.all('.pic-box10').setContent('<img src="'+Y.one('.addBox10 img').getAttribute('src')+'" />');
+        Y.all('.pic-box11').setContent('<img src="'+Y.one('.addBox11 img').getAttribute('src')+'" />');
+        Y.all('.pic-box12').setContent('<img src="'+Y.one('.addBox12 img').getAttribute('src')+'" />');
+        Y.all('.pic-box13').setContent('<img src="'+Y.one('.addBox13 img').getAttribute('src')+'" />');
+        Y.all('.pic-box14').setContent('<img src="'+Y.one('.addBox14 img').getAttribute('src')+'" />');
+        Y.all('.pic-box15').setContent('<img src="'+Y.one('.addBox15 img').getAttribute('src')+'" />');
+        Y.all('.pic-box16').setContent('<img src="'+Y.one('.addBox16 img').getAttribute('src')+'" />');
     })
 });
 
@@ -170,18 +192,18 @@ function handleFilesLogo(files){
     }
 }
 
-function handlePic(files){
+function handlePic(files,addBox){
     for (var i = 0; i < files.length; i++) {
         var file = files[i];
         var imageType = /image.*/;
 
         if (!file.type.match(imageType)) {
-            alert('error');
+            alert('亲，上传的图片格式不正确哦！');
             continue;
         }
         var reader = new FileReader();
         reader.onload = function(e){
-            displayImage($('addBox1'),e.target.result);
+            displayImage(addBox,e.target.result);
         }
         reader.readAsDataURL(file);
     }

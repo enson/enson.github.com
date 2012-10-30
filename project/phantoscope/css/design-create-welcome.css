@@ -134,6 +134,12 @@ input{ vertical-align:middle; margin:0; padding:0}
     height: 113px;
     border-bottom: 3px solid black;
     background-color: #234567;
+    font-size: 56px;
+    color:#fff;
+}
+.phonePreview .template1 ul li .bb-pic img{
+    width:102px;
+    height:112px;
 }
 .phonePreview .copyright{
     color:#a9a9a9;
@@ -156,6 +162,12 @@ input{ vertical-align:middle; margin:0; padding:0}
     width:110px;
     height:110px;
     display: inline-block;
+    font-size: 56px;
+    color:#fff;
+}
+.phonePreview .template2 .pic-box img{
+    width:110px;
+    height:110px;
 }
 .phonePreview .template2 .pic-box1{
     position: absolute;
@@ -173,22 +185,22 @@ input{ vertical-align:middle; margin:0; padding:0}
     top: -23px;
     left: 88px;
     z-index: 11;
-    transform: rotate(181deg);
-    -ms-transform: rotate(181deg);
-    -moz-transform: rotate(181deg);
-    -webkit-transform: rotate(181deg);
-    -o-transform: rotate(181deg);
+    transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
 }
 .phonePreview .template2 .pic-box3{
     position: absolute;
     top: -49px;
     left: 169px;
     z-index: 12;
-    transform: rotate(178deg);
-    -ms-transform: rotate(178deg);
-    -moz-transform: rotate(178deg);
-    -webkit-transform: rotate(178deg);
-    -o-transform: rotate(178deg);
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
     background-color: black;
 }
 .phonePreview .template2 .pic-box4{
@@ -196,11 +208,11 @@ input{ vertical-align:middle; margin:0; padding:0}
     top: -26px;
     left: 223px;
     z-index: 11;
-    transform: rotate(178deg);
-    -ms-transform: rotate(178deg);
-    -moz-transform: rotate(178deg);
-    -webkit-transform: rotate(178deg);
-    -o-transform: rotate(178deg);
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
     background-color: #D15353;
 }
 .phonePreview .template2 .pic-box5{
@@ -208,11 +220,11 @@ input{ vertical-align:middle; margin:0; padding:0}
     top: 13px;
     left: 163px;
     z-index: 10;
-    transform: rotate(181deg);
-    -ms-transform: rotate(181deg);
-    -moz-transform: rotate(181deg);
-    -webkit-transform: rotate(181deg);
-    -o-transform: rotate(181deg);
+    transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
     background-color: #234567;
 }
 .phonePreview .template2 .pic-box6{
@@ -338,15 +350,22 @@ input{ vertical-align:middle; margin:0; padding:0}
     height: 60px;
 }
 .phonePreview .template3 ul{
-    margin-left: -3px;
+    margin-left: 0px;
 }
 .phonePreview .template3 ul li{
     width: 79px;
     height: 82px;
     display: inline-block;
     background-color: #216CB8;
-    margin-right: -4px;
-    margin-top: -1px;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: 46px;
+    color: white;
+    float: left;
+}
+.phonePreview .template3 ul li img{
+    width:78px;
+    height:82px;
 }
 
 
@@ -363,6 +382,12 @@ input{ vertical-align:middle; margin:0; padding:0}
     height: 55px;
 }
 .phonePreview .template4 .main-pic{
+    height:353px;
+    font-size: 56px;
+    color:#fff;
+}
+.phonePreview .template4 .main-pic img{
+    width:316px;
     height:353px;
 }
 
@@ -384,6 +409,15 @@ input{ vertical-align:middle; margin:0; padding:0}
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
+    font-size: 30px;
+    color:#fff;
+}
+.phonePreview .template5 .pic-box img{
+    width: 96px;
+    height: 96px;
+    -webkit-transform: rotate(-45deg);
+    margin-top: -14px;
+    margin-left: -14px;
 }
 .phonePreview .template5 .pic-box1{
     top: -35px;
@@ -396,6 +430,10 @@ input{ vertical-align:middle; margin:0; padding:0}
     background-color: #CC583A;
     width: 36px;
     height: 36px;
+}
+.phonePreview .template5 .pic-box2 img{
+    width: 56px;
+    height: 58px;
 }
 .phonePreview .template5 .pic-box3{
     top: 239px;

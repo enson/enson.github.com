@@ -1,0 +1,30 @@
+
+#body{
+    width:440px;
+    height:658px;
+    background-color: #fff;
+    margin:15px auto;
+    text-align: left;
+}
+.appName{
+    height:66px;
+    background: url("../img/deploy/wap-header-bkg.png") no-repeat center top;
+    font-family: microsoft YaHei;
+    font-size: 30px;
+    color:#fff;
+}
+.appName .text{
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.title{
+    font-family: microsoft YaHei;
+    font-size: 17px;
+    color:#686868;
+    font-weight: bold;
+}
+.intro{
+    color:#686868;
+    font-family: microsoft YaHei;
+}
