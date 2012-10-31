@@ -20,28 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="design-create-welcome.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design-create-welcome.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="51" selection-start="338" selection-end="338" vertical-scroll-proportion="-5.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="design-page-blendent.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design-page-blendent.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="54" selection-start="145" selection-end="145" vertical-scroll-proportion="-3.2692308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app-wap.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app-wap.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app-wap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="0.7253142">
+            <state line="9" column="4" selection-start="345" selection-end="432" vertical-scroll-proportion="-5.8846154">
               <folding />
             </state>
           </provider>
@@ -50,7 +32,34 @@
       <file leaf-file-name="app-wap.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app-wap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+            <state line="49" column="22" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check-link-bb.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check-link-bb.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="25" selection-start="672" selection-end="672" vertical-scroll-proportion="-6.230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit-ad-pos.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="16" selection-start="735" selection-end="735" vertical-scroll-proportion="1.9615384">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/edit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="512" column="0" selection-start="19875" selection-end="19875" vertical-scroll-proportion="1.4446309">
               <folding />
             </state>
           </provider>
@@ -66,22 +75,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/design-create-icon.html" />
-        <option value="$PROJECT_DIR$/js/design-create-icon.js" />
-        <option value="$PROJECT_DIR$/js/design-appearance.js" />
         <option value="$PROJECT_DIR$/css/edit.css" />
         <option value="$PROJECT_DIR$/design-appearance.html" />
         <option value="$PROJECT_DIR$/edit-homepage.html" />
         <option value="$PROJECT_DIR$/deploy-packing.html" />
         <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/deploy-now.html" />
         <option value="$PROJECT_DIR$/js/design-create-welcome.js" />
         <option value="$PROJECT_DIR$/css/design-create-welcome.css" />
         <option value="$PROJECT_DIR$/design-create-welcome.html" />
         <option value="$PROJECT_DIR$/design-page-blendent.html" />
         <option value="$PROJECT_DIR$/deploy-info-input.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/deploy-now.html" />
         <option value="$PROJECT_DIR$/app-wap.html" />
         <option value="$PROJECT_DIR$/css/app-wap.css" />
+        <option value="$PROJECT_DIR$/check-link-bb.html" />
+        <option value="$PROJECT_DIR$/js/edit.js" />
       </list>
     </option>
   </component>
@@ -117,6 +126,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -165,18 +175,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="fileTemplates" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -236,16 +245,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17174083" sideWeight="0.91961414" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17174083" sideWeight="0.67202574" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -310,116 +319,102 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/design-appearance.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit-homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1973" selection-end="1973" vertical-scroll-proportion="-3.7692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deploy-packing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="55" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.98563737">
-          <folding />
-        </state>
+        <state line="58" column="55" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.98563737" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy-now.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.06104129">
-          <folding />
-        </state>
+        <state line="57" column="0" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design-appearance.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.091561936">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="703" selection-end="703" vertical-scroll-proportion="0.030520646">
-          <folding />
-        </state>
+        <state line="39" column="0" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.091561936" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/edit-bb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.904362">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.904362" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/design-create-welcome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="418" column="22" selection-start="9368" selection-end="9368" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy-info-input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="51" selection-start="337" selection-end="337" vertical-scroll-proportion="111.30769" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="14" selection-start="654" selection-end="668" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/design-create-welcome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="3" selection-start="4724" selection-end="4724" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/design-create-welcome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="418" column="22" selection-start="9368" selection-end="9368" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="81" selection-start="223" selection-end="283" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-create-welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="338" selection-end="338" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy-info-input.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="337" selection-end="337" vertical-scroll-proportion="111.30769">
+        <state line="17" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.48489934">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design-page-blendent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="54" selection-start="145" selection-end="145" vertical-scroll-proportion="-3.2692308">
+        <state line="123" column="8" selection-start="4979" selection-end="5011" vertical-scroll-proportion="-0.091561936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy-now.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="10" selection-start="4084" selection-end="4084" vertical-scroll-proportion="1.1220826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check-link-bb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="672" selection-end="672" vertical-scroll-proportion="-6.230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/app-wap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+        <state line="49" column="22" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-create-welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="753" selection-end="753" vertical-scroll-proportion="0.4578097">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app-wap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="0.7253142">
+        <state line="9" column="4" selection-start="345" selection-end="432" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit-ad-pos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="16" selection-start="735" selection-end="735" vertical-scroll-proportion="1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="512" column="0" selection-start="19875" selection-end="19875" vertical-scroll-proportion="1.4446309">
           <folding />
         </state>
       </provider>

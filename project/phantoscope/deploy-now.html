@@ -10,6 +10,8 @@
     <script type="text/javascript"
             src="http://a.tbcdn.cn/??s/kissy/1.1.6/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
     </script>
+    <script type="text/javascript" src="http://a.tbcdn.cn/mw/base/libs/jquery/1.7.1/jquery.js"></script>
+    <script type="text/javascript" src="http://a.tbcdn.cn/mw/mix/qr/jquery.qrcode.min.js"></script>
     <style type="text/css">
         #content .text{
             text-align: left;
@@ -22,7 +24,7 @@
             position: relative;
         }
         .title2{
-            height:140px;
+            height:198px;
         }
         .wapLink{
             color:#3b639f;
@@ -84,8 +86,8 @@
             <div class="title">从WAP页面下载：<a href="http://www.taobao.com" class="wapLink">www.taobao.com</a></div>
             <div class="title title2">扫描二维码下载：
                 <div class="erwei">
-                    <img src="./img/edit/pic1.PNG" />
-                    <div class="erwei-btn"><a href="http://www.taobao.com"><img src="./img/deploy/code-down.png" /></a></div>
+                    <span id="td-code"></span>
+                    <!--<div class="erwei-btn"><a href="http://www.taobao.com"><img src="./img/deploy/code-down.png" /></a></div>-->
                 </div>
             </div>
         </div>
@@ -97,6 +99,16 @@
     <footer id="footer" align="center">
         <img src="./img/homepage/footer-logo.PNG" />
     </footer>
+    <script type="text/javascript">
+        $("#td-code").qrcode({
+            width:200,
+            height:200,
+            correctLevel:1,
+            foreground:'#132452',
+            background:'#fff',
+            text:'http://www.taobao.com'
+        })
+    </script>
 
 </div>
 </body>

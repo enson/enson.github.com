@@ -18,13 +18,7 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
     var nAdListArray = getAdList();
     var nAdListArray2 = nAdListArray.get('length');
     var nAdArrayLength = nAdListArray.get('length').length;
-    //Y.log(nAdListArray.size());
-    //Y.log(nAdListArray.item(0));
-    //Y.log(nAdListArray.item(nAdArrayLength-1));
-    //Y.log(nAdListArray.get('length').length);
-    //Y.log(nAdListArray);
-    //Y.log(nAdListArray.get('length'));
-    //Y.log(nAdListArray2[0]);
+
 
     var nBoxLeft = Y.one('.box-left');
     var nBoxRight = Y.one('.box-right');
@@ -463,6 +457,12 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
         });
     };
 
+    //广告位--点击保存该模块换预览区广告图
+    nAdSave.on('click',function(){
+        var src = nAdList.one('.ad-item .ad-item-pic img').getAttribute('src');
+        Y.one('#P_ad img').setAttribute('src',src);
+    })
+
 
     //专题编辑功能
     nSubList.delegate('click',function(){
@@ -510,6 +510,9 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
     nSubLinkSelect.on('click',function(){
         subLinkSelect();
     })
+
+    //3个专题 --点击保存该模块预览区专题变化
+
 
     //六个宝贝-点击批量导入宝贝按钮
     nImportBb.on('click',function(){

@@ -1,22 +1,25 @@
 
 #body{
-    width:440px;
-    height:658px;
-    background-color: #fff;
-    margin:15px auto;
-    text-align: left;
+    width: auto;
+    height: auto;
+    background-color: white;
+    text-align: center;
 }
 .appName{
     height:66px;
-    background: url("../img/deploy/wap-header-bkg.png") no-repeat center top;
+    background: url("../img/deploy/wap-header-bkg.png") repeat-x center top;
     font-family: microsoft YaHei;
-    font-size: 30px;
+    font-size: 26px;
     color:#fff;
 }
 .appName .text{
     float: left;
     margin-left: 5px;
     margin-top: 10px;
+}
+.content{
+    text-align: left;
+    margin-left: 8px;
 }
 .title{
     font-family: microsoft YaHei;
@@ -28,3 +31,124 @@
     color:#686868;
     font-family: microsoft YaHei;
 }
+.btn{
+    width: 342px;
+    margin: 0 auto;
+}
+.btn img{
+    width: 158px;
+    height: 48px;
+    cursor: pointer;
+}
+.btn a{
+    margin-right: 10px;
+}
+.divisionLine{
+    margin:5px auto;
+}
+
+.pic-widget-slide-v2{}
+.common-slide {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.common-slide .list {
+    position: relative;
+    width: 300px;
+    height: 156px;
+    overflow: hidden;
+}
+.common-slide .list ul {
+    position: absolute;
+    white-space: nowrap;
+}
+.common-slide .list li {
+    width: 94px;
+    height: 156px;
+    line-height: 95px;
+    float: left;
+    position: relative;
+    left: 3px;
+    -webkit-touch-callout: none;
+    margin-left: 6px;
+}
+.common-slide .list li img {
+    margin-left: -6px;
+    vertical-align: top;
+    border: none;
+    width:94px;
+    height:156px;
+}
+
+.common-slide .mtbslide-pagination {
+    height: 28px;
+    clear: both;
+    position: absolute;
+    top: 46px;
+}
+.common-slide .mtbslide-pagination .prev {
+    position: absolute;
+    left: -20px;
+    top:36px;
+}
+.common-slide .mtbslide-pagination .pg-btn {
+    width: 20px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 22px;
+    font-weight: bolder;
+    color:#808080;
+    cursor: pointer;
+}
+.common-slide .mtbslide-pagination .next {
+    position: absolute;
+    left: 300px;
+    top:36px;
+}
+
+
+
+/*
+.display-module{
+    width:300px;
+    position: relative;
+}
+.pic-display{
+    margin-top: 6px;
+    width:1270px;
+    height:196px;
+    margin-left: 20px;
+    position: absolute;
+    float:left;
+}
+.pic-display .one-img{
+    display: inline-block;
+    margin-right: 6px;
+}
+.pic-display .one-img img{
+    width:90px;
+}
+.display{
+    position: relative;
+    width:300px;
+    overflow:hidden;
+}
+.display .left-btn{
+    position: absolute;
+    top: 58px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.display .right-btn{
+    position: absolute;
+    top: 58px;
+    left:313px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+*/
+
+

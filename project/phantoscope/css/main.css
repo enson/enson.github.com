@@ -37,7 +37,7 @@
     font-size: 13px;
     margin-bottom: 5px;
 }
-#content .divisionLine{
+.divisionLine{
     border-bottom: 1px solid gainsboro;
     border-color: #cccccc;
     display: block;
