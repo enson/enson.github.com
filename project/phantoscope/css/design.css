@@ -10,6 +10,7 @@
     font-size:16px;
     font-weight:bold;
     margin-top: 10px;
+    position: relative;
 }
 #content .setName p{
     font-size: 12px;
@@ -85,7 +86,27 @@
     background: url("../img/design/bkgPhone.png") no-repeat 0px 0px;
     position: relative;
 }
-
+.num-warning{
+    color:red;
+    font-size: 12px;
+    font-weight: normal;
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 230px;
+}
+.num-right{
+    display: none;
+}
+.name-warning{
+    color:red;
+    font-size: 12px;
+    font-weight: normal;
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 186px;
+}
 
 
 /*----------外观设计-卖家首页 --------end-----*/

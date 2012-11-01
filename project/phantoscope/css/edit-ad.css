@@ -60,6 +60,14 @@ input{ vertical-align:middle; margin:0; padding:0}
     overflow:hidden;
     position: relative;
 }
+#content .phonePreview .preview-content .P_ad img{
+    width:305px;
+    height:103px;
+}
+#content .phonePreview .preview-content .P_ad .P_ad_overlay img{
+    width:80px;
+    height:31px;
+}
 #content .phonePreview .preview-content .P_ad:hover{
     margin-left: 6px;
     margin-top: 0px;
@@ -250,7 +258,7 @@ input{ vertical-align:middle; margin:0; padding:0}
     opacity: 0.4;
     overflow: hidden;
     width:318px;
-    height:260px;
+    height:192px;
     top:0;
     left:0;
     display: none;
@@ -282,7 +290,7 @@ input{ vertical-align:middle; margin:0; padding:0}
 }
 #content .phonePreview .preview-content .P_hot .P_hot_item{
     width:90px;
-    height:124px;
+    height:90px;
     border: 1px solid gainsboro;
     background-color: #fff;
     display: inline-block;

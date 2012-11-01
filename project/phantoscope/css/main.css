@@ -22,6 +22,7 @@
 #header .header-logo{
     float: left;
     cursor: pointer;
+    height:79px;
 }
 #header .header-text{
     color:#808080;
@@ -85,8 +86,16 @@
     cursor:pointer;
 }
 #footer{
+    background: #fff url("../img/homepage/footer-logo.PNG") no-repeat center top;
     width:990px;
+    height:52px;
     overflow-x: hidden;
+}
+#footer .copyright{
+    font-size: 16px;
+    font-family: "宋体";
+    color:#b0b0b0;
+    line-height: 52px;
 }
 button{
     border: none;

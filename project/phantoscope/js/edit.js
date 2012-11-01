@@ -92,6 +92,7 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
         nSixBb.setStyle('display','none');
         nUpdateBb.setStyle('display','none');
         nHotSell.setStyle('display','none');
+        Y.one('.preview-content').set('scrollTop',160);
     },'.item-title');
     nPBox.delegate('click',function(){
         nPBox.all('.item-bb').setStyle('border','2px solid #ff6600');
@@ -104,6 +105,7 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
         nSixBb.setStyle('display','block');
         nUpdateBb.setStyle('display','none');
         nHotSell.setStyle('display','none');
+        Y.one('.preview-content').set('scrollTop',160);
         shiftLi(nBbList);
     },'.item-bb');
     nPNewBb.on('click',function(){
@@ -117,6 +119,7 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
         nSixBb.setStyle('display','none');
         nUpdateBb.setStyle('display','block');
         nHotSell.setStyle('display','none');
+        Y.one('.preview-content').set('scrollTop',456);
     });
     nPHot.on('click',function(){
         nPNewBb.setStyle('border','2px solid #fff');
@@ -129,6 +132,7 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
         nSixBb.setStyle('display','none');
         nUpdateBb.setStyle('display','none');
         nHotSell.setStyle('display','block');
+        Y.one('.preview-content').set('scrollTop',948);
     })
 
     //鼠标移上各个图标的浮层提示
@@ -461,6 +465,7 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
     nAdSave.on('click',function(){
         var src = nAdList.one('.ad-item .ad-item-pic img').getAttribute('src');
         Y.one('#P_ad img').setAttribute('src',src);
+        Y.one('.preview-content').set('scrollTop',160);
     })
 
 

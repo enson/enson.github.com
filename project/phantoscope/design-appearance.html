@@ -17,6 +17,7 @@
 <body>
 <div id="body" >
     <header id="header">
+        <span class="header-logo"><a href=""><img src="./img/homepage/h-logo.png"/></a></span>
         <div class="header-text">
             Welcome,<span id="user-name">$!username</span>&nbsp&nbsp&nbsp<a href="#">退出</a>
         </div>
@@ -30,10 +31,14 @@
         <div class="setName">
             <ul class="input">
                 <li>客户端名字：
-                    <input type="text" name="softwareName" maxlength="6" placeholder="最多能填写6个中文字符!"/>
+                    <input type="text" class="input_name" placeholder="最多能填写6个中文字符!"/>
+                    <span class="name-warning">最多能填写6个中文字符！</span>
+                    <span class="name-right done-icon"><img style="display: none;" src="./img/common/ok.PNG"/></span>
                 </li>
                 <li>&nbsp&nbsp&nbsp圈子ID号：
-                    <input type="text" name="softwareName"  placeholder="一串数字"/>
+                    <input type="text" class="input_num" name="softwareName"  placeholder="一串数字"/>
+                    <span class="num-warning">请输入一串数字！</span>
+                    <span class="num-right done-icon"><img style="display: none;" src="./img/common/ok.PNG"/></span>
                 </li>
                 <p>提示：如对圈子有疑问，请在线咨询旺旺号圈子</p>
             </ul>
@@ -42,7 +47,7 @@
         <div class="divisionLine"></div>
         <div class="flowStep">
             <ul class="detail">
-                <li class="status-logo">&nbsp&nbsp&nbsp&nbsp&nbsp创建图标：&nbsp&nbsp
+                <li class="status-logo">&nbsp&nbsp&nbsp&nbsp&nbsp创建图标：&nbsp&nbsp&nbsp
                     <span class="scheduleBar scheduleBar-complete"></span>
                     <span class="scheduleBar scheduleBar-complete"></span>
                     <span class="scheduleBar scheduleBar-complete"></span>
@@ -77,14 +82,14 @@
             </ul>
 
         </div>
-        <input type="hidden" class="appStatus" value="6"/>
+        <input type="hidden" class="appStatus" value="4"/>
 
     </div>
     <div class="nextStep">
         <a href=""><img src="./img/common/nextStep1.PNG" /></a>
     </div>
     <footer id="footer" align="center">
-        <img src="./img/homepage/footer-logo.PNG" />
+        <div class="copyright">Copyright @ 2003-2012 Taobao.com 版权所有</div>
     </footer>
 
 </div>
