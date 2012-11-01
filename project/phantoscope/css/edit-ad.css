@@ -151,6 +151,12 @@ input{ vertical-align:middle; margin:0; padding:0}
 }
 #content .phonePreview .preview-content .P_box .item-box img{
     margin-top: -1px;
+    width:86px;
+    height:92px;
+}
+#content .phonePreview .preview-content .P_box .item-box .P_box_overlay img{
+    width:80px;
+    height:31px;
 }
 #content .phonePreview .preview-content .P_box .item-box1{
     background-color: #d0c3a3;

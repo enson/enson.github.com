@@ -512,6 +512,12 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
     })
 
     //3个专题 --点击保存该模块预览区专题变化
+    nSubSave.on('click',function(){
+        var subArray = nSubList.all('.sub-item');
+        nPBox.one('.item-box1 .subject').setContent(subArray.item(0).one('.sub-item-text').getContent());
+        nPBox.one('.item-box6 .subject').setContent(subArray.item(1).one('.sub-item-text').getContent());
+        nPBox.one('.item-box8 .subject').setContent(subArray.item(2).one('.sub-item-text').getContent());
+    })
 
 
     //六个宝贝-点击批量导入宝贝按钮
@@ -597,6 +603,20 @@ YUI().use('node','event','dd','node-base','node-event-delegate','jsonp',function
 
         }
     })
+
+    //6个宝贝--点击保存预览区图片变化
+    Y.one('#bb-save').on('click',function(){
+        var previewBBList = nPBox.all('.item-bb');
+        var selectBBList = nBbList.all('.bb-item');
+        previewBBList.item(0).one('img').setAttribute('src',selectBBList.item(0).one('.bb-item-pic img').getAttribute('src'));
+        previewBBList.item(1).one('img').setAttribute('src',selectBBList.item(1).one('.bb-item-pic img').getAttribute('src'));
+        previewBBList.item(2).one('img').setAttribute('src',selectBBList.item(2).one('.bb-item-pic img').getAttribute('src'));
+        previewBBList.item(3).one('img').setAttribute('src',selectBBList.item(3).one('.bb-item-pic img').getAttribute('src'));
+        previewBBList.item(4).one('img').setAttribute('src',selectBBList.item(4).one('.bb-item-pic img').getAttribute('src'));
+        previewBBList.item(5).one('img').setAttribute('src',selectBBList.item(5).one('.bb-item-pic img').getAttribute('src'));
+
+    })
+
 
     //热销模块选择宝贝--弹出宝贝框
     Y.one('.select-bb').on('click',function(){
