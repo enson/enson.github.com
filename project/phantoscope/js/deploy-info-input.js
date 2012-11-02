@@ -49,11 +49,10 @@ YUI().use('node','event','node-event-delegate',function(Y){
 
     //输入框显示上传控件里选中的文件路径
     Y.one('.a-upload-pic').delegate('change',function(){
-        this.previous('.txt').setAttribute('value',this.get("value"));
+        this.previous('.txt').set('value',this.get("value"));
     },'.file')
     Y.one('.i-upload-pic').delegate('change',function(){
-        //alert(this.get('value'));
-        this.previous('.txt').setAttribute('value',this.get("value"));
+        this.previous('.txt').set('value',this.get("value"));
     },'.file')
 
     //判断有无上传文件

@@ -1,7 +1,7 @@
 /**
  * @author xijian
  * @version v1.0.0 first release
- * @description ±¾Ò³ÊÇÍò»¨Í²µÇÂ¼Ê×Ò³µÄÑùÊ½
+ * @description ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½Â¼ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ê½
  */
 
 /*-------homepage css---------*/
@@ -52,6 +52,7 @@
     text-align:center;
     margin-top: 10px;
     margin-bottom: 10px;
+    height:132px;
 }
 #content .module .item{
     float:left;

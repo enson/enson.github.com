@@ -15,9 +15,6 @@ YUI().use('node','event','node-event-delegate',function(Y){
         }
     })
 
-    window.onload = function(){
-
-    }
 
     Y.one('.input_name').on('change',function(){
         var inputVal = Y.one('.input_name').get('value');
@@ -33,8 +30,29 @@ YUI().use('node','event','node-event-delegate',function(Y){
         }else if(!this.get('value') || length > 12){
             Y.one('.name-right img').setStyle('display','none');
             Y.one('.name-warning').setStyle('display','inline-block');
+            Y.one('.input_name').set('value',inputVal.substring(0,12));
         }
+    })
 
+    Y.one('.nextStep img').on('click',function(e){
+        if(Y.one('.num-right img').getStyle('display') == 'inline-block'
+            && Y.one('.name-right img').getStyle('display') == 'inline-block'
+            && Y.one('.done-icon1').getStyle('display') == 'inline-block'
+            && Y.one('.done-icon2').getStyle('display') == 'inline-block'
+            && Y.one('.done-icon3').getStyle('display') == 'inline-block'){
+            alert('h');
+        }else{
+            e.halt();
+            alert('亲，您还没有编辑完成哦！');
+            if(Y.one('.num-right img').getStyle('display') == 'none'){
+                Y.one('.num-warning').setStyle('display','inline-block');
+            }
+            if(Y.one('.name-right img').getStyle('display') == 'none'){
+                Y.one('.name-warning').setStyle('display','inline-block');
+            }
+
+
+        }
     })
 
 })
