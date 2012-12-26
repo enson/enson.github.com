@@ -1,0 +1,180 @@
+.tree
+{
+    overflow: auto;
+    text-align: left;
+}
+.tree table
+{
+    border-collapse: collapse;
+/*    table-layout: fixed;*/
+    cursor: default;
+}
+/*
+    Text
+*/
+.treeNodeText
+{
+    color: #000;
+    margin-left: 4px;
+    font-family: verdana,ËÎÌו;
+    font-size: 9pt;
+    text-decoration: none;
+    display: block;
+}
+.treeTextNoWrap
+{
+    white-space: nowrap;
+    word-break: keep-all;
+}
+.treeTextAutoWrap
+{
+    white-space: normal;
+    word-break: break-all;
+}
+.treeHighlightedText
+{
+    color: #FFF;
+    background-color: #191970;
+}
+.treeDraggedText
+{
+    color: #808080;
+    background-color: transparent;
+}
+.treeDroppableText
+{
+    font-weight: bold;
+}
+/*
+    Editbox
+*/
+.treeEditbox
+{
+    color: #000;
+    border: 1px solid #000;
+    background-color: #FFF;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#808080', Direction=135, Strength=2);
+}
+/*
+    Dragging
+*/
+.treeDragHint
+{
+    font-family: verdana,helvetica;
+    font-size: 9pt;
+    color: #FFF;
+    background-color: #191970;
+    padding: 0px 2px 1px 2px;
+    white-space: nowrap;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70, StartY=0) progid:DXImageTransform.Microsoft.Shadow(color='#808080', Direction=135, Strength=4);
+    opacity: 0.5;
+    position: absolute;
+}
+.treeDroppableSibling
+{
+    border-top: 1px dotted #000;
+    width: 100%;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+}
+/*
+    Images
+*/
+.treeIcon
+{
+    width: 16px;
+    height: 22px;
+}
+.treeImgBranchInactive
+{
+    background: transparent url(node.gif) no-repeat 0px center;
+}
+.treeImgBranchActive
+{
+    background: transparent url(node.gif) no-repeat -16px center;
+}
+.treeImgLeafInactive
+{
+    background: transparent url(node.gif) no-repeat -32px center;
+}
+.treeImgLeafActive
+{
+    background: transparent url(node.gif) no-repeat -48px center;
+}
+.treeImgBoxUnchecked
+{
+    background: transparent url(check.gif) no-repeat 0px center;
+}
+.treeImgBoxChecked
+{
+    background: transparent url(check.gif) no-repeat -16px center;
+}
+.treeImgBoxCheckedPartial
+{
+    background: transparent url(check.gif) no-repeat -32px center;
+}
+.treeImgRadioUnchecked
+{
+    background: transparent url(radio.gif) no-repeat 0px center;
+}
+.treeImgRadioChecked
+{
+    background: transparent url(radio.gif) no-repeat -16px center;
+}
+.treeImgLoading
+{
+    background: transparent url(loading.gif) no-repeat center center;
+}
+.treeImgPlus1
+{
+    background: transparent url(hierarchy.gif) no-repeat 0px center;
+}
+.treeImgPlus2
+{
+    background: transparent url(hierarchy.gif) no-repeat -16px center;
+}
+.treeImgPlus3
+{
+    background: transparent url(hierarchy.gif) no-repeat -32px center;
+}
+.treeImgPlus4
+{
+    background: transparent url(hierarchy.gif) no-repeat -48px center;
+}
+.treeImgMinus1
+{
+    background: transparent url(hierarchy.gif) no-repeat -64px center;
+}
+.treeImgMinus2
+{
+    background: transparent url(hierarchy.gif) no-repeat -80px center;
+}
+.treeImgMinus3
+{
+    background: transparent url(hierarchy.gif) no-repeat -96px center;
+}
+.treeImgMinus4
+{
+    background: transparent url(hierarchy.gif) no-repeat -112px center;
+}
+.treeImgLine1
+{
+    background: transparent url(hierarchy.gif) no-repeat -128px center;
+}
+.treeImgLine2
+{
+    background: transparent url(hierarchy.gif) no-repeat -144px center;
+}
+.treeImgLine3
+{
+    background: transparent url(hierarchy.gif) no-repeat -160px center;
+}
+.treeImgLine4
+{
+    background: transparent url(hierarchy.gif) no-repeat -176px center;
+}
+.treeImgLine5
+{
+    background: transparent url(hierarchy.gif) no-repeat -192px center;
+}

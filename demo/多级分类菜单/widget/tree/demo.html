@@ -1,0 +1,178 @@
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>JavaScript Tree</title>
+        <script language="javascript" src="../widget.js" imports="Tree"></script>
+		<script language="javascript">
+            function InitPage()
+            {
+                var start_point = new Date().getTime();
+                var config =
+                {
+                    id: "TreeTest",
+                    container: "TreeArea1",
+//                    width: "40%",
+//                    height: "300",
+//                    prefix: "checkbox",
+//                    expandAllOnload: true,
+//                    selectionMode: "multiple",
+//                    draggable: true,
+//                    dropEffect: "move",
+//                    editable: true
+//                    onbeforeload: testLoading
+                };
+                var tree_test1 = new Tree(config);
+                obj =
+                [
+                    {
+                        id: "Browser",
+                        text: "Browser",
+                        expanded: true,
+                        hint: "长字符串长字符串长字符串长字符串 长字符串长字符串长字符串",
+                        childNodes:
+                        [
+                            {
+                                id: "Opera",
+                                text: "Opera",
+                                checked: true,
+                                childNodes:
+                                [
+                                    {
+                                        id: "Operav5.x",
+                                        text: "v5.x"
+                                    }
+                                ]
+                            },
+                            {
+                                id: "KHTML",
+                                text: "KHTML",
+                                checked: true,
+                                childNodes:
+                                [
+                                    {
+                                        id: "Safari",
+                                        text: "Safari"
+                                    },
+                                    {
+                                        id: "Konqueror",
+                                        text: "Konqueror"
+                                    }
+                                ]
+                            },
+                            {
+                                id: "Internet Explorer",
+                                text: "Internet Explorer",
+//                                expanded: true,
+                                childNodes:
+                                [
+                                    {
+                                        id: "Macintosh",
+                                        text: "Macintosh",
+                                        childNodes:
+                                        [
+                                            {
+                                                id: "Macintoshv4.0",
+                                                text: "v4.0"
+                                            },
+                                            {
+                                                id: "Macintoshv5.0",
+                                                text: "v5.0"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        id: "Windows",
+                                        text: "Windows",
+                                        childNodes:
+                                        [
+                                            {
+                                                id: "Windowsv4.0",
+                                                text: "v4.0"
+                                            },
+                                            {
+                                                id: "Windowsv5.0",
+                                                text: "v5.0"
+                                            },
+                                            {
+                                                id: "Windowsv5.5",
+                                                text: "v5.5"
+                                            },
+                                            {
+                                                id: "Windowsv6.0",
+                                                text: "v6.0"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                id: "Netscape",
+                                text: "Netscape",
+                                childNodes:
+                                [
+                                    {
+                                        id: "Netscapev4.0x",
+                                        text: "v4.0x"
+                                    },
+                                    {
+                                        id: "Netscapev4.5-v4.7",
+                                        text: "v4.5-v4.7"
+                                    },
+                                    {
+                                        id: "Netscapev6.x",
+                                        text: "v6.x"
+                                    },
+                                    {
+                                        id: "Netscapev7.x",
+                                        text: "v7.x"
+                                    },
+                                    {
+                                        id: "Mozilla",
+                                        text: "Mozilla",
+                                        childNodes:
+                                        [
+                                            {
+                                                id: "Mozillapre-v1.0",
+                                                text: "测试测试a测试apre-v1.0"
+                                            },
+                                            {
+                                                id: "Mozillav1.0",
+                                                text: "v1.0"
+                                            },
+                                            {
+                                                id: "Mozillav1.1+",
+                                                text: "v1.1+"
+                                            },
+                                            {
+                                                id: "Firebird",
+                                                text: "Firebird"
+                                            },
+                                            {
+                                                id: "test1",
+                                                text: "测试a测试b测试123测试a  测试b测试123测试a测试b测试123测试a测试b测试123测试a测试b测试123测试a"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                id: "Omniweb",
+                                text: "Omniweb"
+                            }
+                        ]
+                    }
+                ];
+//                tree_test1.render();
+                tree_test1.loadJSON(obj);
+                var end_point = new Date().getTime();
+                document.getElementById("loadtime").innerHTML = (end_point - start_point);
+            }
+		</script>
+	</head>
+
+	<body onload="InitPage()">
+        <div id="TreeArea1"></div>
+        <br/>
+        耗时：<label id="loadtime"></label> ms<br/><br/>
+	</body>
+</html>
