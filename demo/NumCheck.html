@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script type="text/javascript">
+window.onload=function(){
+document.forms[0].t1.onchange=function(e){
+if (/[^\d]/.test(this.value)){
+alert("请输入数字");
+}
+};
+};
+</script>
+</head>
+<body>
+<form name="" action="" method="post">
+<input type="text" name="t1" value="0" />
+</form>
+</body>
+</html>

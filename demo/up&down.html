@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+  <html xmlns ="http://www.w3.org/1999/xhtml" > 
+  <head>
+  <title> runcode </title> 
+  <meta http-equiv="Content-Type" content="text/html;charset=GB2312"/> 
+  <meta name="Author" content="Sheneyan"/>
+  <script type="text/javascript"> 
+var lastTR=null;
+   function $(n)
+   { 
+  return document.getElementById(n);
+  } 
+  function initTable(n) 
+  {
+var o = $(n);
+if (!o) return;
+var trs=o.getElementsByTagName('tr');
+for (var i=0; i<trs.length; i++)
+{
+trs[i].onclick=function()
+{
+var clicked=this.className.match(/\b selected \b/g);
+if (lastTR)
+lastTR.className=lastTR.className.replace(/\b selected \b/g,'');
+if (!clicked)
+this.className+='selected';
+lastTR=this;
+}
+   } 
+  } 
+   
+function upbutton()
+{
+var p=lastTR.parentNode;
+if (lastTR)
+{
+var t=lastTR.cloneNode(true);
+var pre=lastTR.rowIndex==0?null:p.rows[lastTR.rowIndex-1];
+if (pre)
+{
+p.deleteRow(lastTR.rowIndex);
+lastTR=p.insertBefore(t,pre);
+} 
+} 
+else  
+alert('请选择一个');
+return false;
+} 
+   
+function downbutton()
+{
+var p=lastTR.parentNode;
+if (lastTR)
+{
+var t=lastTR.cloneNode(true);
+var pos=lastTR.rowIndex==(p.rows.length-2)?null:p.rows[lastTR.rowIndex+2];
+p.deleteRow(lastTR.rowIndex);
+if (pos)
+lastTR=p.insertBefore(t,pos);
+else 
+lastTR=p.appendChild(t);
+} 
+else  
+alert('请选择一个');
+return false;
+}
+</script>
+<style type="text/css"> 
+table#t, table#t td {
+border-collapse:collapse; 
+border:1px solid #66efef;
+}
+table#t td {
+width:100px;
+}
+tr.selected {
+background:#efefef; 
+color:blue;
+}
+</style>
+</head>
+ 
+<body onload="initTable('t')">
+<input name="up" type="button" id="up" value="向上" onclick="upbutton()"/> 
+<input name="down" type="button" id="down" value="向下" onclick="downbutton()"/>  
+<table id="t"> 
+<tr><td> l1 </td><td> l1 </td><td> l1 </td><td> l1 </td></tr> 
+<tr><td> l2 </td><td> l2 </td><td> l2 </td><td> l2 </td></tr>
+<tr><td> l3 </td><td> l3 </td><td> l3 </td><td> l3 </td></tr> 
+<tr><td> l4 </td><td> l4 </td><td> l4 </td><td> l4 </td></tr>
+<tr><td> l5 </td><td> l5 </td><td> l5 </td><td> l5 </td></tr> 
+<tr><td> l6 </td><td> l6 </td><td> l6 </td><td> l6 </td></tr>
+<tr><td> l7 </td><td> l7 </td><td> l7 </td><td> l7 </td></tr> 
+<tr><td> l8 </td><td> l8 </td><td> l8 </td><td> l8 </td></tr>
+</table>
+</body>
+</html>

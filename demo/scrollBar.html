@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>JS控制DIV滚动条</title>
+</head>
+<script>
+function scrollup()
+{
+document.getElementById('div1').scrollTop = document.getElementById('div1').scrollTop-25;
+}
+function scrolldown()
+{
+document.getElementById('div1').scrollTop = document.getElementById('div1').scrollTop+25;
+}
+function scrolltop()
+{
+document.getElementById('div1').scrollTop = 0;
+}
+function scrollbottom()
+{
+document.getElementById('div1').scrollTop = document.getElementById('div1').scrollHeight;
+}
+</script>
+<style>
+.div1
+{
+height:200px;
+overflow-y:scroll;
+width:400px;
+border:solid 1px #ccc;
+}
+</style>
+<body>
+<div class="div1" id="div1"><br />
+<br />
+<br /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+ 
+</div>
+<input name="" type="button"  value="向上"/ onclick="scrollup();">
+<input name="" type="button"  value="向下" onclick="scrolldown();"/>
+<input name="" type="button"  value="顶"/ onclick="scrolltop();">
+<input name="" type="button"  value="底" onclick="scrollbottom();"/>
+</body>
+</html>

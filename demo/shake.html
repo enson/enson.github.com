@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>鼠标经过图片晃动效果</title>
+<style>
+.shakeimage{
+position:relative;
+width:146px;
+height:100px;
+margin: 350px auto;
+display: block;
+}
+
+</style>
+</head>
+
+<body>
+<div>
+<img src="http://pic15.nipic.com/20110712/7237668_092817173000_2.jpg" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this)">
+</div>
+<script language="JavaScript1.2">
+//晃动效果
+var rector=3
+var stopit=0
+var a=1
+
+function init(which){
+stopit=0
+shake=which
+shake.style.left=0
+shake.style.top=0
+}
+
+function rattleimage(){
+
+	if ((!document.all&&!document.getElementById)||stopit==1)
+	return
+	if (a==1){
+	shake.style.top=parseInt(shake.style.top)+rector;
+	shake.width = parseInt(shake.width)* 1.5;
+	shake.height = parseInt(shake.height)* 1.5;
+	console.log(shake.width);
+	}
+	else if (a==2){
+	shake.style.left=parseInt(shake.style.left)+rector
+	}
+	else if (a==3){
+	shake.style.top=parseInt(shake.style.top)-rector
+	}
+	else{
+	shake.style.left=parseInt(shake.style.left)-rector
+	}
+
+	if (a<4){
+	a++
+	//alert(shake.height)
+	}
+	else{
+	a=1
+	}
+	setTimeout("rattleimage()",50)
+}
+
+function stoprattle(which){
+stopit=1
+which.style.left=0
+which.style.top=0
+}
+
+//
+
+</script>
+</body>
+</html>
+ 
