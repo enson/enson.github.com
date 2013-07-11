@@ -1,48 +1,354 @@
+
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js ie ie6 lte9 lte8 lte7"> <![endif]-->
-<!--[if IE 7]><html class="no-js ie ie7 lte9 lte8 lte7"> <![endif]-->
-<!--[if IE 8]><html class="no-js ie ie8 lte9 lte8"> <![endif]-->
-<!--[if IE 9]><html class="no-js ie ie9 lte9"> <![endif]-->
-<!--[if gt IE 9]><html class="no-js"><![endif]-->
-<!--[if !IE]><!--><html><!--<![endif]-->
+<html lang="en">
 <head>
-    <title>墨沚于北</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="知鱼的记录" />
-    <link rel="stylesheet" href="http://l.tbcdn.cn/??p/global/1.0/global-min.css" />
-	<link type="image/x-icon" href="http://www.taobao.com/favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" href="http://a.tbcdn.cn/??app/dp/s/html5/css/common-min.css"/>
-    <!--[if lt IE 9]><script src="http://a.tbcdn.cn/app/dp/s/html5/js/??html5shiv-min.js,modernizr-v2.5.3-min.js"></script><![endif]-->
-	<script type="text/javascript"
-            src="http://l.tbcdn.cn/??s/kissy/1.3.0/seed-min.js,p/global/1.0/global-min.js,s/yui/3.3.0/build/yui/yui-min.js,s/yui/3.3.0/build/loader/loader-min.js,apps/et/common/js/trip-config-min.js">
-    </script>	
+    <meta charset="utf-8">
+    <title>Flat UI Kit - HTML/PSD Design Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="assets/css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="http://www.taobao.com/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <header id="header">
-        <div class="header-main">
-            <a href="/wht/index"><span class="header-logo wht-bg"></span></a>
-            <ul class="header-tab">
-                <li class="header-tab-item"><a href="/wht/index">首页</a></li>
-                <li class="header-tab-item"><a href="/wht/appMarket">应用市场</a></li>
-                <li class="header-tab-item"><a href="/appManager">应用管理</a></li>
-                <li class="header-tab-item"><a href="/wht/apply">申请加入</a></li>
-                <li class="header-tab-item"><a href="/wht/guide">帮助中心</a></li>
-            </ul>
-            <span class="head-arr-up"></span>
-			<div class="login-box">
+<div class="container">
+<div class="demo-headline">
+    <h1 class="demo-logo">
+        <div class="logo"></div>
+        Flat UI
+        <small>Free Web User Interface Kit</small>
+    </h1>
+</div> <!-- /demo-headline -->
+
+<h1>Basic elements</h1>
+<h3 class="demo-panel-title">Buttons</h3>
+
+<div class="row demo-row">
+    <div class="span3">
+        <a href="#fakelink" class="btn btn-large btn-block btn-primary">Primary Button</a>
+    </div>
+    <div class="span3">
+        <a href="#fakelink" class="btn btn-large btn-block btn-warning">Warning Button</a>
+    </div>
+    <div class="span3">
+        <a href="#fakelink" class="btn btn-block btn-large">Default Button</a>
+    </div>
+    <div class="span3">
+        <a href="#fakelink" class="btn btn-large btn-block btn-danger">Danger Button</a>
+    </div>
+</div> <!-- /row -->
+
+<div class="row demo-row">
+    <div class="span3">
+        <a href="#fakelink" class="btn btn-large btn-block btn-success">Success Button</a>
+    </div>
+    <div class="span3">
+        <a href="#fakelink" class="btn btn-large btn-block btn-inverse">Inverse Button</a>
+    </div>
+    <div class="span3">
+        <a href="#fakelink" class="btn btn-large btn-block btn-info">Info Button</a>
+    </div>
+    <div class="span3">
+        <a href="#fakelink" class="btn btn-large btn-block disabled">Disabled Button</a>
+    </div>
+</div> <!-- /row -->
+
+
+<h3 class="demo-panel-title">Input</h3>
+<div class="row">
+    <div class="span3">
+        <input type="text" value="" placeholder="Inactive" class="span3" />
+    </div>
+    <div class="span3">
+        <div class="control-group error">
+            <input type="text" value="Error" class="span3" />
+        </div>
+    </div>
+    <div class="span3">
+        <div class="control-group success">
+            <input type="text" value="Success" class="span3" />
+            <i class="input-icon fui-check-inverted"></i>
+        </div>
+    </div>
+    <div class="span3">
+        <input type="text" value="Disabled" disabled="disabled" class="span3" />
+    </div>
+</div> <!-- /row -->
+
+
+
+<div class="row">
+    <div class="span3">
+        <h3 class="demo-panel-title">Checkboxes</h3>
+        <label class="checkbox" for="checkbox1">
+            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+            Unchecked
+        </label>
+        <label class="checkbox" for="checkbox2">
+            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+            Checked
+        </label>
+        <label class="checkbox" for="checkbox3">
+            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+            Disabled unchecked
+        </label>
+        <label class="checkbox" for="checkbox4">
+            <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled="" checked="">
+            Disabled checked
+        </label>
+    </div> <!-- /checkboxes span3 -->
+
+    <div class="span3">
+        <h3 class="demo-panel-title">Radio Buttons</h3>
+        <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+            Radio is off
+        </label>
+        <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+            Radio is on
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="">
+            Disabled radio is off
+        </label>
+        <label class="radio">
+            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="">
+            Disabled radio is on
+        </label>
+    </div> <!-- /radios span3 -->
+
+    <div class="span3">
+        <h3 class="demo-panel-title">Switches</h3>
+
+        <table width="100%">
+            <tr>
+                <td width="50%" class="pbm">
+                    <input type="checkbox" checked="" data-toggle="switch" />
+                </td>
+
+                <td class="pbm">
+                    <input type="checkbox" data-toggle="switch" />
+                </td>
+            </tr>
+            <tr>
+                <td class="pbm">
+                    <div class="switch switch-square"
+                         data-on-label="<i class='fui-check'></i>"
+                         data-off-label="<i class='fui-cross'></i>">
+                        <input type="checkbox" />
+                    </div>
+                </td>
+
+                <td class="pbm">
+                    <div class="switch switch-square"
+                         data-on-label="<i class='fui-check'></i>"
+                         data-off-label="<i class='fui-cross'></i>">
+                        <input type="checkbox" checked="" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" disabled data-toggle="switch" />
+                </td>
+
+                <td>
+                    <input type="checkbox" checked disabled data-toggle="switch" />
+                </td>
+            </tr>
+        </table>
+    </div> <!-- /toggles span3 -->
+
+    <div class="span3">
+        <h3 class="demo-panel-title">Tags</h3>
+        <input name="tagsinput" id="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" />
+    </div>
+</div> <!-- /row -->
+
+
+
+<div class="row">
+    <div class="span10">
+        <h3 class="demo-panel-title">Color Swatches</h3>
+        <div class="row mbl">
+            <div class="span2">
+                <dl class="palette palette-turquoise">
+                    <dt>#1abc9c</dt>
+                    <dd>Turquoise</dd>
+                </dl>
+                <dl class="palette palette-green-sea">
+                    <dt>#16a085</dt>
+                    <dd>Green sea</dd>
+                </dl>
+            </div>
+
+            <div class="span2">
+                <dl class="palette palette-emerald">
+                    <dt>#2ecc71</dt>
+                    <dd>Emerald</dd>
+                </dl>
+                <dl class="palette palette-nephritis">
+                    <dt>#27ae60</dt>
+                    <dd>Nephritis</dd>
+                </dl>
+            </div>
+
+            <div class="span2">
+                <dl class="palette palette-peter-river">
+                    <dt>#3498db</dt>
+                    <dd>Peter river</dd>
+                </dl>
+                <dl class="palette palette-belize-hole">
+                    <dt>#2980b9</dt>
+                    <dd>Belize hole</dd>
+                </dl>
+            </div>
+
+            <div class="span2">
+                <dl class="palette palette-amethyst">
+                    <dt>#9b59b6</dt>
+                    <dd>Amethyst</dd>
+                </dl>
+                <dl class="palette palette-wisteria">
+                    <dt>#8e44ad</dt>
+                    <dd>Wisteria</dd>
+                </dl>
+            </div>
+
+            <div class="span2">
+                <dl class="palette palette-wet-asphalt">
+                    <dt>#34495e</dt>
+                    <dd>Wet asphalt</dd>
+                </dl>
+                <dl class="palette palette-midnight-blue">
+                    <dt>#2c3e50</dt>
+                    <dd>Midnight blue</dd>
+                </dl>
+            </div>
+        </div> <!-- /color swatches -->
+
+        <div class="row mbl">
+            <div class="span2">
+                <dl class="palette palette-sun-flower">
+                    <dt>#f1c40f</dt>
+                    <dd>Sun flower</dd>
+                </dl>
+                <dl class="palette palette-orange">
+                    <dt>#f39c12</dt>
+                    <dd>Orange</dd>
+                </dl>
+            </div>
+
+            <div class="span2">
+                <dl class="palette palette-carrot">
+                    <dt>#e67e22</dt>
+                    <dd>Carrot</dd>
+                </dl>
+                <dl class="palette palette-pumpkin">
+                    <dt>#d35400</dt>
+                    <dd>Pumpkin</dd>
+                </dl>
+            </div>
+
+            <div class="span2">
+                <dl class="palette palette-alizarin">
+                    <dt>#e74c3c</dt>
+                    <dd>Alizarin</dd>
+                </dl>
+                <dl class="palette palette-pomegranate">
+                    <dt>#c0392b</dt>
+                    <dd>Pomegranate</dd>
+                </dl>
+            </div>
+
+            <div class="span2">
+                <dl class="palette palette-clouds">
+                    <dt>#ecf0f1</dt>
+                    <dd>Clouds</dd>
+                </dl>
+                <dl class="palette palette-silver">
+                    <dt>#bdc3c7</dt>
+                    <dd>Silver</dd>
+                </dl>
+            </div>
+
+            <div class="span2">
+                <dl class="palette palette-concrete">
+                    <dt>#95a5a6</dt>
+                    <dd>Concrete</dd>
+                </dl>
+                <dl class="palette palette-asbestos">
+                    <dt>#7f8c8d</dt>
+                    <dd>Asbestos</dd>
+                </dl>
+            </div>
+        </div> <!-- /color swatches -->
+    </div>
+
+    <div class="span2">
+        <h3 class="demo-panel-title">&nbsp;</h3>
+        <h6 class="palette-headline">SWATCHES</h6>
+        <p class="palette-paragraph">
+            Colors &mdash; is almost the most important part of the <strong>Flat UI</strong>. Better to use different shades of provided colors than new.
+        </p>
+        <p class="palette-paragraph">
+            For your convenience we also provide <strong>Swatches Preset</strong> <span>(flat&#8209;ui&#8209;swatches.aco in the Pack folder).</span>
+        </p>
+        <p class="palette-paragraph">
+            <strong>No gradients, no shadows.</strong>
+        </p>
+    </div> <!-- /swatches desc -->
+</div> <!-- /swatches row -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="span7">
+                <h3 class="footer-title">Subscribe</h3>
+                <p>Do you like this site? Want to get more stuff like this?<br/>
+                    Subscribe to news and updates to stay tuned on great designs.<br/>
+                    Go to: <a href="http://enson.github.com" target="_blank">enson.github.com</a>
+                </p>
+
+                <p class="pvl">
+                    <a target="_blank" href="http://weibo.com/enson99" class="twitter-share-button" data-url="http://weibo.com/enson99" data-text="Flat UI Free - PSD&amp;HTML User Interface Kit" data-via="designmodo" data-size="large">weibo</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </p>
+
+                <!--<a class="footer-brand" href="http://designmodo.com" target="_blank">-->
+                    <!--<img src="images/footer/logo.png" alt="Designmodo.com" />-->
+                <!--</a>-->
+            </div> <!-- /span8 -->
+
+            <div class="span5">
+                <div class="footer-banner">
+                    <h3 class="footer-title">Get Flat UI Pro</h3>
+                    <ul>
+                        <li>Tons of Basic and Custom UI Elements</li>
+                        <li>A Lot of Useful Samples</li>
+                        <li>More Vector Icons and Glyphs</li>
+                        <li>Pro Color Swatches</li>
+                        <li>Bootstrap Based HTML/CSS/JS Layout</li>
+                    </ul>
+                    <!--Go to: <a href="http://designmodo.com/flat" target="_blank">designmodo.com/flat</a>-->
+                </div>
             </div>
         </div>
-        <div class="top-line"></div>
-    </header>
-	<div class="bkg">
-		<div>$screen_placeholder</div>
-		<footer id="footer">
-            <div class="copyright">
-                <div class="wht-bg btm-icon-left"></div>
-                <div class="copyright-text">Copyright @ 2003-2013 Taobao.com 版权所有</div>
-                <div class="wht-bg btm-icon-right"></div>
-            </div>
-        </footer>
-	</div>
+    </div>
+</footer>
+
+<!-- Load JS here for greater good =============================-->
+<script src=""></script>
 </body>
 </html>
