@@ -1,0 +1,34 @@
+#tbh5v0 .c-float-shortcutLayer{position:relative;display:inline-block;width:190px;max-width:400px;background:#f7ab06;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffba27), color-stop(100%, #f7ab06));border:1px solid #e68200;border-radius:3px;-webkit-box-shadow:inset 0px 0px 2px 2px #ffc241;}#tbh5v0 .c-float-shortcutLayer .shtxt{padding:12px 10px;}
+#tbh5v0 .c-float-shortcutLayer .shclose{position:absolute;right:3px;top:2px;width:14px;height:14px;background:url('http://a.tbcdn.cn/mw/base/styles/component/float/images/close.png');-webkit-background-size:contain;}
+#tbh5v0 .c-float-shortcutLayer .xjt{position:absolute;width:13px;height:8px;left:50%;margin-left:-10px;}#tbh5v0 .c-float-shortcutLayer .xjt:before{content:'';position:absolute;right:0px;top:-3px;width:9px;height:3px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9b114), color-stop(100%, #fab113));-webkit-border-bottom-right-radius:2px;-webkit-border-bottom-left-radius:2px;}
+#tbh5v0 .c-float-shortcutLayer .xjt span{position:absolute;display:block;width:18px;height:8px;overflow:hidden;}#tbh5v0 .c-float-shortcutLayer .xjt span em{display:block;position:absolute;top:-6px;left:3px;width:9px;height:9px;background:#f7ab06;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffba27), color-stop(100%, #f7ab06));border:1px solid #e68200;-webkit-box-shadow:inset 0px 0px 2px 2px #ffc241;-webkit-transform:rotate(45deg);}
+#tbh5v0 .c-float-fingPop{background-color:rgba(23, 23, 23, 0.9);}#tbh5v0 .c-float-fingPop .innerC{width:173px;margin:0 auto;padding-top:5px;}#tbh5v0 .c-float-fingPop .innerC .fingerImg{display:inline-block;width:63px;height:70px;background-image:url('http://a.tbcdn.cn/mw/base/styles/component/float/images/fingers.png');}
+#tbh5v0 .c-float-fingPop .innerC .ftxt{display:inline-block;width:101px;padding:20px 0 10px 0;vertical-align:top;color:white;}
+#tbh5v0 .c-float-shakePop{background-color:rgba(23, 23, 23, 0.9);display:block;text-align:center;padding:10px 10px 10px 10px;color:#ffffff;}
+#tbh5v0 .c-float-impWarn{background-color:rgba(215, 23, 23, 0.9);display:block;text-align:center;padding:10px 10px 10px 10px;color:#ffffff;}
+#tbh5v0 .c-float-modePop{text-align:center;background-color:rgba(23, 23, 23, 0.9);}#tbh5v0 .c-float-modePop .warnMsg{padding:10px 10px 10px 10px;color:#ffffff;}
+#tbh5v0 .c-float-modePop .doBtn{width:170px;margin:0 auto;}
+#tbh5v0 .c-float-modePop button{padding:6px 9px 6px 9px;color:#949494;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #404040), color-stop(100%, #2e2e2e));border:none;border-radius:2px;}
+#tbh5v0 .c-float-shade{width:100%;display:block;position:absolute;z-index:99;background-color:#000;opacity:0.5;top:0;left:0;}#tbh5v0 .c-float-shade.hide{display:none;}
+#tbh5v0 .c-float-popWrap{width:220px;border-radius:2px;z-index:9999;position:absolute;overflow:hidden;}#tbh5v0 .c-float-popWrap .c-float-modePop{background-color:rgba(51, 51, 51, 0.9);border-radius:2px;padding:15px;}#tbh5v0 .c-float-popWrap .c-float-modePop .warnMsg{padding:0px;font-size:14px;}
+#tbh5v0 .c-float-popWrap .c-float-modePop .content{margin-top:10px;}
+#tbh5v0 .c-float-popWrap .c-float-modePop .doBtn{width:190px;margin-top:10px;}
+#tbh5v0 .c-float-popWrap .c-float-modePop button{width:80px;height:30px;line-height:30px;color:#444;font-size:14px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #999999));border:none;border-radius:2px;padding:0px;margin:10px 5px 0;}
+#tbh5v0 .c-float-popWrap.hide{display:none;-webkit-box-shadow:none;}
+#tbh5v0 .c-float-popWrap.show{display:block;-webkit-box-shadow:0px 0px 2px 2px rgba(0, 0, 0, 0.3);}
+#tbh5v0 .c-float-popWrap.msgMode .c-float-modePop .content,#tbh5v0 .c-float-popWrap.msgMode .c-float-modePop .doBtn{display:none;}
+#tbh5v0 .c-float-popWrap.alertMode .c-float-modePop .content{display:none;}
+#tbh5v0 .c-float-popWrap.alertMode .c-float-modePop .doBtn .cancel{display:none;}
+#tbh5v0 .c-float-popWrap.confirmMode .c-float-modePop .content,#tbh5v0 .c-float-popWrap.confirmMode .c-float-modePop .doBtn{display:block;}
+#tbh5v0 .c-float-gallery .ctrlBtn{display:none;margin-bottom:11px;}#tbh5v0 .c-float-gallery .ctrlBtn button{padding:6px 9px 6px 9px;color:#949494;background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #404040), color-stop(100%, #2e2e2e));border:none;border-radius:2px;}#tbh5v0 .c-float-gallery .ctrlBtn button.lbtn{float:left;}
+#tbh5v0 .c-float-gallery .ctrlBtn button.rbtn{float:right;}
+#tbh5v0 .c-float-gallery .c-float-wrap{position:relative;}#tbh5v0 .c-float-gallery .c-float-wrap nav a{display:block;width:32px;height:32px;position:absolute;margin-top:-16px;top:50%;}#tbh5v0 .c-float-gallery .c-float-wrap nav a span{display:block;position:absolute;top:12px;left:12px;width:6px;height:6px;-webkit-transform:rotate(45deg);}
+#tbh5v0 .c-float-gallery .c-float-wrap nav a.prev{left:10px;}#tbh5v0 .c-float-gallery .c-float-wrap nav a.prev span{border-left:3px solid #999;border-bottom:3px solid #999;}
+#tbh5v0 .c-float-gallery .c-float-wrap nav a.next{right:10px;}#tbh5v0 .c-float-gallery .c-float-wrap nav a.next span{border-right:3px solid #999;border-top:3px solid #999;}
+#tbh5v0 .c-float-gallery .c-float-wrap nav .position{position:absolute;left:35px;bottom:-25px;width:32px;height:18px;line-height:18px;font-size:12px;text-align:center;color:#999;background:rgba(10, 10, 10, 0.68);}#tbh5v0 .c-float-gallery .c-float-wrap nav .position .active{color:white;}
+#tbh5v0 .c-float-gallery.gfullscreen{position:absolute;top:0;width:100%;height:100%;min-height:500px;background:rgba(25, 25, 25, 0.92);opacity:1;}#tbh5v0 .c-float-gallery.gfullscreen .ctrlBtn{display:block;}
+#tbh5v0 .c-float-gallery.gfullscreen .c-float-slide li{text-align:center;}
+#tbh5v0 .c-float-gallery.gfullscreen .c-float-slide img{max-width:300px;max-height:300px;}
+#tbh5v0 .c-float-gallery.gfullscreen .c-float-wrap nav a{z-index:99;top:50%;}
+#tbh5v0 .c-float-gallery.gfullscreen nav .position{width:60px;font-size:14px;bottom:-30px;left:50%;margin-left:-30px;color:#999;text-align:center;background:none;}
+#tbh5v0 .c-float-delPop{position:relative;background-color:rgba(95, 95, 95, 0.6);height:50px;}#tbh5v0 .c-float-delPop .deltxt{position:absolute;right:20px;height:50px;line-height:50px;color:white;font-weight:bold;}

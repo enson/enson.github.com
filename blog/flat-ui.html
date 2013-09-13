@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>This is Enson's Blog</title>
-    <meta name="description" content="Hi~ This is Enson's blog!">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -25,13 +24,13 @@
 <div class="demo-headline">
     <h1 class="demo-logo">
         <div class="logo"></div>
-        ENSON
-        <small>Do it. Do it right. Do it right now</small>
+        Flat UI
+        <small>Free Web User Interface Kit</small>
     </h1>
 </div> <!-- /demo-headline -->
 
-<!--<h1>Basic elements</h1>-->
-<h3 class="demo-panel-title">BLOG</h3>
+<h1>Basic elements</h1>
+<h3 class="demo-panel-title">Buttons</h3>
 
 <div class="row demo-row">
     <div class="span3">
@@ -61,9 +60,9 @@
     <div class="span3">
         <a href="#fakelink" class="btn btn-large btn-block disabled">Disabled Button</a>
     </div>
-</div>
+</div> <!-- /row -->
 
-<!--
+
 <h3 class="demo-panel-title">Input</h3>
 <div class="row">
     <div class="span3">
@@ -83,8 +82,101 @@
     <div class="span3">
         <input type="text" value="Disabled" disabled="disabled" class="span3" />
     </div>
-</div>
- -->
+</div> <!-- /row -->
+
+
+
+<div class="row">
+    <div class="span3">
+        <h3 class="demo-panel-title">Checkboxes</h3>
+        <label class="checkbox" for="checkbox1">
+            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+            Unchecked
+        </label>
+        <label class="checkbox" for="checkbox2">
+            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+            Checked
+        </label>
+        <label class="checkbox" for="checkbox3">
+            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+            Disabled unchecked
+        </label>
+        <label class="checkbox" for="checkbox4">
+            <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled="" checked="">
+            Disabled checked
+        </label>
+    </div> <!-- /checkboxes span3 -->
+
+    <div class="span3">
+        <h3 class="demo-panel-title">Radio Buttons</h3>
+        <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+            Radio is off
+        </label>
+        <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+            Radio is on
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="">
+            Disabled radio is off
+        </label>
+        <label class="radio">
+            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="">
+            Disabled radio is on
+        </label>
+    </div> <!-- /radios span3 -->
+
+    <div class="span3">
+        <h3 class="demo-panel-title">Switches</h3>
+
+        <table width="100%">
+            <tr>
+                <td width="50%" class="pbm">
+                    <input type="checkbox" checked="" data-toggle="switch" />
+                </td>
+
+                <td class="pbm">
+                    <input type="checkbox" data-toggle="switch" />
+                </td>
+            </tr>
+            <tr>
+                <td class="pbm">
+                    <div class="switch switch-square"
+                         data-on-label="<i class='fui-check'></i>"
+                         data-off-label="<i class='fui-cross'></i>">
+                        <input type="checkbox" />
+                    </div>
+                </td>
+
+                <td class="pbm">
+                    <div class="switch switch-square"
+                         data-on-label="<i class='fui-check'></i>"
+                         data-off-label="<i class='fui-cross'></i>">
+                        <input type="checkbox" checked="" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" disabled data-toggle="switch" />
+                </td>
+
+                <td>
+                    <input type="checkbox" checked disabled data-toggle="switch" />
+                </td>
+            </tr>
+        </table>
+    </div> <!-- /toggles span3 -->
+
+    <div class="span3">
+        <h3 class="demo-panel-title">Tags</h3>
+        <input name="tagsinput" id="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" />
+    </div>
+</div> <!-- /row -->
+
+
 
 <div class="row">
     <div class="span10">
@@ -145,7 +237,7 @@
                 </dl>
             </div>
         </div> <!-- /color swatches -->
-        <!--
+
         <div class="row mbl">
             <div class="span2">
                 <dl class="palette palette-sun-flower">
@@ -201,7 +293,7 @@
                     <dd>Asbestos</dd>
                 </dl>
             </div>
-        </div> -->
+        </div> <!-- /color swatches -->
     </div>
 
     <div class="span2">
@@ -231,6 +323,7 @@
 
                 <p class="pvl">
                     <a target="_blank" href="http://weibo.com/enson99" class="twitter-share-button" data-url="http://weibo.com/enson99" data-text="Flat UI Free - PSD&amp;HTML User Interface Kit" data-via="designmodo" data-size="large">weibo</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </p>
 
                 <!--<a class="footer-brand" href="http://designmodo.com" target="_blank">-->
