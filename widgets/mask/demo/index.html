@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mask</title>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.13.0/build/cssreset/cssreset-min.css" />
+        <script src="/h5-hotel/src/libs/seed.js" charset="utf-8"></script>
+        <style>
+            .m-mask {
+                background:rgba(0,0,0,0.75);
+                color:#fff;
+                padding:10%;
+                -webkit-box-sizing:border-box;
+                overflow:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Mask</h2>
+        <button class="useAnim">useAnim</button>
+        <button class="noAnim">noAnim</button>
+        <script>
+            var S = KISSY;
+            
+            if (S.Config.debug) {
+                var srcPath = "../../../";
+                
+                S.config({
+                    packages:[
+                        {
+                            name:"widgets",
+                            path:srcPath,
+                            charset:"utf-8",
+                            ignorePackageNameInUri:true
+                        }
+                    ]
+                });
+            }
+        
+            S.use('widgets/mask/1.0/', function (S, Mask) {
+                var h = '<div class="content">',
+                    i = 0;
+                
+                while (i++ < 100) {
+                    h += ('<p>' + i + '</p>');
+                }
+                
+                h += '</div>';
+                
+                var mask = new Mask({
+                    clickHide: true,
+                    content: h,
+                    opacity:1
+                });
+                
+                mask.render();
+                
+                $('.useAnim').on('click', function() {
+                    if (mask.get('visible')) {
+                        mask.hide(true);
+                    } else {
+                        mask.show(true);
+                    }
+                });
+                
+                $('.noAnim').on('click', function() {
+                    if (mask.get('visible')) {
+                        mask.hide(false);
+                    } else {
+                        mask.show(false);
+                    }
+                });
+            })
+        </script>
+    </body>
+</html>

@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e04125-de5b-4870-a96d-6cf5a7279c34" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo/NumCheck.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo/dispayPic1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo/displayPic2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo/div-shift.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/flat-ui.css" afterPath="$PROJECT_DIR$/assets/css/flat-ui.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="enson.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378888889647" ignored="false" />
+    <file path="/Dummy.txt" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383748057269" ignored="false" />
     <file path="$PROJECT_DIR$/../../svn/et-trunk-assets/assets/trip-html5/apps/frame-ticket/frame_ticket.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1373529475010" ignored="false" />
     <file path="/frame_ticket.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1373529474193" ignored="false" />
-    <file path="/index.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378892212194" ignored="false" />
+    <file path="/index.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383748436808" ignored="false" />
     <file path="/flat-ui.css" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378888987950" ignored="false" />
     <file path="$PROJECT_DIR$/../../gitlab/m-act2013/src/seckill903/index.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378951658359" ignored="false" />
     <file path="$PROJECT_DIR$/../../gitlab/m-act2013/abc.json" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378978319002" ignored="false" />
@@ -25,6 +20,27 @@
     <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/ticketSale/index-min.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378978319002" ignored="false" />
     <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/draw903/index-min.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378978319003" ignored="false" />
     <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/ticketSale/index.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378978319003" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/src/aroundlist/all.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383790444524" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/ard.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/index.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/index-tms.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/index-min.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/all-min.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/ard-min.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/zepto.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/zepto-min.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/index.css" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/ard-spring-min.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/detail-min.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/ard-spring.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/index.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/detail.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/index-min.css" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../gitlab/m-act2013/build/aroundlist/all.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383791017903" ignored="false" />
+    <file path="$PROJECT_DIR$/../../svn/et-trunk-assets/assets/trip-html5/apps/wetrip/index.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383828729310" ignored="false" />
+    <file path="$PROJECT_DIR$/../../svn/et-trunk-assets/assets/trip-html5/apps/wetrip/wetrip.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383811435610" ignored="false" />
+    <file path="/wetrip.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383810637111" ignored="false" />
+    <file path="/index.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383828721280" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,19 +60,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="203" column="15" selection-start="6531" selection-end="6531" vertical-scroll-proportion="2.3529413">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flat-ui.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="40" selection-start="3597" selection-end="3597" vertical-scroll-proportion="0.7015177">
+            <state line="55" column="113" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.7003367">
               <folding />
             </state>
           </provider>
@@ -329,6 +336,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="40" selection-start="3597" selection-end="3597" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="193" column="80" selection-start="3693" selection-end="3693" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -336,21 +357,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="40" selection-start="3597" selection-end="3597" vertical-scroll-proportion="0.025848143">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="15" selection-start="6531" selection-end="6531" vertical-scroll-proportion="2.3529413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="40" selection-start="3597" selection-end="3597" vertical-scroll-proportion="0.7015177">
+        <state line="55" column="113" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.7003367">
           <folding />
         </state>
       </provider>

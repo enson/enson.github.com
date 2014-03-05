@@ -1,0 +1,13 @@
+{
+  "name": "radio",
+  "_release": "f2230302af",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f2230302af90d863c9bf366990c3ebed54a11123"
+  },
+  "_source": "http://gitlab.alibaba-inc.com/mpi/radio.git",
+  "_target": "*",
+  "_originalSource": "mpi/radio",
+  "_direct": true
+}

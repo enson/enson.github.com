@@ -1,0 +1,13 @@
+{
+  "name": "mask",
+  "_release": "c006d8c013",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c006d8c013959835d4eb5d94dc34fe83e40aff86"
+  },
+  "_source": "http://gitlab.alibaba-inc.com/mpi/mask.git",
+  "_target": "*",
+  "_originalSource": "mpi/mask",
+  "_direct": true
+}

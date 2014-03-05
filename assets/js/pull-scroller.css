@@ -1,0 +1,35 @@
+#tbh5v0 .scroller-tip {
+  position: absolute;
+  bottom: -35px;
+  z-index: 2;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0 0;
+  -webkit-box-shadow: 0 3px 5px #e7e7e7 inset;
+  box-shadow: 0 3px 5px #e7e7e7 inset; }
+  #tbh5v0 .scroller-tip.hidden {
+    display: none; }
+
+#tbh5v0 .scroller-tip s {
+  background: url("http://img03.taobaocdn.com/tps/i3/T1gYYGXbJrXXXWxZPf-41-81.png") no-repeat;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  margin: 0 5px 2px 0;
+  background-size: 17px 25px;
+  vertical-align: middle; }
+
+#tbh5v0 .scroller-tip s.rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg); }
+
+#tbh5v0 .loading-icon {
+  padding: 15px 0 0;
+  -webkit-box-shadow: 0 3px 5px #e7e7e7 inset;
+  box-shadow: 0 3px 5px #e7e7e7 inset; }
