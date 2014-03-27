@@ -1,6 +1,6 @@
 /**
  * @description util
- * @author yingyi.zj@taobao.com
+ * @author xijian.py@taobao.com
  * */
 KISSY.add(function (S) {
 

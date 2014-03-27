@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="48e04125-de5b-4870-a96d-6cf5a7279c34" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/util.js" afterPath="$PROJECT_DIR$/assets/js/util.js" />
     </list>
     <ignored path="enson.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383748057269" ignored="false" />
+    <file path="/Dummy.txt" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1395921801099" ignored="false" />
     <file path="$PROJECT_DIR$/../../svn/et-trunk-assets/assets/trip-html5/apps/frame-ticket/frame_ticket.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1373529475010" ignored="false" />
     <file path="/frame_ticket.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1373529474193" ignored="false" />
     <file path="/index.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383748436808" ignored="false" />
@@ -63,7 +63,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="113" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.7003367">
+            <state line="226" column="80" selection-start="7531" selection-end="7531" vertical-scroll-proportion="0.7837838">
               <folding />
             </state>
           </provider>
@@ -89,6 +89,7 @@
       <list>
         <option value="$PROJECT_DIR$/assets/css/flat-ui.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/util.js" />
       </list>
     </option>
   </component>
@@ -140,6 +141,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="enson.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enson.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enson.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,16 +375,48 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-78.41815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="40" selection-start="3597" selection-end="3597" vertical-scroll-proportion="0.025848143">
+        <state line="195" column="40" selection-start="3601" selection-end="3601" vertical-scroll-proportion="-86.23501">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="60" selection-start="493" selection-end="493" vertical-scroll-proportion="0.50793654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.6012964">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/juicer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="113" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.7003367">
+        <state line="226" column="80" selection-start="7531" selection-end="7531" vertical-scroll-proportion="0.7837838">
           <folding />
         </state>
       </provider>
