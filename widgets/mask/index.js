@@ -1,6 +1,5 @@
 /**
- * @fileoverview 
- * @author 虎牙<huya.nzb@alibaba-inc.com>
+ * @fileoverview
  * @module mask
  **/
 KISSY.add(function (S, Base) {

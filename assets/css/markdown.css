@@ -1,0 +1,166 @@
+
+html { padding : 0; }
+
+body { margin : 0; padding : 0; background : #fff; }
+
+.epiceditor-wrapper { background : white; }
+
+.markdown-ctn { font-family : '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', Helvetica, arial, freesans, clean, sans-serif; font-size : 13px; line-height : 1.6; }
+
+.markdown-ctn a { color : #4183C4; text-decoration : none; }
+
+.markdown-ctn a:hover { text-decoration : underline; }
+
+.markdown-ctn h1,
+.markdown-ctn h2,
+.markdown-ctn h3,
+.markdown-ctn h4,
+.markdown-ctn h5,
+.markdown-ctn h6 { padding-top : 15px; font-weight : bold; -webkit-font-smoothing : antialiased; }
+
+.markdown-ctn h1 tt,
+.markdown-ctn h1 code,
+.markdown-ctn h2 tt,
+.markdown-ctn h2 code,
+.markdown-ctn h3 tt,
+.markdown-ctn h3 code,
+.markdown-ctn h4 tt,
+.markdown-ctn h4 code,
+.markdown-ctn h5 tt,
+.markdown-ctn h5 code,
+.markdown-ctn h6 tt,
+.markdown-ctn h6 code { font-size : inherit; }
+
+.markdown-ctn h1 { font-size : 28px; color : #000; }
+
+.markdown-ctn h2 { font-size : 24px; border-bottom : 1px solid #ccc; color : #000; }
+
+.markdown-ctn h3 { font-size : 18px; }
+
+.markdown-ctn h4 { font-size : 16px; }
+
+.markdown-ctn h5 { font-size : 14px; }
+
+.markdown-ctn h6 { color : #777; font-size : 14px; }
+
+.markdown-ctn li { list-style : disc; }
+
+.markdown-ctn p,
+.markdown-ctn blockquote,
+.markdown-ctn ul,
+.markdown-ctn ol,
+.markdown-ctn dl,
+.markdown-ctn li,
+.markdown-ctn table,
+.markdown-ctn pre { padding : 10px 0 5px 0; }
+
+.markdown-ctn hr { border : 0 none; color : #ccc; height : 4px; padding : 0; }
+
+.markdown-ctn ul,
+.markdown-ctn ol { padding-left : 30px; }
+
+.markdown-ctn dl { padding : 0; }
+
+.markdown-ctn dl dt { font-size : 14px; font-weight : bold; font-style : italic; padding : 0; margin : 15px 0 5px; }
+
+.markdown-ctn dl dd { margin : 0 0 15px; padding : 0 15px; }
+
+.markdown-ctn blockquote { border-left : 4px solid #DDD; padding : 0 15px; color : #777; }
+
+.markdown-ctn table { padding : 0; border-collapse : collapse; border-spacing : 0; font-size : 100%; font : inherit; }
+
+.markdown-ctn table tr { border-top : 1px solid #ccc; background-color : #fff; margin : 0; padding : 0; }
+
+.markdown-ctn table tr th { font-weight : bold; }
+
+.markdown-ctn table tr th,
+.markdown-ctn table tr td { border : 1px solid #ccc; text-align : left; margin : 0; padding : 6px 13px; }
+
+.markdown-ctn img { max-width : 100%; border : 1px solid gray; border-radius : 5px; }
+
+.markdown-ctn span.frame { display : block; overflow : hidden; }
+
+.markdown-ctn span.frame span img { display : block; float : left; }
+
+.markdown-ctn span.frame span span { clear : both; color : #333; display : block; padding : 5px 0 0; }
+
+.markdown-ctn span.align-center { display : block; overflow : hidden; clear : both; }
+
+.markdown-ctn span.align-center>span { display : block; overflow : hidden; margin : 13px auto 0; text-align : center; }
+
+.markdown-ctn span.align-center span img { margin : 0 auto; text-align : center; }
+
+.markdown-ctn span.align-right { display : block; overflow : hidden; clear : both; }
+
+.markdown-ctn span.align-right span img { margin : 0; text-align : right; }
+
+.markdown-ctn span.float-left { display : block; margin-right : 13px; overflow : hidden; float : left; }
+
+.markdown-ctn span.float-left span { margin : 13px 0 0; }
+
+.markdown-ctn span.float-right { display : block; margin-left : 13px; overflow : hidden; float : right; }
+
+.markdown-ctn code,
+.markdown-ctn tt { margin : 0 2px; padding : 0 5px; white-space : nowrap; border : 1px solid #eaeaea; background-color : #f8f8f8; border-radius : 3px; }
+
+.markdown-ctn pre>code { margin : 0; padding : 0; white-space : pre; border : none; background : transparent; }
+
+.markdown-ctn .highlight pre,
+.markdown-ctn pre { background-color : #0B0C09; color : #F8F8F2; border : 1px solid #ccc; font-size : 13px; line-height : 19px; overflow : auto; padding : 6px 10px; border-radius : 5px; }
+
+.markdown-ctn pre code,
+.markdown-ctn pre tt { background-color : transparent; border : none; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin : 0; padding : 0; border : 0; font-size : 100%; }
+
+section, article, aside, header, footer, nav, dialog, figure { display : block; }
+
+figure { margin : 0; }
+
+body, button, input, select, textarea { font : 12px/1.5 tahoma, arial, \5b8b\4f53; }
+
+h1, h2, h3, h4, h5, h6 { font-size : 100%; }
+
+address, cite, dfn, em, var { font-style : normal; }
+
+code, kbd, pre, samp { font-family : courier new, courier, monospace; }
+
+small { font-size : 12px; }
+
+ul, ol { list-style : none; }
+
+sup { vertical-align : text-top; }
+
+sub { vertical-align : text-bottom; }
+
+legend { color : #000; }
+
+fieldset, img { border : 0; }
+
+button, input, select, textarea { font-size : 100%; }
+
+table { border-collapse : collapse; border-spacing : 0; }
+
+.clearfix:after { content : '\0020'; display : block; height : 0; clear : both; visibility : hidden; }
+
+.clearfix { *zoom : 1; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, s, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin : 0; padding : 0; border : 0; outline : 0; background : transparent; }
+
+article, aside, details, summary, figcaption, figure, footer, header, hgroup, menu, nav, section { display : block; }
+
+del { text-decoration : line-through; }
+
+abbr[title], dfn[title] { border-bottom : 1px dotted; cursor : help; }
+
+.clearfix:after { content : "."; display : block; height : 0; clear : both; visibility : hidden; }
+
+.clearfix { display : inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height : 1%; }
+
+.clearfix { display : block; }
+
+/* End hide from IE-mac */
+.has-trans { -webkit-transition : all .3s ease-out; -moz-transition : all .3s ease-out; -ms-transition : all .3s ease-out; -o-transition : all .3s ease-out; transition : all .3s ease-out; }

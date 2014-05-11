@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e04125-de5b-4870-a96d-6cf5a7279c34" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/blog-index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/links.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/markdown.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/util.js" afterPath="$PROJECT_DIR$/assets/js/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widgets/mask/index.js" afterPath="$PROJECT_DIR$/widgets/mask/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="enson.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1395921801099" ignored="false" />
+    <file path="/Dummy.txt" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1399803634491" ignored="false" />
     <file path="$PROJECT_DIR$/../../svn/et-trunk-assets/assets/trip-html5/apps/frame-ticket/frame_ticket.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1373529475010" ignored="false" />
     <file path="/frame_ticket.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1373529474193" ignored="false" />
-    <file path="/index.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383748436808" ignored="false" />
+    <file path="/index.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1399815070015" ignored="false" />
     <file path="/flat-ui.css" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378888987950" ignored="false" />
     <file path="$PROJECT_DIR$/../../gitlab/m-act2013/src/seckill903/index.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378951658359" ignored="false" />
     <file path="$PROJECT_DIR$/../../gitlab/m-act2013/abc.json" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1378978319002" ignored="false" />
@@ -41,6 +49,8 @@
     <file path="$PROJECT_DIR$/../../svn/et-trunk-assets/assets/trip-html5/apps/wetrip/wetrip.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383811435610" ignored="false" />
     <file path="/wetrip.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383810637111" ignored="false" />
     <file path="/index.js" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1383828721280" ignored="false" />
+    <file path="/README.md" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1399803888330" ignored="false" />
+    <file path="/flat_ui.html" changelist="48e04125-de5b-4870-a96d-6cf5a7279c34" time="1399804461747" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +73,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="80" selection-start="7531" selection-end="7531" vertical-scroll-proportion="0.7837838">
+            <state line="33" column="70" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.8918919">
               <folding />
             </state>
           </provider>
@@ -88,8 +98,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/assets/css/flat-ui.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/util.js" />
+        <option value="$PROJECT_DIR$/widgets/mask/index.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/links.html" />
+        <option value="$PROJECT_DIR$/project/flat_ui.html" />
+        <option value="$PROJECT_DIR$/assets/css/markdown.css" />
+        <option value="$PROJECT_DIR$/assets/css/blog-index.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -198,6 +216,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="index.html" type="JavascriptDebugSession" factoryName="Local" singleton="true" temporary="true">
@@ -342,81 +361,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/project/address/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="75" selection-start="5060" selection-end="5060" vertical-scroll-proportion="-5.923825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/address/address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="55" selection-start="492" selection-end="492" vertical-scroll-proportion="-12.351352">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/mask/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="17" selection-start="21" selection-end="21" vertical-scroll-proportion="0.025396826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/mask/abc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="40" selection-start="3597" selection-end="3597" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="80" selection-start="3693" selection-end="3693" vertical-scroll-proportion="0.0">
+        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-78.41815">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/flat_ui.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="25" selection-start="893" selection-end="893" vertical-scroll-proportion="0.5405405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="81" selection-end="81" vertical-scroll-proportion="0.21157025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/flat-ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="40" selection-start="3601" selection-end="3601" vertical-scroll-proportion="-86.23501">
+        <state line="759" column="34" selection-start="15286" selection-end="15293" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="60" selection-start="493" selection-end="493" vertical-scroll-proportion="0.50793654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/validator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.6012964">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/juicer.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/mobiscroll-all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-11.032414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/markdown.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/blog-index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="80" selection-start="7531" selection-end="7531" vertical-scroll-proportion="0.7837838">
+        <state line="33" column="70" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.8918919">
           <folding />
         </state>
       </provider>
